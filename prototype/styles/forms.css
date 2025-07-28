@@ -58,3 +58,45 @@ textarea {
 [data-theme="dark"] .form-actions--sticky {
   border-color: rgba(255,255,255,0.1);
 }
+
+/* ========== Login Form ========== */
+.login-form {
+  max-width: 400px;
+  margin: 2rem auto;
+  background-color: var(--bg-form);
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.login-form__field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.login-form__actions {
+  text-align: center;
+}
+
+/* ========== Health Exam Form ========== */
+.exam-form {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.exam-form__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.exam-form__row label {
+  flex: 0 0 200px;
+}
+
+.exam-form__row input,
+.exam-form__row textarea {
+  flex: 1 1 200px;
+}
