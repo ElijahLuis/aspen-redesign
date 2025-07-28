@@ -1,0 +1,23 @@
+/* Legacy compatibility mappings */
+:root {
+  --legacy-c1: #98293E;
+  --legacy-c2: #AD4D5F;
+  --legacy-c3: #5C0000;
+  --legacy-highlight: #EABBC4;
+}
+
+.c1Background { background-color: var(--legacy-c1) !important; }
+.c1Color { color: var(--legacy-c1); }
+.c1Border { border-color: var(--legacy-c1); }
+
+.c2Background { background-color: var(--legacy-c2); }
+.c2Color { color: var(--legacy-c2); }
+.c2Border,
+.c2Border-left,
+.c2Border-top { border-color: var(--legacy-c2); }
+
+.c3Background { background-color: var(--legacy-c3); }
+.c3Color { color: var(--legacy-c3); }
+.c3Border { border-color: var(--legacy-c3); }
+
+.listCellLastSelectionHighlight { background-color: var(--legacy-highlight) !important; }
