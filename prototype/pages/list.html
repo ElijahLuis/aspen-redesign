@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List View</title>
+
+  <link rel="stylesheet" href="../styles/common-mo.css">
+  <link rel="stylesheet" href="../styles/layout.css">
+  <link rel="stylesheet" href="../styles/utils.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  <link rel="stylesheet" href="../styles/table.css">
+  <link rel="stylesheet" href="../styles/themes.css">
+</head>
+<body>
+  <div class="layout-wrapper">
+    <nav class="top-nav">
+      <div>Chicago Public Schools</div>
+      <div>User: Jane Admin</div>
+    </nav>
+
+    <div class="layout-container">
+      <aside class="sidebar">
+        <p>Sidebar navigation</p>
+      </aside>
+
+      <main class="main-panel">
+        <div class="button-menu mb-2">
+          <button type="button">Options</button>
+          <button type="button">Reports</button>
+          <button type="button">Help</button>
+        </div>
+
+        <div class="find-bar">
+          <div class="find-bar__search">
+            <input type="text" placeholder="Search records" aria-label="Search records">
+          </div>
+          <div class="find-bar__filters">
+            <button type="button">Filter</button>
+          </div>
+          <div class="find-bar__bulk-actions text-sm ml-auto">0 of N selected</div>
+        </div>
+
+        <div class="table-wrapper">
+          <table class="table table--comfortable">
+            <thead>
+              <tr>
+                <th class="table__cell--sticky"><input type="checkbox" aria-label="Select all rows"></th>
+                <th class="table__cell--sticky">Student</th>
+                <th class="table__cell--sticky">Status</th>
+                <th class="table__cell--sticky">Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" aria-label="Select row"></td>
+                <td>John Doe</td>
+                <td><span class="status-pill status-pill--ok">OK</span></td>
+                <td>05/01/2025</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" aria-label="Select row"></td>
+                <td>Jane Smith</td>
+                <td><span class="status-pill status-pill--warn">Missing</span></td>
+                <td>05/03/2025</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" aria-label="Select row"></td>
+                <td>Max Lee</td>
+                <td><span class="status-pill status-pill--na">N/A</span></td>
+                <td>05/04/2025</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="pagination mt-2">Page 1 of 4</div>
+      </main>
+    </div>
+  </div>
+
+  <script type="module" src="../scripts/components.js"></script>
+</body>
+</html>
