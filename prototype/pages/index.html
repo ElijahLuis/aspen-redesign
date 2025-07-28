@@ -7,10 +7,10 @@
   <title>Aspen: Log On</title>
 
   <!-- Legacy styling support -->
-  <link rel="stylesheet" href="prototypes/styles/common-mo.css">
+  <link rel="stylesheet" href="../styles/css/common-mo.css">
 
   <!-- Theme variables and dark mode -->
-  <link rel="stylesheet" href="prototype/styles/themes.css">
+  <link rel="stylesheet" href="../styles/css/themes.css">
   <!-- Inline color styles removed; see themes.css for variables -->
 
   <!-- Favicon -->
@@ -23,7 +23,7 @@
       <img src="images/follett-aspen-logo.png" alt="Follett Aspen Logo" class="aspen-logo">
     </div>
     <!-- Theme toggle for bonus -->
-    <button type="button" id="themeToggle" class="button" aria-label="Toggle color scheme">Toggle Theme</button>
+    <button type="button" id="themeToggle" class="button" aria-label="Toggle color scheme" aria-pressed="false">Toggle Theme</button>
   </header>
 
   <main class="login-main">
@@ -48,9 +48,16 @@
       <label for="password">Password</label>
       <input type="password" name="password" id="password" class="logonInput" required>
 
+      <label for="languageSelect">Language</label>
+      <select name="language" id="languageSelect" class="logonSelect">
+        <option value="en">English</option>
+        <option value="es">Espa&ntilde;ol</option>
+      </select>
+
       <div class="login-links">
         <a href="javascript:EmbeddedPopup.popupManager.open('loginHelp.do?', 420, 320, 100)">Login Assistance</a>
-        <a href="javascript:EmbeddedPopup.popupManager.open('passwordRecovery.do?isSecondary=false&deploymentId=aspen', 400, 400, 100)">Parent Portal Password Reset</a>
+        <a href="javascript:EmbeddedPopup.popupManager.open('passwordRecovery.do?isSecondary=false&amp;deploymentId=aspen', 400, 400, 100)">Parent Portal Password Reset</a>
+        <a href="javascript:EmbeddedPopup.popupManager.open('passwordRecovery.do?isSecondary=false&amp;deploymentId=aspen', 400, 400, 100)">Forgot Password?</a>
       </div>
 
       <button type="submit" class="button" id="logonButton">
@@ -80,7 +87,9 @@
     const toggleBtn = document.getElementById('themeToggle');
     toggleBtn.addEventListener('click', () => {
       const current = document.documentElement.dataset.theme;
-      document.documentElement.dataset.theme = current === 'dark' ? 'light' : 'dark';
+      const newTheme = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = newTheme;
+      toggleBtn.setAttribute('aria-pressed', newTheme === 'dark');
     });
   </script>
 
