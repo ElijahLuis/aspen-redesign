@@ -22,3 +22,6 @@ Use its contents to:
 For example:
 - .listCellLastSelectionHighlight → mapped to --legacy-highlight
 - .repositoryListClass conflicts → noted for resolution in components.css or utils.css
+
+## Dummy Data Policy
+All captured HTML reflects either zeroed-out student data or the developer's own record. No third-party PHI is included.
