@@ -21,6 +21,10 @@ Use its contents to:
 
 For example:
 - .listCellLastSelectionHighlight → mapped to --legacy-highlight
+- c1Color / c1Background / c1Border → mapped to --legacy-c1
+- c2Color / c2Background / c2Border (+ left/top) → mapped to --legacy-c2
+- c3Color / c3Background / c3Border → mapped to --legacy-c3
+- .menuItemHighlight → mapped to --legacy-highlight
 - .repositoryListClass conflicts → noted for resolution in components.css or utils.css
 
 ## Dummy Data Policy
