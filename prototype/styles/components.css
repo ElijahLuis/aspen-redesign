@@ -1,0 +1,138 @@
+/* Core UI Components for Aspen redesign */
+
+/* ========== Widget Container ========== */
+.widget {
+  background-color: var(--bg-form);
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.widget__header {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.widget__title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.widget__actions {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.widget__body {
+  padding: 1rem;
+}
+
+.widget__footer {
+  padding: 0.5rem 1rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+/* ========== Button Groups ========== */
+.button-menu {
+  display: inline-flex;
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.button-menu button {
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.button-menu button + button {
+  border-left: 1px solid var(--color-primary-dark);
+}
+
+[data-theme="dark"] .widget {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+[data-theme="dark"] .widget__header,
+[data-theme="dark"] .widget__footer {
+  border-color: rgba(255,255,255,0.1);
+}
+
+/* ========== Find/Search Bar ========== */
+.find-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--bg-default);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.find-bar__search {
+  flex: 1 1 12rem;
+}
+
+.find-bar__search input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.find-bar__filters,
+.find-bar__bulk-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* ========== Status Pills ========== */
+.status-pill {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 999px;
+  color: #fff;
+}
+
+.status-pill--ok { background-color: var(--status-ok, #1b8753); }
+.status-pill--warn { background-color: var(--status-warn, #c26100); }
+.status-pill--na { background-color: var(--status-na, #6b6b6b); }
+
+[data-theme="dark"] .find-bar {
+  background-color: var(--bg-form);
+  border-color: rgba(255,255,255,0.1);
+}
+
+/* ========== Main Panel Two-Column Layout ========== */
+.main-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.main-grid__left {
+  flex: 1 1 100%;
+}
+
+.main-grid__right {
+  flex: 1 1 100%;
+}
+
+@media (min-width: 768px) {
+  .main-grid__left {
+    flex-basis: 66.666%;
+  }
+  .main-grid__right {
+    flex-basis: 33.333%;
+  }
+}

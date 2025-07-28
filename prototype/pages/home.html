@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aspen District View</title>
+
+  <link rel="stylesheet" href="../styles/common-mo.css">
+  <link rel="stylesheet" href="../styles/layout.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  <link rel="stylesheet" href="../styles/themes.css">
+</head>
+<body>
+  <div class="layout-wrapper">
+    <nav class="top-nav">
+      <div>Chicago Public Schools</div>
+      <div>User: Jane Admin</div>
+    </nav>
+
+    <div class="layout-container">
+      <aside class="sidebar">
+        <!-- placeholder sidebar -->
+        <p>Sidebar navigation</p>
+      </aside>
+
+      <main class="main-panel">
+        <div class="main-grid">
+          <div class="main-grid__left">
+            <section class="widget">
+              <div class="widget__header">
+                <h2 class="widget__title">Quick Links</h2>
+              </div>
+              <div class="widget__body">
+                <ul>
+                  <li><a href="#">View Students</a></li>
+                  <li><a href="#">Attendance</a></li>
+                  <li><a href="#">Gradebook</a></li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="widget">
+              <div class="widget__header">
+                <h2 class="widget__title">Student Search</h2>
+              </div>
+              <div class="widget__body">
+                <div class="find-bar">
+                  <div class="find-bar__search">
+                    <input type="text" placeholder="Search students" aria-label="Search students">
+                  </div>
+                  <div class="find-bar__filters">
+                    <button type="button">Filter</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="widget">
+              <div class="widget__header">
+                <h2 class="widget__title">Workflows</h2>
+              </div>
+              <div class="widget__body">
+                <p>No current workflows.</p>
+              </div>
+            </section>
+
+            <section class="widget">
+              <div class="widget__header">
+                <h2 class="widget__title">Published Reports</h2>
+              </div>
+              <div class="widget__body">
+                <p>No published reports.</p>
+              </div>
+            </section>
+          </div>
+
+          <div class="main-grid__right">
+            <section class="widget">
+              <div class="widget__header">
+                <h2 class="widget__title">Announcements</h2>
+              </div>
+              <div class="widget__body">
+                <p>No announcements.</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    const toggleBtn = document.getElementById('themeToggle');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', () => {
+        const current = document.documentElement.dataset.theme;
+        const newTheme = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.dataset.theme = newTheme;
+        toggleBtn.setAttribute('aria-pressed', newTheme === 'dark');
+      });
+    }
+  </script>
+</body>
+</html>
