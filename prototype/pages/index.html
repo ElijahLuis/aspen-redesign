@@ -18,6 +18,10 @@
 </head>
 <body class="loginBackground">
 
+  <noscript>
+    <div class="noscript-warning">JavaScript is required to use Aspen. Please enable JavaScript in your browser.</div>
+  </noscript>
+
   <header class="login-header">
     <div class="logo-wrapper">
       <img src="images/follett-aspen-logo.png" alt="Follett Aspen Logo" class="aspen-logo">
@@ -44,9 +48,11 @@
 
       <label for="username">Login ID</label>
       <input type="text" name="username" id="username" class="logonInput" required>
+      <span class="error-message" id="usernameError" style="display:none;">Login ID required</span>
 
       <label for="password">Password</label>
       <input type="password" name="password" id="password" class="logonInput" required>
+      <span class="error-message" id="passwordError" style="display:none;">Password required</span>
 
       <label for="languageSelect">Language</label>
       <select name="language" id="languageSelect" class="logonSelect">
@@ -58,6 +64,7 @@
         <a href="javascript:EmbeddedPopup.popupManager.open('loginHelp.do?', 420, 320, 100)">Login Assistance</a>
         <a href="javascript:EmbeddedPopup.popupManager.open('passwordRecovery.do?isSecondary=false&amp;deploymentId=aspen', 400, 400, 100)">Parent Portal Password Reset</a>
         <a href="javascript:EmbeddedPopup.popupManager.open('passwordRecovery.do?isSecondary=false&amp;deploymentId=aspen', 400, 400, 100)">Forgot Password?</a>
+        <a href="create-account.html" class="disabled" aria-disabled="true">Create Account</a>
       </div>
 
       <button type="submit" class="button" id="logonButton">
