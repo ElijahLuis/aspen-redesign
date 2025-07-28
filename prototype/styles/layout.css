@@ -1,0 +1,51 @@
+/* Responsive Layout Framework
+   Defines semantic layout classes for redesigned Aspen pages.
+   Utilizes Flexbox for sidebar and main content with an optional top bar.
+   Legacy styles remain untouched for compatibility. */
+
+.layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.top-nav {
+  background-color: var(--header-bg);
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+}
+
+.layout-container {
+  flex-direction: column;
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  min-height: 0; /* avoid overflow when sidebar is fixed */
+}
+
+.sidebar {
+  flex: 1 0 100%;
+  background-color: var(--bg-form);
+  padding: 1rem;
+}
+
+.main-panel {
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .layout-container {
+    flex-direction: row;
+  }
+  .sidebar {
+    flex: 0 0 16rem;
+  }
+}
+
+/* Dark theme overrides */
+.layout-wrapper[data-theme="dark"] {
+  background-color: var(--bg-default);
+}
+
+/* Potential conflict: legacy .sidebar class may exist elsewhere; ensure specificity */
+
