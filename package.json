@@ -1,0 +1,17 @@
+{
+  "name": "aspen-redesign",
+  "version": "1.0.0",
+  "description": "This project explores a modernized front‑end for the Aspen student information system. The goal is to create responsive, accessible pages while remaining compatible with legacy CSS and backend logic.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:manifest": "node scripts/build-manifest.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "cheerio": "^1.1.2"
+  }
+}

@@ -1,0 +1,5852 @@
+<html lang="en"><head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="SHORTCUT ICON" href="images/favicon.ico">
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script async="" src="//www.google-analytics.com/analytics.js"></script><script src="js/external/lodash/lodash.3.8.0.compat.min.js?version=6.8.1.11.115" type="text/javascript"></script>
+  <script src="js/external/json/json2.js?version=6.8.1.11.115" type="text/javascript"></script>
+  <script src="js/external/jquery/jquery-3.5.1.min.js?version=6.8.1.11.115" type="text/javascript"></script>
+  <script src="js/jquery-ui-1.12.1.min.js?version=6.8.1.11.115" type="text/javascript"></script>
+  <script src="js/external/quicktags/quicktags-1.3.1-concat.js?version=6.8.1.11.115" type="text/javascript"></script>
+
+
+<script src="js/jquery-common.js?version=6.8.1.11.115" type="text/javascript"></script>
+<script src="js/common.js?version=6.8.1.11.115" type="text/javascript"></script>
+<script src="js/hoverText.js?version=6.8.1.11.115" type="text/javascript"></script>
+<script src="js/menu.js?version=6.8.1.11.115" type="text/javascript"></script>
+<script src="js/locale/date-en-US.js?version=6.8.1.11.115" type="text/javascript"></script>
+<script src="js/dateTime.js?version=6.8.1.11.115" type="text/javascript"></script>
+<script src="js/dependencyHandler.js?version=6.8.1.11.115" type="text/javascript"></script>
+<script src="js/dynamicPickList.js?version=6.8.1.11.115" type="text/javascript"></script>
+<script src="js/resourceGrabber.js?version=6.8.1.11.115" type="text/javascript"></script>
+<script src="js/spellCheckField.js?version=6.8.1.11.115" type="text/javascript"></script>
+<script src="js/messageWindow.js?version=6.8.1.11.115" type="text/javascript"></script>
+<script src="js/help.js?version=6.8.1.11.115" type="text/javascript"></script>
+<script src="js/grid.js?version=6.8.1.11.115" type="text/javascript"></script>
+<script src="js/commentBank.js?version=6.8.1.11.115" type="text/javascript"></script>
+
+
+  <script src="js/modules/seatingChartDesign.js?version=6.8.1.11.115" type="text/javascript"></script>
+
+<script src="ckeditor/ckeditor.js?version=6.8.1.11.115" type="text/javascript"></script><style>.cke{visibility:hidden;}</style>
+<script src="js/ckEditorSetup.js?version=6.8.1.11.115" type="text/javascript"></script>
+
+<script language="JavaScript">
+window.name = "root_aspen_window";
+SYSTEM_LOCALE = 'en_US';
+includeStylesheet('health');
+sessionId = 'lTTkhDWvNfH9fBNexUsOT0lqFT68FvErRJWhOzmZ';
+resetSessionTimeout( 1800 );
+sessionTimeoutMessage1 = 'Your session will expire in less than one minute.';
+sessionTimeoutMessage2 = 'Would you like to continue with your session?';
+sessionExpiredMessage = 'Your session has expired at';
+updateSessionTimeout();
+function onLoad()
+{
+makeTabsClickable();
+scrollToCoordinates();
+if (this.resizeFrames)
+{
+resizeFrames();
+}
+if (this.updateCheckboxViews)
+{
+updateCheckboxViews();
+}
+
+initializeDetailValidator();
+
+}
+
+
+
+</script><link rel="StyleSheet" href="css/common-mo.css" type="text/css" media="screen"><link rel="StyleSheet" href="css/colorPatternPicker.css" type="text/css"><link rel="StyleSheet" href="css/health.css" type="text/css" media="screen">
+
+
+
+<title>Aspen: Immunizations</title>
+<!-- Start Analytics -->
+<script>
+var trackAnalytics = true;
+
+var analyticUserView = 'Health view';
+var analyticUserRole = 'Staff';
+var districtName = 'Chicago Public Schools';
+
+var aspenVersion = '6.8.1.11.115';
+</script>
+<script src="js/analyticsCore.js?version=6.8.1.11.115" type="text/javascript"></script>
+<script src="js/reader-accessibility.js"></script></head>
+
+<body class="bodyBackground" onload="onLoad()">
+<div id="overlay" style="display: none; z-index: 500; position: fixed; left: 0; right: 0; bottom: 0; top: 0; background-color: rgba(0,0,0,0.5);"></div>
+<div id="spellingMenu" class="suggestionMenu spellCheckBackground"></div>
+
+<form name="immunizationInputForm" method="post" action="/aspen/immunizationForm.do"><div><input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="af769c85d55ffa9d66033b7705551f45"></div>
+<input type="hidden" id="userEvent" name="userEvent" value="930">
+<input type="hidden" id="userParam" name="userParam" value="">
+<input type="hidden" id="operationId" name="operationId" value="">
+<input type="hidden" id="deploymentId" name="deploymentId" value="aspen">
+<input type="hidden" id="scrollX" name="scrollX" value="0">
+<input type="hidden" id="scrollY" name="scrollY" value="0">
+<input type="hidden" id="formFocusField" name="formFocusField" value="">
+<input type="hidden" name="formContents" value="">
+<input type="hidden" name="formContentsDirty" value="">
+<input type="hidden" name="maximized" value="false">
+
+
+
+
+<script language="JavaScript">
+var DETAIL_VALIDATOR_EVENTS = ['0',
+'60',
+'70',
+'80',
+'90',
+'930'];
+var DETAIL_VALIDATOR_FORM_CONTENT_KEY = '';
+var DETAIL_VALIDATOR_INDEPENDENT_SAVE = 'false';
+var DETAIL_VALIDATOR_BYPASS_WARNING = 'false';
+var DETAIL_VALIDATOR_UNSAVED_WARNING = 'Your changes have not been saved.';
+</script>
+<script src="js/detailValidator.js?version=6.8.1.11.115" type="text/javascript"></script>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+<tbody><tr class="layoutHeader" id="layoutHeader">
+<td id="header">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td>
+<div id="topTitleBar" style="">
+
+
+
+
+
+
+
+
+
+
+<!--[if lte IE 6]>
+<script src="js/supersleight-min.js?version=6.8.1.11.115" type="text/javascript"></script>
+<![endif]-->
+
+
+
+<iframe id="downloadFrame" src="javascript:false;" style="display: none"></iframe>
+
+
+
+<script language="Javascript">
+function confirmLogout()
+{
+if (confirm('Do you really want to log off and end your session?'))
+{
+window.open('logout.do', '_top');
+}
+}
+</script>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" height="55px" style="float:left;"> <tbody><tr>
+
+<td valign="top" width="50%">
+<table cellpadding="0" cellspacing="0" border="0" style="height: 100%;">
+<tbody><tr valign="top">
+
+<td rowspan="2" class="applicationTitle lightTitle" style="vertical-align: middle" valign="middle">
+
+<span style="padding-left: 10px;">
+NORTHSIDE PREP HS 2025-2026
+</span>
+</td>
+</tr>
+<tr>
+
+</tr>
+</tbody></table>
+</td>
+<td align="center">
+
+</td>
+<td align="right" width="40%">
+<div style="float: right;">
+<table border="0" cellspacing="0" cellpadding="0" style="margin-left: auto; margin-right: auto">
+<tbody><tr><td>
+
+
+
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td>
+<div id="contextMenu" class="toolbarText pointer toolbarItem">
+Health view
+<img src="images/white_down_arrow.png" class="whiteDownArrow" alt="white down arrow">
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div id="contextMenuPane" class="menuPane menuPlainBackground c2Border-left">
+<table border="0" cellspacing="0" cellpadding="0">
+
+<tbody><tr id="contextOrg1" class="pointer">
+<td nowrap="" class="menuOptionFullPadding">District</td>
+<td nowrap="" class="menuOptionFullPadding" width="1" align="right">&nbsp;</td>
+</tr>
+
+
+
+
+
+
+<tr id="contextHealth" class="pointer">
+<td nowrap="" class="menuOptionFullPadding">Health</td>
+<td nowrap="" class="menuOptionFullPadding" width="1" align="right">&nbsp;</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+</tbody></table>
+</div>
+
+<script language="Javascript">
+var contextMenu = new Menu('contextMenu', null, 'menuItemHighlight pointer', 'pointer');
+var contextUrl = rewriteUrl("openContext.do?context=");
+
+contextMenu.addOption('contextOrg1', 'window.open(contextUrl + "1&orgType=", "_top")');
+
+
+
+
+
+
+contextMenu.addOption('contextHealth', 'window.open(contextUrl + "10", "_top")');
+
+
+
+<!-- IEP Organization/School link setup (sub menu support)-->
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</td>
+</tr>
+</tbody></table>
+
+</td>
+
+
+
+
+
+
+<td>
+<div class="toolbarPadding toolbarItem" nowrap="" onmouseover="this.className = 'toolbarPadding toolbarItem c2Background'" onmouseout="this.className = 'toolbarPadding toolbarItem'">
+
+<a class="toolbarText" href="javascript:doPickList('schoolSelect.do?multi=false&amp;fields=sklSchoolName,sklSchoolID&amp;prefix=SKL&amp;sort=sklSchoolName&amp;updateDirectly=false&amp;additional=false&amp;auth=t5FEdBqWMruxY9HHcDWBF5eysu8=')"><span class="fa fa-bell" style="padding-right:5px;"></span>Select school</a>
+</div>
+</td>
+
+
+
+
+
+
+
+
+
+<td>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td>
+<div id="userPreferenceMenu" class="toolbarText pointer toolbarItem" tabindex="0">
+Hernandez, Elijah L
+<img src="images/white_down_arrow.png" class="whiteDownArrow" alt="white down arrow">
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div id="userPreferenceMenuPane" class="menuPane menuPlainBackground c2Border-left">
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody><tr id="userPreferenceContext" tabindex="0" class="pointer">
+<td nowrap="" class="menuOptionFullPadding">Set preferences</td>
+<td nowrap="" class="menuOptionFullPadding" width="1" align="right">&nbsp;</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+<script language="Javascript">
+var userPreferenceMenu = new Menu('userPreferenceMenu', null, 'menuItemHighlight pointer', 'pointer');
+userPreferenceMenu.addOption('userPreferenceContext', 'doNamedPopup(\'userPreferences.do\',\'500\',\'450\',\'preferencesPopup\',\'scrollbars=1,resizable=1,menubar=0,location=0\');');
+</script>
+
+<td>
+<div class="toolbarPadding toolbarItem" nowrap="" onmouseover="this.className = 'toolbarPadding toolbarItem c2Background'" onmouseout="this.className = 'toolbarPadding toolbarItem'">
+<a href="javascript:confirmLogout();" class="toolbarText"><span class="fa fa-sign-out" style="padding-right:5px;"></span>Log Off</a>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+
+</div>
+</td>
+</tr>
+<tr>
+<td>
+
+<!--         <span id="autoSaveDebugButton">&nbsp;</span>-->
+
+<div id="c2colorRef" class="c2color"> </div>
+<div id="topMenuBar" style="">
+<div id="topMenuBarLeft" class="topMenuLeftScroll">
+<img src="images/previous-arrow-white-black-border.png" style="color: transparent;" alt="previous arrow white black border">
+</div>
+<div id="actualTopMenuBar" class="topMenuCenter">
+
+
+
+
+
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+<tbody><tr>
+
+
+</tr></tbody><tbody style="display: inline-block">
+<tr><td width="1" id="left-arrow-container" class="c1Background navTabBackground" nowrap="" onmouseover="this.className = 'navTabBackgroundHover'" onmouseout="this.className = 'navTabBackground c1Background'" style="display: none">
+<div class="arrowToLeft"></div>
+</td>
+</tr></tbody>
+<tbody id="topTabs" style="width: 100%; display:inline-block; overflow:hidden">
+<tr><td style="width: 80px; text-align: center;" class="c1Background navTabBackground" nowrap="" onmouseover="this.className = 'navTabBackgroundHover'" onmouseout="this.className = 'navTabBackground c1Background'">
+<a href="/aspen/home.do" class="navTab">Pages</a>
+</td>
+
+
+
+
+<!-- D-25797 We do not want to display the tab if the user does not have a role with access to the tab. -->
+
+
+<td width="1" class="navTabDividerSolid"><img src="images/spacer.gif" height="1" width="1" alt=" "></td>
+<td width="1" class=" navTabBackgroundSelected" nowrap="">
+<a href="/aspen/studentContextList.do?navkey=student.std.list" class="navTab" title="Student tab">Student</a>
+</td>
+
+
+
+<!-- D-25797 We do not want to display the tab if the user does not have a role with access to the tab. -->
+
+
+<td width="1" class="navTabDividerSolid"><img src="images/spacer.gif" height="1" width="1" alt=" "></td>
+<td width="1" class="c1Background navTabBackground" nowrap="" onmouseover="this.className = 'navTabBackgroundHover '" onmouseout="this.className = 'navTabBackground c1Background'">
+<a href="/aspen/dailyHealthLog.do?navkey=healthLog.hlg.list" class="navTab" title="Health visit tab">Visit</a>
+</td>
+
+
+
+<!-- D-25797 We do not want to display the tab if the user does not have a role with access to the tab. -->
+
+
+<td width="1" class="navTabDividerSolid"><img src="images/spacer.gif" height="1" width="1" alt=" "></td>
+<td width="1" class="c1Background navTabBackground" nowrap="" onmouseover="this.className = 'navTabBackgroundHover '" onmouseout="this.className = 'navTabBackground c1Background'">
+<a href="/aspen/contextList.do?navkey=healthCnd.condition.history" class="navTab" title="Health condition tab">Condition</a>
+</td>
+
+
+
+<!-- D-25797 We do not want to display the tab if the user does not have a role with access to the tab. -->
+
+
+<td width="1" class="navTabDividerSolid"><img src="images/spacer.gif" height="1" width="1" alt=" "></td>
+<td width="1" class="c1Background navTabBackground" nowrap="" onmouseover="this.className = 'navTabBackgroundHover '" onmouseout="this.className = 'navTabBackground c1Background'">
+<a href="/aspen/screeningList.do?navkey=healthScr.screening.history" class="navTab" title="Health screening tab">Screening</a>
+</td>
+
+
+
+<!-- D-25797 We do not want to display the tab if the user does not have a role with access to the tab. -->
+
+
+<td width="1" class="navTabDividerSolid"><img src="images/spacer.gif" height="1" width="1" alt=" "></td>
+<td width="1" class="c1Background navTabBackground" nowrap="" onmouseover="this.className = 'navTabBackgroundHover '" onmouseout="this.className = 'navTabBackground c1Background'">
+<a href="/aspen/contextList.do?navkey=healthMed.order.list" class="navTab" title="Health medication tab">Medication</a>
+</td>
+
+
+
+<!-- D-25797 We do not want to display the tab if the user does not have a role with access to the tab. -->
+
+
+<td width="1" class="navTabDividerSolid"><img src="images/spacer.gif" height="1" width="1" alt=" "></td>
+<td width="1" class="c1Background navTabBackground" nowrap="" onmouseover="this.className = 'navTabBackgroundHover '" onmouseout="this.className = 'navTabBackground c1Background'">
+<a href="/aspen/contextList.do?navkey=healthAlr.alert.history" class="navTab" title="Health alerts tab">Alert</a>
+</td>
+
+
+
+
+<td width="1" class="navTabDividerSolid"><img src="images/spacer.gif" height="1" width="1" alt=" "></td>
+<td width="100%" class="navTabBackground c1Background"><img src="images/spacer.gif" height="1" width="1" alt=" "></td>
+</tr></tbody>
+<tbody style="display: inline-block">
+<tr><td width="1" id="right-arrow-container" class="c1Background navTabBackground" nowrap="" onmouseover="this.className = 'navTabBackgroundHover'" onmouseout="this.className = 'navTabBackground c1Background'" style="display: none">
+<div class="arrowToRight"></div>
+</td>
+</tr></tbody>
+
+</table>
+
+</div>
+<div id="topMenuBarRight" class="topMenuRightScroll">
+<img src="images/next-arrow-white-black-border.png" style="color: transparent;" alt="next arrow white black border">
+</div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>
+<div id="contentArea" class="contentPad">
+<table class="breadcrumbsOuterContainer" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody><tr>
+<td id="breadcrumbsContainer">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table cellpadding="0" cellspacing="0" border="0">
+<tbody><tr>
+<td id="bodytop" class="breadcrumbs"><h1 class="reset_style_h1_top">
+
+<a id="link_topNode" href="https://aspen.cps.edu/aspen/studentContextList.do?navkey=student.std.list&amp;maximized=false" title="List of students">
+Student List
+</a> :: <a href="personAddressDetail.do?navkey=student.std.list.detail">13 - Hernandez, Elijah - 2/27/1997 Age 28 - 41281553</a>
+<img src="images/spacer.gif" height="1" width="2" alt=" ">
+
+</h1></td>
+
+<td>
+<img src="images/spacer.gif" height="1" width="2" alt=" ">
+<a href="javascript:doPopup('quickStatusDetailPopup.do?prefix=STD&amp;oid=std01000800215&amp;context=std.quickStatus.alertPopup&amp;readOnly=true&amp;auth=3cR0un137wcM4Mc3PpwvUgXqOeY=', 440, 800)"><img src="images/alertIcons/bell.png" border="0" title="Quick Status Alert" alt="Quick Status Alert"></a>
+</td>
+<td>
+
+</td>
+<td>
+
+</td>
+<td>
+<img src="images/spacer.gif" height="27" width="1" alt=" ">
+</td>
+</tr>
+</tbody></table>
+
+</td>
+<td align="right">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table cellpadding="0" cellspacing="0" border="0">
+<tbody><tr>
+<td nowrap="">
+<button id="firstButton" class="navIconFlat navIconFlatPointer" type="button" name="firstButton" onclick="doSubmit(80, this.form)" title="Go to the first record">
+<div class="navIconGeneral navFirst"></div>
+</button>
+<button id="previousButton" class="navIconFlat navIconFlatPointer" type="button" name="previousButton" onclick="doSubmit(70, this.form)" title="Go to the previous record">
+<div class="navIconGeneral navPrevious"></div>
+</button>  
+<button type="button" class="navIconFlat navIconFlatPointer" name="searchStringButton" id="searchStringButton" onclick="expandSearchString()" title="Find">
+<div class="navString"></div>
+</button> 
+<button id="nextButton" class="navIconFlat navIconFlatPointer" type="button" name="nextButton" onclick="doSubmit(60, this.form)" title="Go to the next record">
+<div class="navIconGeneral navNext"></div>
+</button>
+<button id="lastButton" class="navIconFlat navIconFlatPointer" type="button" name="lastButton" onclick="doSubmit(90, this.form)" title="Go to the last record">
+<div class="navIconGeneral navLast"></div>
+</button>
+</td>
+</tr>
+</tbody></table>
+
+
+<div id="searchStringDiv" class="searchStringDiv" style="visibility:hidden;">
+<p class="searchStringHeader">Required Search Fields</p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%" height="30%">
+<tbody><tr>
+<td class="searchStringLabel" width="125">&nbsp;&nbsp;&nbsp;
+Name or ID
+<text class="requiredFieldFlag">&nbsp;*</text>
+</td>
+<td><input class="searchString-nameID searchStringInputNameID" id="searchStringNameID" name="menuBarFindInputBox" type="text" value="" onkeydown="if (event.keyCode == 13) redirectWithSearch('std01000800215');">
+</td>
+</tr>
+<tr>
+<td class="searchStringLabel" width="125">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Or
+</td>
+</tr>
+<tr class="searchStringRequiredBottom">
+<td class="searchStringLabel" width="125">&nbsp;&nbsp;&nbsp;
+Last Name
+<text class="requiredFieldFlag">&nbsp;*</text>
+</td>
+<td><input class="searchString-last searchStringInput" id="searchStringLast" name="menuBarFindInputBox" type="text" value="" onkeydown="if (event.keyCode == 13) redirectWithSearch('std01000800215');">
+</td>
+</tr>
+</tbody></table>
+<hr class="searchStringRequiredBottom">
+<p class="searchStringHeader">Optional Search Fields</p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%" height="45%">
+<tbody><tr>
+<td class="searchStringLabel" width="125">&nbsp;&nbsp;&nbsp;
+First Name
+</td>
+<td><input class="searchString-first searchStringInput" id="searchStringFirst" name="menuBarFindInputBox" type="text" value="" onkeydown="if (event.keyCode == 13) redirectWithSearch('std01000800215');">
+</td>
+</tr>
+<tr>
+<td class="searchStringLabel" width="125">&nbsp;&nbsp;&nbsp;
+Grade Level
+</td>
+<td><select class="searchStringGradeLevel searchStringInput" id="searchStringGradeLevel" name="menuBarFindInputBox">
+<option value="" selected=""></option>
+
+<option value="01">01</option>
+
+<option value="02">02</option>
+
+<option value="03">03</option>
+
+<option value="04">04</option>
+
+<option value="05">05</option>
+
+<option value="06">06</option>
+
+<option value="07">07</option>
+
+<option value="08">08</option>
+
+<option value="09">09</option>
+
+<option value="10">10</option>
+
+<option value="11">11</option>
+
+<option value="12">12</option>
+
+<option value="K">K</option>
+
+<option value="PE">PE</option>
+
+<option value="PK">PK</option>
+
+</select></td>
+</tr>
+<tr>
+<td class="searchStringLabel" width="125">&nbsp;&nbsp;&nbsp;
+Gender
+</td>
+<td><select class="searchStringGender  searchStringInput" id="searchStringGender" name="menuBarFindInputBox">
+<option value="" selected=""></option>
+
+<option value="F">F</option>
+
+<option value="M">M</option>
+
+<option value="N">N</option>
+
+<option value="U">U</option>
+
+</select></td>
+</tr>
+<tr>
+<td class="searchStringLabel" width="125">&nbsp;&nbsp;&nbsp;
+Date of Birth
+</td>
+<td><input class="searchStringDOB searchStringInput" id="searchStringDOB" name="menuBarFindInputBox" type="text" value="">
+<a class="datePickerLink searchStringDatePicker" href="javascript:openDatePicker('searchStringDOB');"><img src="images/date-picker.jpg" title="Select from a calendar" border="0" alt="Select from a calendar"></a></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>
+<div align="left">
+
+<button type="button" class="button" id="searchStringSearchButton" tabindex="0" name="searchStringSearchButton" onclick="redirectWithSearch('std01000800215')"><span class="fa fa-search fa-lg"></span><span class="button-text">Search</span></button>
+&nbsp;
+<button type="button" class="button" id="searchStringCancelButton" tabindex="0" name="searchStringCancelButton" title="Cancel" onclick="expandSearchString()"><span class="fa fa-close fa-lg"></span><span class="button-text">Cancel</span></button>
+&nbsp;&nbsp;&nbsp;
+</div>
+</td>
+</tr>
+</tbody></table>
+<table style="width: 100%">
+<tbody><tr style="display: flex; justify-content: center">
+<td class="searchStringErrorTd">
+<text id="searchErrorMessage" class="searchStringTextArea" readonly="">  </text></td>
+</tr>
+</tbody></table>
+</div>
+
+<script language="Javascript">
+function expandSearchString()
+{
+if (document.getElementById("searchStringDiv").style.visibility == "hidden")
+{
+document.getElementById("searchStringDiv").style.visibility = "visible";
+document.getElementById("searchStringNameID").focus();
+}
+else
+{
+document.getElementById("searchStringDiv").style.visibility = "hidden";
+}
+}
+function redirectWithSearch(studentOID)
+{
+var nameOrId = document.getElementById("searchStringNameID").value;
+var last = document.getElementById("searchStringLast").value;
+if ((nameOrId == null || nameOrId == '') && (last == null || last == ''))
+{
+var elem = document.getElementById("searchErrorMessage");
+var changeVal = grabResource("studentSearch.missingFields");
+//Cross browser fix
+//innerText - chrome
+//textContent - firefox
+//error on innerText -> setting the sibling -> IE
+try
+{
+elem.innerText = changeVal;
+elem.textContent = changeVal;
+}
+catch(err)
+{
+elem.nextSibling.data = changeVal;
+}
+}
+else
+{
+var first = document.getElementById("searchStringFirst").value;
+var gradeLevel = document.getElementById("searchStringGradeLevel").value;
+var gender = document.getElementById("searchStringGender").value;
+var dob = document.getElementById("searchStringDOB").value;
+var pathname = document.location["pathname"];
+var navKey = document.location["search"];
+var deploymentId = "aspen";
+navKey = removeParam(navKey, 'nameID');
+navKey = removeParam(navKey, 'last');
+navKey = removeParam(navKey, 'first');
+navKey = removeParam(navKey, 'gradeLevel');
+navKey = removeParam(navKey, 'gender');
+navKey = removeParam(navKey, 'dob');
+navKey = removeParam(navKey, 'studentOID');
+//If there is no navKey, we need a ? to say we have params. If there is one, we need to add an identifier for the end of it
+if (navKey.indexOf('?') < 0)
+{
+navKey = '?';
+}
+else
+{
+navKey = navKey + '&';
+}
+var resouce = rewriteUrl('searchString.do?navkey=' + navKey +
+'&nameID=' + nameOrId +
+'&last=' + last +
+'&first=' + first +
+'&gradeLevel=' + gradeLevel +
+'&gender=' + gender +
+'&dob=' + dob +
+'&studentOID=' + studentOID +
+'&deploymentId=' + deploymentId);
+$.ajax({
+type: "GET",
+url: resouce,
+async: false,
+success: function()
+{
+doSubmit(0, document.forms[0]);
+},
+error: function(){$("#sra-status").text("Communication failure");},
+cache: false
+});
+}
+}
+function removeParam(navKey, param)
+{
+var paramLocation = navKey.indexOf(param);
+if (paramLocation > -1)
+{
+var amperLocation = navKey.indexOf('&', paramLocation);
+if (amperLocation > -1)
+{
+return navKey.substring(0, paramLocation) +	navKey.substring(amperLocation + 1, navKey.length)
+}
+else
+{
+//There is the last param in the list, so we need to remove the previous &
+return navKey.substring(0, paramLocation - 1);
+}
+}
+return navKey;
+}
+</script>
+<style type="text/css">
+span.button-text {
+padding-right: 0 !important;
+}
+</style>
+
+</td>
+</tr>
+
+<tr>
+<td colspan="2"><img src="images/spacer.gif" height="5" width="1" alt=" "></td>
+</tr>
+</tbody></table>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody><tr valign="top">
+<td height="1" width="100" id="layoutVerticalTabsContainer" style="min-width: 100px; width: 100px;">
+<div id="layoutVerticalTabs" style="">
+
+
+
+
+
+
+
+
+
+<script language="Javascript">
+function openNode(url)
+{
+var lastSelection = getLastSelectedValue("immunizationInputForm");
+if (lastSelection != "")
+{
+url += "&oid=" + lastSelection;
+}
+url = rewriteUrl(url);
+window.name = "parentWindow";
+window.open(url, window.name);
+}
+</script>
+
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" height="100%">
+
+
+
+<tbody><tr height="1">
+<td class="verticalTab pointer  verticalTabTopBorder  " onmouseover="this.className = 'verticalTabHighlight verticalTab pointer  verticalTabTopBorder '" onmouseout="this.className = 'verticalTab pointer  verticalTabTopBorder'">
+
+
+<div class="verticalTabLabel">
+<a href="personAddressDetail.do?navkey=student.std.list.detail" title="Details for a student" class="verticalTabText">Details</a>
+
+
+</div>
+
+</td>
+</tr>
+
+
+
+<tr height="1">
+<td class="verticalTab pointer   " onmouseover="this.className = 'verticalTabHighlight verticalTab pointer  '" onmouseout="this.className = 'verticalTab pointer '">
+
+
+<div class="verticalTabLabel">
+<a href="visitLogList.do?navkey=student.std.list.ih" title="List of health visit records" class="verticalTabText">Visits</a>
+
+
+</div>
+
+</td>
+</tr>
+
+
+
+<tr height="1">
+<td class="verticalTabSelected verticalTabShadowDown ">
+
+
+<div style="padding-top: 10px;">
+<span class="verticalTabTextSelected verticalTabLink verticalTabGroupLabel">Immunizations</span></div>
+
+<div class="verticalTabLabel verticalTabBar c2Border">
+<a href="immunizationForm.do?navkey=student.std.list.form" title="Immunization forms" class="verticalTabTextSelected verticalTabLink">Immunizations</a>
+
+
+
+
+</div>
+
+</td>
+</tr>
+
+
+
+<tr height="1">
+<td class="verticalTab pointer   " onmouseover="this.className = 'verticalTabHighlight verticalTab pointer  '" onmouseout="this.className = 'verticalTab pointer '">
+
+
+<div class="verticalTabLabel">
+<a href="contextList.do?navkey=student.std.list.hcn" title="List of health condition records" class="verticalTabText">Conditions</a>
+
+
+</div>
+
+</td>
+</tr>
+
+
+
+<tr height="1">
+<td class="verticalTab pointer   " onmouseover="this.className = 'verticalTabHighlight verticalTab pointer  '" onmouseout="this.className = 'verticalTab pointer '">
+
+
+<div class="verticalTabLabel">
+<a href="screeningList.do?navkey=student.std.list.screen" title="List of health screening records" class="verticalTabText">Screenings</a>
+
+
+</div>
+
+</td>
+</tr>
+
+
+
+<tr height="1">
+<td class="verticalTab pointer   " onmouseover="this.className = 'verticalTabHighlight verticalTab pointer  '" onmouseout="this.className = 'verticalTab pointer '">
+
+
+<div class="verticalTabLabel">
+<a href="contextList.do?navkey=student.std.list.con" title="Contact and related student information" class="verticalTabText">Contacts</a>
+
+
+</div>
+
+</td>
+</tr>
+
+
+
+<tr height="1">
+<td class="verticalTab pointer   " onmouseover="this.className = 'verticalTabHighlight verticalTab pointer  '" onmouseout="this.className = 'verticalTab pointer '">
+
+
+<div class="verticalTabLabel">
+<a href="studentAttendanceList.do?navkey=student.std.list.att" title="Daily and class attendance information" class="verticalTabText">Attendance</a>
+
+
+</div>
+
+</td>
+</tr>
+
+
+
+
+
+<tr height="1">
+<td class="verticalTab pointer   " onmouseover="this.className = 'verticalTabHighlight verticalTab pointer  '" onmouseout="this.className = 'verticalTab pointer '">
+
+
+<div class="verticalTabLabel">
+<a href="transcriptList.do?navkey=student.std.list.trn" title="List of transcript records" class="verticalTabText">Transcript</a>
+
+
+</div>
+
+</td>
+</tr>
+
+
+
+<tr height="1">
+<td class="verticalTab pointer   " onmouseover="this.className = 'verticalTabHighlight verticalTab pointer  '" onmouseout="this.className = 'verticalTab pointer '">
+
+
+<div class="verticalTabLabel">
+<a href="studentScheduleContextList.do?navkey=student.std.list.sch" title="Schedule information including attributes, workspace, and change history" class="verticalTabText">Schedule</a>
+
+
+</div>
+
+</td>
+</tr>
+
+
+
+<tr height="1">
+<td class="verticalTab pointer   " onmouseover="this.className = 'verticalTabHighlight verticalTab pointer  '" onmouseout="this.className = 'verticalTab pointer '">
+
+
+<div class="verticalTabLabel">
+<a href="studentEnrollmentList.do?navkey=student.std.list.enr" title="District, school, program, and group membership history" class="verticalTabText">Membership</a>
+
+
+</div>
+
+</td>
+</tr>
+
+
+
+
+
+<tr height="1">
+<td class="verticalTab pointer   " onmouseover="this.className = 'verticalTabHighlight verticalTab pointer  '" onmouseout="this.className = 'verticalTab pointer '">
+
+
+<div class="verticalTabLabel">
+<a href="contextList.do?navkey=student.std.list.doc" title="Journals, forms, and other documents" class="verticalTabText">Documents</a>
+
+
+</div>
+
+</td>
+</tr>
+
+
+
+
+
+<tr height="1">
+<td class="verticalTab pointer   " onmouseover="this.className = 'verticalTabHighlight verticalTab pointer  '" onmouseout="this.className = 'verticalTab pointer '">
+
+
+<div class="verticalTabLabel">
+<a href="recordSetKeyList.do?navkey=student.std.list.rsk" title="List of snapshots for the student" class="verticalTabText">Snapshots</a>
+
+
+</div>
+
+</td>
+</tr>
+
+
+
+<tr height="*">
+<td id="fillerRow" width="1" class="borderRight"></td>
+</tr>
+</tbody></table>
+
+</div>
+</td>
+<td rowspan="2" width="*" class="contentContainer">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" class="optionsBar">
+<tbody><tr class="" height="22">
+
+<td width="1%" style="display: none;">
+
+<div id="maximizeMenuButton" class="menu pointer menuBarSegment c1Background" onclick="showMaximizeMenus(event)">
+<img src="images/menu-icon-white.png" style="height: 15px" alt="menu icon white">
+</div>
+
+</td>
+
+
+
+
+<td width="1%">
+<div id="options" tabindex="0" class="menu pointer menuBarSegment c1Background">Options<img src="images/white_down_arrow.png" class="whiteDownArrow" alt="white down arrow"></div><div id="optionsPane" class="menuPane c2Border-left"><table width="91" id="optionsColumn0Table" border="0" cellspacing="0" cellpadding="0" class="menuColumn"><tbody><tr data-name="option.addFromPickListSingle.addSeries.name" id="options_Option0" data-id="null" tabindex="0" class="menuPlainBackground pointer"><td nowrap="" class="menuOption" width="1" align="left"><img src="images/spacer.gif" width="4" alt=" "></td><td nowrap="" class="menuOption" width="*" align="left">Add Series...</td><td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td></tr>
+</tbody></table></div><script language="Javascript">var options = new Menu('options', null, 'menuItemHighlight pointer', 'menuPlainBackground pointer',false);
+options.addOption('options_Option0', 'doPickList(\'addFromPickList.do?multi=false&filters=himRequiredInd!equals!and!constant!false&fields=himSeriesId,himSeriesName&prefix=HIM&sort=himSeriesId,himSeriesName&relation=&auth=fscx2EF3fvH9S7/lK5mt+ThhAxXv+PHg=\')');
+</script>
+</td>
+
+
+
+<td width="1%">
+
+<div id="reportsMenu" tabindex="0" class="menu pointer menuBarSegment c1Background">Reports<img src="images/white_down_arrow.png" class="whiteDownArrow" alt="white down arrow"></div><div id="reportsMenuPane" class="menuPane c2Border-left"><table width="189" id="reportsMenuColumn0Table" border="0" cellspacing="0" cellpadding="0" class="menuColumn"><tbody><tr data-name="Health Profile" id="reportsMenu_Option0" data-id="null" tabindex="0" class="menuPlainBackground pointer"><td nowrap="" class="menuOption" width="1" align="left"><img src="images/spacer.gif" width="4" alt=" "></td><td nowrap="" class="menuOption" width="*" align="left">Health Profile</td><td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td></tr>
+<tr data-name="Hearing Compliance Summary" id="reportsMenu_Option1" data-id="null" tabindex="0" class="menuPlainBackground pointer"><td nowrap="" class="menuOption" width="1" align="left"><img src="images/spacer.gif" width="4" alt=" "></td><td nowrap="" class="menuOption" width="*" align="left">Hearing Compliance Summary</td><td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td></tr>
+<tr data-name="Immunization Next Shot Due" id="reportsMenu_Option2" data-id="null" tabindex="0" class="menuPlainBackground pointer"><td nowrap="" class="menuOption" width="1" align="left"><img src="images/spacer.gif" width="4" alt=" "></td><td nowrap="" class="menuOption" width="*" align="left">Immunization Next Shot Due</td><td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td></tr>
+<tr data-name="Immunization Non-Compliance" id="reportsMenu_Option3" data-id="null" tabindex="0" class="menuPlainBackground pointer"><td nowrap="" class="menuOption" width="1" align="left"><img src="images/spacer.gif" width="4" alt=" "></td><td nowrap="" class="menuOption" width="*" align="left">Immunization Non-Compliance</td><td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td></tr>
+<tr data-name="School Health Record" id="reportsMenu_Option4" data-id="null" tabindex="0" class="menuPlainBackground pointer"><td nowrap="" class="menuOption" width="1" align="left"><img src="images/spacer.gif" width="4" alt=" "></td><td nowrap="" class="menuOption" width="*" align="left">School Health Record</td><td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td></tr>
+<tr data-name="Vision Compliance Summary" id="reportsMenu_Option5" data-id="null" tabindex="0" class="menuPlainBackground pointer"><td nowrap="" class="menuOption menuSeparator" width="1" align="left"><img src="images/spacer.gif" width="4" alt=" "></td><td nowrap="" class="menuOption menuSeparator" width="*" align="left">Vision Compliance Summary</td><td nowrap="" class="menuOption menuSeparator" width="1" align="right">&nbsp;</td></tr>
+<tr data-name="menu.tools.reports.option.queue" id="reportsMenu_Option6" data-id="null" tabindex="0" class="menuPlainBackground pointer"><td nowrap="" class="menuOption" width="1" align="left"><img src="images/spacer.gif" width="4" alt=" "></td><td nowrap="" class="menuOption" width="*" align="left">My Job Queue...</td><td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td></tr>
+</tbody></table></div><script language="Javascript">var reportsMenu = new Menu('reportsMenu', null, 'menuItemHighlight pointer', 'menuPlainBackground pointer',false);
+reportsMenu.addOption('reportsMenu_Option0', 'doNamedPopup(\'runTool.do?oid=RPT0000000004J&toolClass=com.follett.fsc.core.k12.beans.Report\', 600, 400, \'toolWindow\', \'\');');
+reportsMenu.addOption('reportsMenu_Option1', 'doNamedPopup(\'runTool.do?oid=RPT000000ZT0VH&toolClass=com.follett.fsc.core.k12.beans.Report\', 600, 400, \'toolWindow\', \'\');');
+reportsMenu.addOption('reportsMenu_Option2', 'doNamedPopup(\'runTool.do?oid=RPT0000000003r&toolClass=com.follett.fsc.core.k12.beans.Report\', 600, 400, \'toolWindow\', \'\');');
+reportsMenu.addOption('reportsMenu_Option3', 'doNamedPopup(\'runTool.do?oid=RPT0000000004B&toolClass=com.follett.fsc.core.k12.beans.Report\', 600, 400, \'toolWindow\', \'\');');
+reportsMenu.addOption('reportsMenu_Option4', 'doNamedPopup(\'runTool.do?oid=RPT0000000004T&toolClass=com.follett.fsc.core.k12.beans.Report\', 600, 400, \'toolWindow\', \'\');');
+reportsMenu.addOption('reportsMenu_Option5', 'doNamedPopup(\'runTool.do?oid=RPT000000ZT0VN&toolClass=com.follett.fsc.core.k12.beans.Report\', 600, 400, \'toolWindow\', \'\');');
+reportsMenu.addOption('reportsMenu_Option6', 'doNamedPopup(\'personalToolQueue.do\', 450, 350, \'reportQueue\', \'\');');
+</script>
+</td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td width="1%">
+<div id="helpMenu" class="menu pointer menuBarSegment c1Background" tabindex="0">
+Help
+<img src="images/white_down_arrow.png" class="whiteDownArrow" alt="white down arrow">
+</div>
+<div id="helpMenuPane" class="menuPane c2border-left">
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody><tr id="helpOnline" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*">Help for this Page</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+<tr id="helpCenter" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*">Help Center</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+<tr id="helpReleaseNotes" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*">Release Notes</td>
+<td nowrap="" class="menuOption" width="1" align="right"><img src="images/sub-menu-arrow.gif" alt=" ">
+<div id="helpReleaseNotesPane" class="menuPane c2border-left">
+<table border="0" cellspacing="0" cellpadding="0">
+
+<tbody><tr id="helpReleaseNotes1" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">Aspen Release Notes</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+<tr id="helpReleaseNotes2" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">Release Highlight Videos</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+</tbody></table>
+</div>
+
+</td>
+</tr>
+<tr id="helpUserGuides" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*">User Guides</td>
+<td nowrap="" class="menuOption" width="1" align="right"><img src="images/sub-menu-arrow.gif" alt=" ">
+<div id="helpUserGuidesPane" class="menuPane c2border-left">
+<table border="0" cellspacing="0" cellpadding="0">
+
+<tbody><tr id="helpUserGuides4" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">Aspen IMS for Curriculum Directors</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+<tr id="helpUserGuides5" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">Aspen IMS for Teachers</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+<tr id="helpUserGuides24" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">Aspen System Reports</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+<tr id="helpUserGuides11" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">Attendance</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+<tr id="helpUserGuides1" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">Basic Navigation</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+<tr id="helpUserGuides25" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">CRDC - Administrator Setup Guide</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+<tr id="helpUserGuides13" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">Conduct - Administrator Setup Guide</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+<tr id="helpUserGuides14" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">Conduct - User Guide</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+<tr id="helpUserGuides10" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">Elementary Scheduling</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+<tr id="helpUserGuides22" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">Family and Student Portals - Administrator Setup Guide</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+<tr id="helpUserGuides23" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">Family and Student Portals - User Guide</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+<tr id="helpUserGuides12" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">Grades</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+<tr id="helpUserGuides2" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">Groups and Pages - Administrator Setup Guide</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+<tr id="helpUserGuides18" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">Health - Administrator Setup Guide</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+<tr id="helpUserGuides19" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">Health - User Guide</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+<tr id="helpUserGuides8" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">Master Schedule - Building</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+<tr id="helpUserGuides9" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">Master Schedule - Managing</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+<tr id="helpUserGuides20" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">Special Education - Administrator Setup Guide</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+<tr id="helpUserGuides21" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">Special Education - User Guide</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+<tr id="helpUserGuides7" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">Staff Information</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+<tr id="helpUserGuides17" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">Staff View and Teacher Gradebook</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+<tr id="helpUserGuides16" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">Standards-Based Grades - Teacher User Guide</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+<tr id="helpUserGuides6" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">Student Information</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+<tr id="helpUserGuides3" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*" align="left">System Administration</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+
+</tbody></table>
+</div>
+
+</td>
+</tr>
+
+<tr class="menuPlainBackground pointer">
+<td nowrap="" class="menuSeparator" colspan="3"><img src="images/spacer.gif" height="1" width="1" alt=" "></td>
+</tr>
+<tr id="helpAbout" tabindex="0" class="menuPlainBackground pointer">
+<td nowrap="" class="menuOption" width="1"><img src="images/spacer.gif" height="1" width="4" alt=" "></td>
+<td nowrap="" class="menuOption" width="*">About Aspen</td>
+<td nowrap="" class="menuOption" width="1" align="right">&nbsp;</td>
+</tr>
+</tbody></table>
+</div>
+
+<script language="Javascript">
+var helpMenu = new Menu('helpMenu', null, 'menuItemHighlight pointer', 'menuPlainBackground pointer');
+var helpUrl    = "#Customizations.htm";
+var helpUrlEsc = "null";
+helpUrl = (helpUrl != "null") ? helpUrl : (helpUrlEsc != "null") ? helpUrlEsc : "";
+if (true && (!isSafari() || false))
+{
+var helpFullUrl = "http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=help/aspen_CSH.htm&anchor="+helpUrl.replace("#", "");
+var helpCenterUrl = "http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=" + "help/Content/Help_Center/Aspen_Main.htm";
+}
+else
+{
+var helpFullUrl = "help/aspen_CSH.htm" + helpUrl;
+var helpCenterUrl = "help/Content/Help_Center/Aspen_Main.htm";
+}
+helpFullUrl = rewriteUrl(helpFullUrl);
+helpMenu.addOption('helpOnline', 'window.open("'+helpFullUrl+'", "_blank");');
+helpCenterUrl = rewriteUrl(helpCenterUrl);
+helpMenu.addOption('helpCenter', 'window.open("'+helpCenterUrl+'", "_blank");');
+if(false)
+{
+helpMenu.addOption('helpReportProblem', 'doNamedPopup("ticketSubmit.do", 700, 400, "ticketSubmitWindow", "");');
+}
+helpMenu.addOption('helpReleaseNotes', 'doNamedPopup("about.do", 400, 170, "aboutWindow", "");');
+helpMenu.addOption('helpUserGuides', 'doNamedPopup("about.do", 400, 170, "aboutWindow", "");');
+helpMenu.addOption('helpAbout', 'doNamedPopup("about.do", 400, 200, "aboutWindow", "");');
+var helpReleaseNotesMenu = new Menu('helpReleaseNotes', helpMenu, 'menuItemHighlight pointer', 'menuPlainBackground pointer');
+
+helpReleaseNotesMenu.addOption('helpReleaseNotes1', 'window.open(rewriteUrl("http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=latestReleaseNotes/ReleaseNotes.pdf"), "_blank");');
+
+helpReleaseNotesMenu.addOption('helpReleaseNotes2', 'window.open(rewriteUrl("https://www.follettcommunity.com/s/topic/0TO2J000000k9bwWAA/current-release"), "_blank");');
+
+var helpUserGuidesMenu = new Menu('helpUserGuides', helpMenu, 'menuItemHighlight pointer', 'menuPlainBackground pointer');
+
+helpUserGuidesMenu.addOption('helpUserGuides4', 'window.open(rewriteUrl("http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=guides/imscurriculumdirectors.pdf"), "_blank");');
+
+helpUserGuidesMenu.addOption('helpUserGuides5', 'window.open(rewriteUrl("http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=guides/imsteachers.pdf"), "_blank");');
+
+helpUserGuidesMenu.addOption('helpUserGuides24', 'window.open(rewriteUrl("http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=guides/System_reports.pdf"), "_blank");');
+
+helpUserGuidesMenu.addOption('helpUserGuides11', 'window.open(rewriteUrl("http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=guides/Attendance.pdf"), "_blank");');
+
+helpUserGuidesMenu.addOption('helpUserGuides1', 'window.open(rewriteUrl("http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=guides/Basic_nav.pdf"), "_blank");');
+
+helpUserGuidesMenu.addOption('helpUserGuides25', 'window.open(rewriteUrl("http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=guides/CRDC_admin.pdf"), "_blank");');
+
+helpUserGuidesMenu.addOption('helpUserGuides13', 'window.open(rewriteUrl("http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=guides/Conduct_admin.pdf"), "_blank");');
+
+helpUserGuidesMenu.addOption('helpUserGuides14', 'window.open(rewriteUrl("http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=guides/Conduct_user.pdf"), "_blank");');
+
+helpUserGuidesMenu.addOption('helpUserGuides10', 'window.open(rewriteUrl("http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=guides/Elementary_Scheduling.pdf"), "_blank");');
+
+helpUserGuidesMenu.addOption('helpUserGuides22', 'window.open(rewriteUrl("http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=guides/Portals_admin.pdf"), "_blank");');
+
+helpUserGuidesMenu.addOption('helpUserGuides23', 'window.open(rewriteUrl("http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=guides/Family_Student_portal.pdf"), "_blank");');
+
+helpUserGuidesMenu.addOption('helpUserGuides12', 'window.open(rewriteUrl("http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=guides/Grades.pdf"), "_blank");');
+
+helpUserGuidesMenu.addOption('helpUserGuides2', 'window.open(rewriteUrl("http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=guides/Pages_admin.pdf"), "_blank");');
+
+helpUserGuidesMenu.addOption('helpUserGuides18', 'window.open(rewriteUrl("http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=guides/Health_admin.pdf"), "_blank");');
+
+helpUserGuidesMenu.addOption('helpUserGuides19', 'window.open(rewriteUrl("http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=guides/Health_user.pdf"), "_blank");');
+
+helpUserGuidesMenu.addOption('helpUserGuides8', 'window.open(rewriteUrl("http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=guides/master_schedule_build.pdf"), "_blank");');
+
+helpUserGuidesMenu.addOption('helpUserGuides9', 'window.open(rewriteUrl("http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=guides/master_schedule_manage.pdf"), "_blank");');
+
+helpUserGuidesMenu.addOption('helpUserGuides20', 'window.open(rewriteUrl("http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=guides/Sped_admin.pdf"), "_blank");');
+
+helpUserGuidesMenu.addOption('helpUserGuides21', 'window.open(rewriteUrl("http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=guides/Sped_user.pdf"), "_blank");');
+
+helpUserGuidesMenu.addOption('helpUserGuides7', 'window.open(rewriteUrl("http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=guides/Staff_info.pdf"), "_blank");');
+
+helpUserGuidesMenu.addOption('helpUserGuides17', 'window.open(rewriteUrl("http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=guides/Staff_view_gradebook.pdf"), "_blank");');
+
+helpUserGuidesMenu.addOption('helpUserGuides16', 'window.open(rewriteUrl("http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=guides/Standards_Based_Grading_Teachers.pdf"), "_blank");');
+
+helpUserGuidesMenu.addOption('helpUserGuides6', 'window.open(rewriteUrl("http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=guides/Student_info.pdf"), "_blank");');
+
+helpUserGuidesMenu.addOption('helpUserGuides3', 'window.open(rewriteUrl("http://aspenhelp.follettlearning.com?sessid=NjgxLENMLDIwMjUtMDctMjgsRU5fVVM=&path=guides/Sys_admin.pdf"), "_blank");');
+
+</script>
+</td>
+
+
+<td width="*" align="right">
+
+&nbsp;
+
+</td>
+
+<td width="1" onmouseout="this.className = '';" onmouseover="this.className = this.className = 'controlHoverBackground';" class="">
+
+
+
+</td>
+<td width="1">
+<img src="images/spacer.gif" height="1" width="7" alt=" ">
+</td>
+<td width="1" onmouseover="this.className = this.className = 'controlHoverBackground';" onmouseout="this.className = '';" style="padding-right: 3px" class="">
+<a href="javascript:toggleMaximize('Maximize', 'Minimize')"><img id="maximizeImg" src="images/max-window.gif" border="0" title="Maximize" alt="Maximize"></a>
+</td>
+</tr>
+</tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="JavaScript">
+INVALID_DATE_FORMAT   = 'The date you entered is not formatted properly.';
+INVALID_DATE_VALUE    = 'The date you entered is invalid.';
+INVALID_NUMERIC_VALUE = 'The number you entered is invalid.';
+INVALID_TIME_FORMAT   = 'The time you entered is not formatted properly.';
+INVALID_TIME_VALUE    = 'The time you entered is invalid.';
+INVALID_TIMESTAMP_FORMAT   = 'The date and time you entered is not formatted properly.';
+
+</script>
+
+<script src="js/grid.js?version=6.8.1.11.115" type="text/javascript"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+.errorDiv
+{
+background-color: #F0F8FF;
+border: 1px solid black;
+color: blue;
+padding-bottom: 10px;
+padding-left: 3px;
+padding-right: 10px;
+padding-top: 10px;
+position: absolute;
+white-space: normal
+}
+.errorText
+{
+font-family: arial;
+font-size: 8pt;
+font-weight: bold;
+}
+.listCellImm td
+{
+padding-left: 0px;
+padding-right: 0px;
+}
+.listGridImmunization
+{
+background-color: #BBBBBB;
+border: solid #CCCCCC 1px;
+overflow: auto;
+width: 800px;
+}
+</style>
+<script language="JavaScript">
+UNAVAILABLE_WIDTH = 140;   //grid.js variable
+var originalValues = new Array();
+
+function addNextDate(seriesId, buttonNumber, formName, doseProperty, maxDosesNumber)
+{
+var curId = seriesId + "-" + parseInt(buttonNumber);
+var curCell = getElementByIdSafe("doseDate(" + curId + ")");
+var num = parseInt(buttonNumber) + 1;
+var num2 = num + 1;
+var id = seriesId + "-" + num;
+var id2 = seriesId  + "-"+ num2;
+var maxDoses = parseInt(maxDosesNumber);
+if(num < maxDoses)
+{
+var html = "<table cellpadding='0' cellspacing='0'>";
+html += "<tr valign='center'>";
+html += "<td>";
+html += "<input type=\"text\" tabindex=\"1\"";
+html += "name=\"doseDate('" + id + "')\"";
+html += "id=\"doseDate(" + id + ")\"";
+html += "size=\"10\" ";
+html += "onchange\=\"formatDate('doseDate(" + id + ")');";
+html += "addNextDate('" + seriesId + "', '" + num + "', '" + formName + "', 'doseDate(" + id2 + ")', '" + maxDoses + "');\" >";
+html += "</td>";
+html += "<td>";
+html += "<img src=\"images/spacer.gif\" width=\"3\">";
+html += "</td>";
+html += "<td>";
+html += "<a href=\"javascript:openDatePicker('doseDate(" + id + ")', ";
+html += "'addNextDate(\\'" + seriesId + "\\', \\'" + num + "\\', \\'" + formName + "\\', \\'doseDate(" + id2 + ")\\', \\'" + maxDoses + "\\')'";
+html += ");\" >";
+html += "<img src=\"images/date-picker.jpg\" title=\"Select from a calendar\" border=\"0\">";
+html += "</a>";
+html += "</td>";
+html += "</tr>";
+html += "</table>";
+html +="<input type=\"hidden\" name=\"doseOid(" + id + ")\" value=\"\">";
+var cell = getElementByIdSafe(id);
+//make sure the previous date was valid
+var validDate = getDate(curCell.value);
+var check = false;
+if ((curCell != null && curCell.value.toUpperCase() == "T") ||
+("true" == "false" && curCell != null && "SKIPPED".toUpperCase().startsWith(curCell.value.toUpperCase())) ||
+("true" == "true" && curCell != null && "WAIVED".toUpperCase().startsWith(curCell.value.toUpperCase())) ||
+("true" == "false" && curCell != null && "NO DATE".toUpperCase().startsWith(curCell.value.toUpperCase())) ||
+(validDate != null))
+{
+check = true;
+}
+//make sure cell doesn't have a date field already and previous date was valid
+if(cell.innerHTML.trim() == "" && check)
+{
+cell.innerHTML = html;
+setTimeout(function () { var textbox = getElementByIdSafe("doseDate(" + id + ")");textbox.focus(); }, 1);
+}
+}
+if (curCell.value != null && curCell.value.trim() != "")
+{
+//Replace S with skipped for clarity
+if ("true" == "false" && curCell != null && "SKIPPED".toUpperCase().startsWith(curCell.value.toUpperCase()))
+{
+curCell.value = "SKIPPED";
+}
+//Replace N with no date for clarity
+if ("true" == "false" && curCell != null && "NO DATE".toUpperCase().startsWith(curCell.value.toUpperCase()))
+{
+curCell.value = "NO DATE";
+}
+//Replace W with waived for clarity
+if ("true" == "true" && curCell != null && "WAIVED".toUpperCase().startsWith(curCell.value.toUpperCase()))
+{
+curCell.value = "WAIVED";
+}
+}
+//If this date existed originally
+if(originalValues[curId] != null)
+{
+var parseDate = curCell.value;
+//If the cell has no date, warn user Dose will be deleted
+//If it does have a date, update the originalValues array in case user has edited it.
+if(parseDate == null || parseDate.trim() == "")
+{
+if(!confirm('This will delete the Dose when saved, continue?'))
+{
+curCell.value = originalValues[curId].toString();
+}
+}
+else
+{
+originalValues[curId] = parseDate;
+}
+}
+}
+function formatDate(elementId)
+{
+var dateElement = getElementByIdSafe(elementId);
+var rawValue = dateElement.value.trim();
+var success = false;
+//detects DDMMYY (replaces with DD/MM/YY, which is parsable by Date.parse())
+var cleanDate = cleanDateValue(rawValue);
+var parsedDate = Date.parse(cleanDate);
+if (parsedDate != null && !rawValue.match(/^n(ow)?/i) && !rawValue.match(/^w(aived)?/i) && parsedDate.getFullYear() >= 1753)
+{
+setDate(elementId, parsedDate.getFullYear(), parsedDate.getMonth()+1, parsedDate.getDate());
+success = true;
+}
+else if (dateElement != null && dateElement.value.length > 0)
+{
+success = ("true" == "false" && "SKIPPED".toUpperCase().startsWith(dateElement.value.toUpperCase())) ||
+("true" == "false" && "NO DATE".toUpperCase().startsWith(dateElement.value.toUpperCase())) ||
+("true" == "true" && "WAIVED".toUpperCase().startsWith(dateElement.value.toUpperCase()));
+}
+else if (dateElement != null && dateElement.value.length == 0)
+{
+success = true;
+}
+if (!success)
+{
+alertInvalidInput(INVALID_DATE_FORMAT, elementId);
+}
+return success;
+}
+function hideDiv(divId)
+{
+var div = getElementByIdSafe(divId);
+if (div)
+{
+div.style.display = 'none';
+}
+}
+function showDiv(element, divId)
+{
+var div = getElementByIdSafe(divId);
+if (div)
+{
+if (isInternetExplorer())
+{
+var errorArea = getElementByIdSafe('errorArea');
+if (errorArea)
+{
+errorArea.insertBefore(div);
+}
+}
+div.style.left = (findPositionX(element)) + 'px';
+div.style.top = (findPositionY(element) + 20) + 'px';
+div.style.display = '';
+}
+}
+</script>
+
+
+<div id="errorArea"></div>
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+
+<div id="dataGrid" class="listGridImmunization" style="width: 1218.98px;">
+<table width="100%" cellspacing="1" border="0">
+
+<tbody><tr class="listHeader headerLabelBackground" style="height: 30px;">
+<th class="listHeaderText" width="*" nowrap="nowrap">Series ID</th>
+<th class="listHeaderText" width="10%" nowrap="nowrap">Required?</th>
+<th class="listHeaderText" width="10%" nowrap="nowrap">Is Compliant?</th>
+<th class="listHeaderText" width="10%" nowrap="nowrap" style="border-right: 1px solid gray;">Next Dose</th>
+
+<th class="listHeaderText" width="100" nowrap="nowrap">Dose 1</th>
+
+<th class="listHeaderText" width="100" nowrap="nowrap">Dose 2</th>
+
+<th class="listHeaderText" width="100" nowrap="nowrap">Dose 3</th>
+
+<th class="listHeaderText" width="100" nowrap="nowrap">Dose 4</th>
+
+<th class="listHeaderText" width="100" nowrap="nowrap">Dose 5</th>
+
+<th class="listHeaderText" width="100" nowrap="nowrap">Dose 6</th>
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr class="listCell" id="row">
+<td height="26" nowrap="nowrap">
+<a href="javascript:doPopup(rewriteUrl('seriesDetail.do?prefix=HIS&amp;oid=him01000000002&amp;context=&amp;readOnly=false&amp;hideTopButtons=true'),400,420)">
+DTP
+</a>
+
+</td>
+<td height="26" nowrap="nowrap">
+Y
+</td>
+<td height="26" nowrap="nowrap">
+Y
+
+</td>
+<td nowrap="nowrap" style="border-right: 1px solid gray;">
+
+
+
+
+
+<div onmouseover="showDiv(this, 'div_2/27/1997 - 6/26/2015')" onmouseout="hideDiv('div_2/27/1997 - 6/26/2015')">
+2/27/1997 - 6/26/2015
+</div>
+
+<div id="div_2/27/1997 - 6/26/2015" class="errorDiv" style="display: none;">
+This dose range has a 4 day grace period applied
+</div>
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="DTP-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid01012481769', 400, 450)">
+
+
+
+
+4/27/1997
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="DTP-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid02009075013', 400, 450)">
+
+
+
+
+9/27/1997
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="DTP-2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid03005245530', 400, 450)">
+
+
+
+
+11/27/1997
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="DTP-3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid04003712731', 400, 450)">
+
+
+
+
+6/27/1998
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="DTP-4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid05001928790', 400, 450)">
+
+
+
+
+6/27/2001
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="DTP-5">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?definitionOid=him01000000002', 400, 450)">
+[add]
+</a>
+
+
+
+
+
+
+</td>
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr class="listCell" id="row">
+<td height="26" nowrap="nowrap">
+<a href="javascript:doPopup(rewriteUrl('seriesDetail.do?prefix=HIS&amp;oid=him01000000004&amp;context=&amp;readOnly=false&amp;hideTopButtons=true'),400,420)">
+HIB
+</a>
+
+</td>
+<td height="26" nowrap="nowrap">
+Y
+</td>
+<td height="26" nowrap="nowrap">
+Y
+
+</td>
+<td nowrap="nowrap" style="border-right: 1px solid gray;">
+Completed
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="HIB-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid01013813776', 400, 450)">
+
+
+
+
+4/27/1997
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="HIB-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid02010121345', 400, 450)">
+
+
+
+
+9/3/1997
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="HIB-2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid03006272009', 400, 450)">
+
+
+
+
+11/14/1997
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="HIB-3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid04004656443', 400, 450)">
+
+
+
+
+6/25/1998
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="HIB-4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?definitionOid=him01000000004', 400, 450)">
+[add]
+</a>
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="HIB-5">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr class="listCell" id="row">
+<td height="26" nowrap="nowrap">
+<a href="javascript:doPopup(rewriteUrl('seriesDetail.do?prefix=HIS&amp;oid=him01000000015&amp;context=&amp;readOnly=false&amp;hideTopButtons=true'),400,420)">
+HPV
+</a>
+
+</td>
+<td height="26" nowrap="nowrap">
+N
+</td>
+<td height="26" nowrap="nowrap">
+Y
+
+</td>
+<td nowrap="nowrap" style="border-right: 1px solid gray;">
+Completed
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="HPV-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?definitionOid=him01000000015', 400, 450)">
+[add]
+</a>
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="HPV-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="HPV-2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="HPV-3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="HPV-4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="HPV-5">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr class="listCell" id="row">
+<td height="26" nowrap="nowrap">
+<a href="javascript:doPopup(rewriteUrl('seriesDetail.do?prefix=HIS&amp;oid=him01000000014&amp;context=&amp;readOnly=false&amp;hideTopButtons=true'),400,420)">
+Hep A
+</a>
+
+</td>
+<td height="26" nowrap="nowrap">
+N
+</td>
+<td height="26" nowrap="nowrap">
+Y
+
+</td>
+<td nowrap="nowrap" style="border-right: 1px solid gray;">
+Completed
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="Hep A-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid05002634282', 400, 450)">
+
+
+
+
+9/15/2007
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="Hep A-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid06000616389', 400, 450)">
+
+
+
+
+10/8/2009
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="Hep A-2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?definitionOid=him01000000014', 400, 450)">
+[add]
+</a>
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="Hep A-3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="Hep A-4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="Hep A-5">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr class="listCell" id="row">
+<td height="26" nowrap="nowrap">
+<a href="javascript:doPopup(rewriteUrl('seriesDetail.do?prefix=HIS&amp;oid=him01000000003&amp;context=&amp;readOnly=false&amp;hideTopButtons=true'),400,420)">
+Hep B
+</a>
+
+</td>
+<td height="26" nowrap="nowrap">
+Y
+</td>
+<td height="26" nowrap="nowrap">
+Y
+
+</td>
+<td nowrap="nowrap" style="border-right: 1px solid gray;">
+Completed
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="Hep B-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid01014956331', 400, 450)">
+
+
+
+
+2/27/1997
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="Hep B-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid02010902545', 400, 450)">
+
+
+
+
+4/27/1997
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="Hep B-2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid03006920645', 400, 450)">
+
+
+
+
+11/27/1997
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="Hep B-3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?definitionOid=him01000000003', 400, 450)">
+[add]
+</a>
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="Hep B-4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="Hep B-5">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr class="listCell" id="row">
+<td height="26" nowrap="nowrap">
+<a href="javascript:doPopup(rewriteUrl('seriesDetail.do?prefix=HIS&amp;oid=him01000000016&amp;context=&amp;readOnly=false&amp;hideTopButtons=true'),400,420)">
+INFL
+</a>
+
+</td>
+<td height="26" nowrap="nowrap">
+N
+</td>
+<td height="26" nowrap="nowrap">
+Y
+
+</td>
+<td nowrap="nowrap" style="border-right: 1px solid gray;">
+Completed
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="INFL-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?definitionOid=him01000000016', 400, 450)">
+[add]
+</a>
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="INFL-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="INFL-2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="INFL-3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="INFL-4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="INFL-5">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr class="listCell" id="row">
+<td height="26" nowrap="nowrap">
+<a href="javascript:doPopup(rewriteUrl('seriesDetail.do?prefix=HIS&amp;oid=him01000000005&amp;context=&amp;readOnly=false&amp;hideTopButtons=true'),400,420)">
+IPV
+</a>
+
+</td>
+<td height="26" nowrap="nowrap">
+Y
+</td>
+<td height="26" nowrap="nowrap">
+Y
+
+</td>
+<td nowrap="nowrap" style="border-right: 1px solid gray;">
+
+
+
+
+
+<div onmouseover="showDiv(this, 'div_2/27/1997 - 6/26/2015')" onmouseout="hideDiv('div_2/27/1997 - 6/26/2015')">
+2/27/1997 - 6/26/2015
+</div>
+
+<div id="div_2/27/1997 - 6/26/2015" class="errorDiv" style="display: none;">
+This dose range has a 4 day grace period applied
+</div>
+
+
+
+
+<div onmouseover="showDiv(this, 'div_12/27/2001 - 6/26/2015')" onmouseout="hideDiv('div_12/27/2001 - 6/26/2015')">
+12/27/2001 - 6/26/2015
+</div>
+
+<div id="div_12/27/2001 - 6/26/2015" class="errorDiv" style="display: none;">
+This dose range has a 4 day grace period applied
+</div>
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="IPV-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid01016294333', 400, 450)">
+
+
+
+
+4/27/1997
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="IPV-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid02012124704', 400, 450)">
+
+
+
+
+9/27/1997
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="IPV-2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid03008084215', 400, 450)">
+
+
+
+
+6/27/1998
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="IPV-3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid04005347158', 400, 450)">
+
+
+
+
+6/27/2001
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="IPV-4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?definitionOid=him01000000005', 400, 450)">
+[add]
+</a>
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="IPV-5">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr class="listCell" id="row">
+<td height="26" nowrap="nowrap">
+<a href="javascript:doPopup(rewriteUrl('seriesDetail.do?prefix=HIS&amp;oid=him01000000013&amp;context=&amp;readOnly=false&amp;hideTopButtons=true'),400,420)">
+MCV4
+</a>
+
+</td>
+<td height="26" nowrap="nowrap">
+Y
+</td>
+<td height="26" nowrap="nowrap">
+Y
+
+</td>
+<td nowrap="nowrap" style="border-right: 1px solid gray;">
+
+
+
+
+
+<div onmouseover="showDiv(this, 'div_2/23/2013 - 6/26/2015')" onmouseout="hideDiv('div_2/23/2013 - 6/26/2015')">
+2/23/2013 - 6/26/2015
+</div>
+
+<div id="div_2/23/2013 - 6/26/2015" class="errorDiv" style="display: none;">
+This dose range has a 4 day grace period applied
+</div>
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="MCV4-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid06000679923', 400, 450)">
+
+
+
+
+10/8/2009
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="MCV4-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?definitionOid=him01000000013', 400, 450)">
+[add]
+</a>
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="MCV4-2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="MCV4-3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="MCV4-4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="MCV4-5">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr class="listCell" id="row">
+<td height="26" nowrap="nowrap">
+<a href="javascript:doPopup(rewriteUrl('seriesDetail.do?prefix=HIS&amp;oid=him01000000006&amp;context=&amp;readOnly=false&amp;hideTopButtons=true'),400,420)">
+MEA
+</a>
+
+</td>
+<td height="26" nowrap="nowrap">
+Y
+</td>
+<td height="26" nowrap="nowrap">
+Y
+
+</td>
+<td nowrap="nowrap" style="border-right: 1px solid gray;">
+Completed
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="MEA-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid01017904535', 400, 450)">
+
+
+
+
+3/13/1998
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="MEA-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid02013559153', 400, 450)">
+
+
+
+
+6/6/2001
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="MEA-2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?definitionOid=him01000000006', 400, 450)">
+[add]
+</a>
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="MEA-3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="MEA-4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="MEA-5">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr class="listCell" id="row">
+<td height="26" nowrap="nowrap">
+<a href="javascript:doPopup(rewriteUrl('seriesDetail.do?prefix=HIS&amp;oid=him01000000007&amp;context=&amp;readOnly=false&amp;hideTopButtons=true'),400,420)">
+MMR
+</a>
+
+</td>
+<td height="26" nowrap="nowrap">
+Y
+</td>
+<td height="26" nowrap="nowrap">
+Y
+
+</td>
+<td nowrap="nowrap" style="border-right: 1px solid gray;">
+Completed
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="MMR-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid01019303444', 400, 450)">
+
+
+
+
+3/13/1998
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="MMR-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid02014715594', 400, 450)">
+
+
+
+
+6/6/2001
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="MMR-2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?definitionOid=him01000000007', 400, 450)">
+[add]
+</a>
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="MMR-3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="MMR-4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="MMR-5">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr class="listCell" id="row">
+<td height="26" nowrap="nowrap">
+<a href="javascript:doPopup(rewriteUrl('seriesDetail.do?prefix=HIS&amp;oid=him01000000008&amp;context=&amp;readOnly=false&amp;hideTopButtons=true'),400,420)">
+MUM
+</a>
+
+</td>
+<td height="26" nowrap="nowrap">
+Y
+</td>
+<td height="26" nowrap="nowrap">
+Y
+
+</td>
+<td nowrap="nowrap" style="border-right: 1px solid gray;">
+Completed
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="MUM-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid01020181241', 400, 450)">
+
+
+
+
+3/13/1998
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="MUM-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid02015311947', 400, 450)">
+
+
+
+
+6/6/2001
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="MUM-2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?definitionOid=him01000000008', 400, 450)">
+[add]
+</a>
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="MUM-3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="MUM-4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="MUM-5">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr class="listCell" id="row">
+<td height="26" nowrap="nowrap">
+<a href="javascript:doPopup(rewriteUrl('seriesDetail.do?prefix=HIS&amp;oid=him01000000012&amp;context=&amp;readOnly=false&amp;hideTopButtons=true'),400,420)">
+PCV
+</a>
+
+</td>
+<td height="26" nowrap="nowrap">
+Y
+</td>
+<td height="26" nowrap="nowrap">
+Y
+
+</td>
+<td nowrap="nowrap" style="border-right: 1px solid gray;">
+Completed
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="PCV-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid01021150084', 400, 450)">
+
+
+
+
+6/6/2001
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="PCV-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?definitionOid=him01000000012', 400, 450)">
+[add]
+</a>
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="PCV-2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="PCV-3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="PCV-4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="PCV-5">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr class="listCell" id="row">
+<td height="26" nowrap="nowrap">
+<a href="javascript:doPopup(rewriteUrl('seriesDetail.do?prefix=HIS&amp;oid=him01000000017&amp;context=&amp;readOnly=false&amp;hideTopButtons=true'),400,420)">
+ROTA
+</a>
+
+</td>
+<td height="26" nowrap="nowrap">
+N
+</td>
+<td height="26" nowrap="nowrap">
+Y
+
+</td>
+<td nowrap="nowrap" style="border-right: 1px solid gray;">
+Completed
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="ROTA-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?definitionOid=him01000000017', 400, 450)">
+[add]
+</a>
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="ROTA-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="ROTA-2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="ROTA-3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="ROTA-4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="ROTA-5">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr class="listCell" id="row">
+<td height="26" nowrap="nowrap">
+<a href="javascript:doPopup(rewriteUrl('seriesDetail.do?prefix=HIS&amp;oid=him01000000009&amp;context=&amp;readOnly=false&amp;hideTopButtons=true'),400,420)">
+RUB
+</a>
+
+</td>
+<td height="26" nowrap="nowrap">
+Y
+</td>
+<td height="26" nowrap="nowrap">
+Y
+
+</td>
+<td nowrap="nowrap" style="border-right: 1px solid gray;">
+Completed
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="RUB-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid01021823125', 400, 450)">
+
+
+
+
+3/13/1998
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="RUB-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid02016198053', 400, 450)">
+
+
+
+
+6/6/2001
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="RUB-2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?definitionOid=him01000000009', 400, 450)">
+[add]
+</a>
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="RUB-3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="RUB-4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="RUB-5">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr class="listCell" id="row">
+<td height="26" nowrap="nowrap">
+<a href="javascript:doPopup(rewriteUrl('seriesDetail.do?prefix=HIS&amp;oid=him01000000011&amp;context=&amp;readOnly=false&amp;hideTopButtons=true'),400,420)">
+TD
+</a>
+
+</td>
+<td height="26" nowrap="nowrap">
+N
+</td>
+<td height="26" nowrap="nowrap">
+Y
+
+</td>
+<td nowrap="nowrap" style="border-right: 1px solid gray;">
+Completed
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="TD-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid01022648205', 400, 450)">
+
+
+
+
+10/8/2009
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="TD-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?definitionOid=him01000000011', 400, 450)">
+[add]
+</a>
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="TD-2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="TD-3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="TD-4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="TD-5">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr class="listCell" id="row">
+<td height="26" nowrap="nowrap">
+<a href="javascript:doPopup(rewriteUrl('seriesDetail.do?prefix=HIS&amp;oid=him01000000010&amp;context=&amp;readOnly=false&amp;hideTopButtons=true'),400,420)">
+TDP
+</a>
+
+</td>
+<td height="26" nowrap="nowrap">
+Y
+</td>
+<td height="26" nowrap="nowrap">
+Y
+
+</td>
+<td nowrap="nowrap" style="border-right: 1px solid gray;">
+Completed
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="TDP-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid01022853199', 400, 450)">
+
+
+
+
+10/8/2009
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="TDP-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?definitionOid=him01000000010', 400, 450)">
+[add]
+</a>
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="TDP-2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="TDP-3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="TDP-4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="TDP-5">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr class="listCell" id="row">
+<td height="26" nowrap="nowrap">
+<a href="javascript:doPopup(rewriteUrl('seriesDetail.do?prefix=HIS&amp;oid=him01000000001&amp;context=&amp;readOnly=false&amp;hideTopButtons=true'),400,420)">
+VAR
+</a>
+
+</td>
+<td height="26" nowrap="nowrap">
+Y
+</td>
+<td height="26" nowrap="nowrap">
+Y
+
+</td>
+<td nowrap="nowrap" style="border-right: 1px solid gray;">
+Completed
+
+
+</td>
+
+
+<td height="26" nowrap="nowrap" align="center" class="listCellImm" id="VAR-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid01023493517', 400, 450)">
+
+
+
+
+8/27/1998
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="VAR-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?doseOid=hid02016805657', 400, 450)">
+
+
+
+
+10/7/2009
+
+
+</a>
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="VAR-2">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:doPopup('doseDetail.do?definitionOid=him01000000001', 400, 450)">
+[add]
+</a>
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="VAR-3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="VAR-4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+
+
+<td height="26" nowrap="nowrap" align="center" class="unusedImmunizationDoseField listCellImm" id="VAR-5">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+</tr>
+
+
+</tbody></table>
+</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/spacer.gif" height="10" width="1" alt=" ">
+</td>
+</tr>
+</tbody></table>
+
+<table>
+<tbody><tr>
+
+<td>
+
+
+<button type="button" class="button" id="editButton" tabindex="0" name="editButton" onclick="doSubmit(120, this.form);return false;"><span class="fa fa-pencil fa-lg"></span><span class="button-text">Mass Edit</span></button>
+
+</td>
+
+
+</tr>
+</tbody></table>
+
+
+
+
+
+<script language="JavaScript">
+DETAIL_VALIDATOR_EXPRESSION = 'input[type="text"][name^="doseDate("]';
+DETAIL_VALIDATOR_FORM_CONTENT_KEY = 'immunizationDetail';
+</script>
+
+
+</td>
+<td>
+
+
+
+</td>
+</tr>
+<tr>
+<td height="*" class="borderRight">
+<img src="images/spacer.gif" height="1" width="1" alt=" ">
+</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+</tbody></table>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="JavaScript">
+function displayActionMessages(messagesArray, isErrorMessage)
+{
+var messages = messagesArray.join("<br>");
+
+
+showMessageWindow(messages, isErrorMessage, false, 250);
+if(!isErrorMessage) {
+$(function(){$('#messageWindow').stop().animate({opacity: 1.0}, 2000).fadeTo(500, 0, closeMessageWindow);});
+}
+
+}
+</script>
+
+<div id="messageWindow"><img src="images/spacer.gif" height="1" width="1" alt=" "></div>
+<script language="JavaScript">
+setInitialMaximizedState('Maximize', 'Minimize');
+</script>
+
+
+<script language="Javascript">function windowResizeHandler(e) {resizeGrid('dataGrid');} windowResizeHandler(); window.onresize = windowResizeHandler;</script>
+
+
+
+</body></html>
