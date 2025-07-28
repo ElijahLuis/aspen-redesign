@@ -6,6 +6,9 @@
   --color-primary-dark: #1d5fa3;
   --footer-bg: rgba(36, 92, 162, 0.9);
   --header-bg: rgba(38, 93, 161, 0.91);
+  --status-ok: #1b8753;
+  --status-warn: #c26100;
+  --status-na: #6b6b6b;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,6 +20,9 @@
     --color-primary-dark: #3778d8;
     --footer-bg: rgba(24, 50, 100, 0.9);
     --header-bg: rgba(26, 56, 110, 0.91);
+    --status-ok: #2e9e64;
+    --status-warn: #e09533;
+    --status-na: #8a8a8a;
   }
 }
 
@@ -28,4 +34,7 @@
   --color-primary-dark: #3778d8;
   --footer-bg: rgba(24, 50, 100, 0.9);
   --header-bg: rgba(26, 56, 110, 0.91);
+  --status-ok: #2e9e64;
+  --status-warn: #e09533;
+  --status-na: #8a8a8a;
 }

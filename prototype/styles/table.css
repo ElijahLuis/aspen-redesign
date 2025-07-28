@@ -1,0 +1,69 @@
+/* Responsive table styles for list screens */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 0.5rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.table--dense th,
+.table--dense td {
+  padding: 0.25rem 0.5rem;
+}
+
+.table--comfortable th,
+.table--comfortable td {
+  padding: 0.75rem 1rem;
+}
+
+.table__cell--sticky {
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-form);
+  z-index: 1;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: rgba(0,0,0,0.03);
+}
+
+.table tbody tr:hover {
+  background-color: rgba(38,115,193,0.1);
+}
+
+.table td:focus-within {
+  outline: 2px solid var(--color-primary);
+  outline-offset: -2px;
+}
+
+.table__row--selected {
+  background-color: rgba(38,115,193,0.15);
+}
+
+.table-wrapper {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .table-wrapper {
+    overflow-x: auto;
+  }
+}
+
+[data-theme="dark"] .table th,
+[data-theme="dark"] .table td {
+  border-color: rgba(255,255,255,0.1);
+}
+
+[data-theme="dark"] .table tbody tr:nth-child(even) {
+  background-color: rgba(255,255,255,0.05);
+}
+
+[data-theme="dark"] .table__cell--sticky {
+  background-color: var(--bg-form);
+}

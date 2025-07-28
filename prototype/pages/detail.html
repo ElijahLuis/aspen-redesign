@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail View</title>
+
+  <link rel="stylesheet" href="../styles/common-mo.css">
+  <link rel="stylesheet" href="../styles/layout.css">
+  <link rel="stylesheet" href="../styles/utils.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  <link rel="stylesheet" href="../styles/forms.css">
+  <link rel="stylesheet" href="../styles/themes.css">
+</head>
+<body>
+  <div class="layout-wrapper">
+    <nav class="top-nav">
+      <div>Chicago Public Schools</div>
+      <div>User: Jane Admin</div>
+    </nav>
+
+    <div class="layout-container">
+      <aside class="sidebar">
+        <nav class="sidebar-nav">
+          <ul>
+            <li><a href="#">Details</a></li>
+            <li><a href="#">Visits</a></li>
+            <li><a href="#">Immunizations</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main-panel">
+        <div role="tablist" class="mb-2">
+          <button role="tab" aria-selected="true">General</button>
+          <button role="tab">Medical</button>
+        </div>
+
+        <form>
+          <section class="form-section">
+            <h2 class="form-section__title">Student Info</h2>
+            <div>
+              <label for="studentName">Student Name</label>
+              <input id="studentName" type="text" required class="field--error">
+              <span class="error-message text-sm">Required</span>
+
+              <label for="grade">Grade</label>
+              <select id="grade">
+                <option>9</option>
+                <option>10</option>
+              </select>
+
+              <label for="studentId">ID</label>
+              <input id="studentId" type="text" value="A123" readonly class="field--readonly">
+            </div>
+          </section>
+
+          <section class="form-section">
+            <h2 class="form-section__title">Health</h2>
+            <div>
+              <label for="notes">Notes</label>
+              <textarea id="notes" rows="4"></textarea>
+            </div>
+          </section>
+
+          <div class="form-actions form-actions--sticky">
+            <button type="submit" class="button">Save</button>
+            <button type="button" class="button">Cancel</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </div>
+
+  <script type="module" src="../scripts/components.js"></script>
+</body>
+</html>
