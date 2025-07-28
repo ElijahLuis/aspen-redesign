@@ -1,0 +1,45 @@
+# DOM Map: student-detail.html
+
+- body.bodyBackground
+  - div#overlay
+  - div#spellingMenu
+  - form[name="personAddressDetailForm"]
+    - input[type=hidden] (userEvent, userParam, operationId, etc.)
+    - table#layoutHeader.layoutHeader
+      - div#topTitleBar
+        - div#contextMenu
+        - div#contextMenuPane
+        - div#userPreferenceMenu
+        - div#userPreferenceMenuPane
+      - div#c2colorRef
+      - div#topMenuBar
+        - div#topMenuBarLeft
+        - div#actualTopMenuBar
+        - div#topMenuBarRight
+    - div#contentArea.contentPad
+      - table.breadcrumbs (#bodytop)
+      - table.nav buttons (firstButton, previousButton, searchStringButton, etc.)
+      - div#searchStringDiv.searchStringDiv
+      - table (layoutVerticalTabsContainer)
+        - div#layoutVerticalTabs
+          - tr.verticalTabSelected
+          - tr.verticalTab pointer (Visits, Immunizations, Conditions, etc.)
+      - td.contentContainer
+        - table.optionsBar
+          - div#maximizeMenuButton
+          - div#options + div#optionsPane
+          - div#reportsMenu + div#reportsMenuPane
+          - div#helpMenu + div#helpMenuPane
+        - div#collapsibleDiv0.detailContainer
+        - div#collapsibleDiv1
+        - div#collapsibleDiv2.detailContainer
+        - div#collapsibleDiv3.detailContainer
+    - div#messageWindow
+
+## 🧩 Component Candidates
+- TabbedPanel
+- DetailFormGroup
+- StudentContextBar
+- RelatedListTable
+- OptionsMenuBar
+- SearchOverlay
