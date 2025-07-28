@@ -9,12 +9,12 @@
 - Sticky form actions footer
 - Dense/comfortable table variants
 - Modal dialogs
+- Login form (`login-form`)
+- Health exam form (`exam-form`)
 
 ## Planned
-- Login form (`login-form`)
 - Student tab navigation (`student-tabs`)
 - Detail record form (`detail-form`)
-- Health exam form (`exam-form`)
 - Immunization table (`imms-table`)
 - Membership table (`membership-table`)
 

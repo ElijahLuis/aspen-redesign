@@ -5,6 +5,14 @@
   --legacy-c3: #5C0000;
   --legacy-highlight: #EABBC4;
   --legacy-menu-highlight: var(--legacy-highlight);
+  --legacy-dashboard: #445;
+  --legacy-myinfo: #cc3300;
+  --legacy-student: #ff6600;
+  --legacy-attendance: #ff9900;
+  --legacy-gradebook: #336600;
+  --legacy-planner: #669900;
+  --legacy-quest: #193366;
+  --legacy-pd: #1966b2;
 }
 
 .c1Background { background-color: var(--legacy-c1) !important; }
