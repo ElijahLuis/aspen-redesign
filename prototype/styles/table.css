@@ -44,6 +44,16 @@
 .table__row--selected {
   background-color: rgba(38,115,193,0.15);
 }
+.table__row--dense th,
+.table__row--dense td {
+  padding: 0.25rem 0.5rem;
+}
+
+.table__row--comfortable th,
+.table__row--comfortable td {
+  padding: 0.75rem 1rem;
+}
+
 
 .table-wrapper {
   width: 100%;
