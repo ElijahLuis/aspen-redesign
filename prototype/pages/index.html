@@ -17,19 +17,23 @@
   <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
 </head>
 <body class="loginBackground">
-  <noscript>
-    <div class="noscript-warning">JavaScript is required to use Aspen. Please enable JavaScript.</div>
-  </noscript>
+  <div class="wrapper">
+    <div class="main-content">
+      <noscript>
+        <div class="noscript-warning">JavaScript is required to use Aspen. Please enable JavaScript.</div>
+      </noscript>
 
-  <header class="login-header">
-    <div class="logo-wrapper">
-      <img src="../../images/new-aspen-logo.png" alt="CPS Aspen Header Logo" class="aspen-logo">
-    </div>
-    <!-- Theme toggle for bonus -->
-    <button type="button" id="themeToggle" class="button" aria-label="Toggle color scheme" aria-pressed="false">Toggle Theme</button>
-  </header>
+      <header class="login-header">
+        <div class="logo-wrapper">
+          <img src="../../images/new-aspen-logo.png" alt="CPS Aspen Header Logo" class="aspen-logo">
+        </div>
+        <!-- Theme toggle for bonus -->
+        <div style="display: flex; justify-content: center;">
+          <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle color scheme" aria-pressed="false">Toggle Theme</button>
+        </div>
+      </header>
 
-  <main class="login-main">
+      <main class="login-main">
     <form name="logonForm" method="post" action="/aspen/logon.do" class="logonDetailContainer">
       <!-- Required hidden fields for backend -->
       <input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="a9592cac982b15f8b17ab4e24995cd91">
@@ -75,16 +79,18 @@
     </form>
   </main>
 
-  <footer class="login-footer">
-    <div class="footer-left">
-      &copy; 2025 Follett School Solutions, LLC. All rights reserved.
-    </div>
-    <div class="footer-right">
-      <a href="http://www.follettlearning.com/" target="_blank">Follett School Solutions</a> |
-      <a href="http://www.follettlearning.com/technology/products/student-information-system" target="_blank">Aspen</a> |
-      <a href="http://www.follettlearning.com/webapp/wcs/stores/servlet/en/fssmarketingstore/terms-of-use" target="_blank">Terms of Use</a>
-    </div>
-  </footer>
+      <footer class="footer login-footer">
+        <div class="footer-left">
+          &copy; 2025 Follett School Solutions, LLC. All rights reserved.
+        </div>
+        <div class="footer-right">
+          <a href="http://www.follettlearning.com/" target="_blank">Follett School Solutions</a> |
+          <a href="http://www.follettlearning.com/technology/products/student-information-system" target="_blank">Aspen</a> |
+          <a href="http://www.follettlearning.com/webapp/wcs/stores/servlet/en/fssmarketingstore/terms-of-use" target="_blank">Terms of Use</a>
+        </div>
+      </footer>
+    </div> <!-- .main-content -->
+  </div> <!-- .wrapper -->
 
   <!-- Theme toggle script -->
   <script>
