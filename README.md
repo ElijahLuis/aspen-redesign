@@ -1,14 +1,31 @@
 # Aspen Redesign (CPS Front-End Prototype)
+
 This project is a front-end prototype for the Aspen student information system, focused on modernizing the UI while maintaining compatibility with legacy CSS and backend logic. The redesign emphasizes responsive layouts, accessibility, and a smooth transition path from the existing system.
 
 ## Repository Structure
 
-- `docs/maps/` - Documentation and mapping files for legacy-to-modern UI translation.
-- `images/` - Project screenshots, diagrams, and UI assets.
-- `prototype/` - Main front-end prototype code, including styles, scripts, and HTML.
-- `reference/` - Reference materials, legacy UI snapshots, and design guidelines.
-- `research/` - Analysis, notes, and CSS conflict tracking for legacy compatibility.
-- `scripts/` - Utility scripts for development, build, or automation tasks.
+```
+aspen-redesign/
+├── prototype/
+│   ├── images/
+│   ├── pages/
+│   ├── scripts/
+│   └── styles/
+├── research/
+│   ├── analysis/
+│   │   └── maps/
+│   ├── captures/
+│   │   └── css_captures
+│   │   └── html_captures
+│   │   └── img_captures
+│   └── legacy/
+├── .gitignore
+├── AGENTS.md
+├── CONTRIBUTING.md
+├── package-lock.json
+├── package.json
+├── README.md (**You are here!**)
+```
 
 ## Layout & Components
 

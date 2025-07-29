@@ -24,7 +24,7 @@
 - confirmLogout() triggers logout with basic JS + redirect
 
 ## URL
-`http://sandbox.aspen.cps.edu/aspen/home.do`
+`http://aspen.cps.edu/aspen/home.do`
 
 ## Structure
 - XHTML 1.0 Strict layout
