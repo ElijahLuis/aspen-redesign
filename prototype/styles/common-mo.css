@@ -105,15 +105,37 @@ a:hover {
   font-weight: bold;
 }
 
+/* ========== Theme Toggle Button ========== */
+.theme-toggle {
+  display: inline-block;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.theme-toggle:hover {
+  background-color: #357ABD;
+}
+
 /* ========== Links Section ========== */
 .login-links {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  font-size: 0.875rem;
 }
 .login-links a {
-  color: var(--color-primary);
+  color: #4a90e2;
+  text-decoration: none;
+}
+.login-links a:hover {
+  text-decoration: underline;
 }
 .disabled-link {
   pointer-events: none;
@@ -164,9 +186,9 @@ a:hover {
   }
 
   .login-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
   }
 
   .button {
@@ -177,4 +199,20 @@ a:hover {
     grid-template-columns: 1fr;
     text-align: center;
   }
+}
+
+/* ========== Wrapper Layout ========== */
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main-content {
+  flex: 1;
+}
+.footer {
+  background-color: #0f2b5b;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
 }
