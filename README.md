@@ -1,35 +1,38 @@
 # Aspen Redesign (CPS Front-End Prototype)
-This project explores a modernized front‑end for the Aspen student information system. The goal is to create responsive, accessible pages while remaining compatible with legacy CSS and backend logic.
+This project is a front-end prototype for the Aspen student information system, focused on modernizing the UI while maintaining compatibility with legacy CSS and backend logic. The redesign emphasizes responsive layouts, accessibility, and a smooth transition path from the existing system.
 
-## Folders
-- `prototype/` – HTML, CSS and JS for the redesign
-- `research/` – capture notes and compatibility testing
+## Repository Structure
+
+- `docs/maps/` - Documentation and mapping files for legacy-to-modern UI translation.
+- `images/` - Project screenshots, diagrams, and UI assets.
+- `prototype/` - Main front-end prototype code, including styles, scripts, and HTML.
+- `reference/` - Reference materials, legacy UI snapshots, and design guidelines.
+- `research/` - Analysis, notes, and CSS conflict tracking for legacy compatibility.
+- `scripts/` - Utility scripts for development, build, or automation tasks.
 
 ## Layout & Components
-The new layout framework (`layout.css` and `components.css`) provides a mobile‑first grid and reusable widgets. `home.html` shows the first working district view using these styles. Theme variables support light and dark modes with fallback to legacy styles via `legacy-map.css`.
 
-Utility classes in `utils.css` offer margin, padding, and flex helpers. Future interactive widgets will live under `prototype/scripts/`.
+The layout system (`layout.css`, `components.css`) is mobile-first, using a grid and reusable widgets. Theme variables enable light/dark modes and fallback to legacy styles via `legacy-map.css`. Utility classes in `utils.css` provide spacing and flexbox helpers. Interactive widgets are organized under `prototype/scripts/`.
 
-## Compatibility
-Captured legacy fragments are tested against the new sheets. Conflicts and overrides are logged in `research/analysis/css_conflicts.md`.
-Codex should treat the research/ folder as the authoritative mapping layer between legacy Aspen UI and the new prototype. 
-Use its contents to:
-- Understand overlapping CSS definitions (research/analysis/css_conflicts.md)
-- Reference legacy classnames and their visual behavior
-- Translate design patterns into modern equivalents using custom properties and layout utilities
-- Avoid style or behavior regressions when matching form inputs, search bars, or navigation behaviors
+## Legacy Compatibility
 
-For example:
-- .listCellLastSelectionHighlight → mapped to --legacy-highlight
-- c1Color / c1Background / c1Border → mapped to --legacy-c1
-- c2Color / c2Background / c2Border (+ left/top) → mapped to --legacy-c2
-- c3Color / c3Background / c3Border → mapped to --legacy-c3
-- .menuItemHighlight → mapped to --legacy-highlight
-- Navigation bar colors from `common-header.css` →
-  `--legacy-dashboard`, `--legacy-myinfo`, `--legacy-student`,
-  `--legacy-attendance`, `--legacy-gradebook`, `--legacy-planner`,
-  `--legacy-quest`, `--legacy-pd`
-- .repositoryListClass conflicts → noted for resolution in components.css or utils.css
+Legacy UI fragments are tested with the new stylesheets. Conflicts and overrides are tracked in `research/analysis/css_conflicts.md`. The `research/` folder is the source of truth for mapping legacy Aspen UI to the prototype. Use it to:
+
+- Identify overlapping CSS (see `css_conflicts.md`)
+- Reference legacy classnames and behaviors
+- Translate old patterns to modern CSS custom properties and utilities
+- Prevent regressions in forms, navigation, and search
+
+**Mapping examples:**
+
+- `.listCellLastSelectionHighlight` → `--legacy-highlight`
+- `c1Color`/`c1Background`/`c1Border` → `--legacy-c1`
+- `c2Color`/`c2Background`/`c2Border` → `--legacy-c2`
+- `c3Color`/`c3Background`/`c3Border` → `--legacy-c3`
+- `.menuItemHighlight` → `--legacy-highlight`
+- Navigation bar colors from `common-header.css` → `--legacy-dashboard`, `--legacy-myinfo`, `--legacy-student`, `--legacy-attendance`, `--legacy-gradebook`, `--legacy-planner`, `--legacy-quest`, `--legacy-pd`
+- `.repositoryListClass` conflicts are resolved in `components.css` or `utils.css`
 
 ## Dummy Data Policy
-All captured HTML reflects either zeroed-out student data or the developer's own record. No third-party PHI is included.
+
+All sample HTML uses either anonymized data or the developer’s own record. No third-party PHI is present.
