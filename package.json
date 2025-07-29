@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:manifest": "node scripts/build-manifest.mjs"
+    "build:manifest": "node prototype/scripts/build-manifest.mjs"
   },
   "keywords": [],
   "author": "",

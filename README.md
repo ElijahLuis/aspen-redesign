@@ -2,23 +2,26 @@
 
 This project is a front-end prototype for the Aspen student information system, focused on modernizing the UI while maintaining compatibility with legacy CSS and backend logic. The redesign emphasizes responsive layouts, accessibility, and a smooth transition path from the existing system.
 
-## Repository Structure
+## 📁 Directory Structure
 
 ```
 aspen-redesign/
+├── images/
+│   ├── favicon.ico
+│   └── new-aspen-logo.png
 ├── prototype/
-│   ├── images/
 │   ├── pages/
 │   ├── scripts/
 │   └── styles/
 ├── research/
 │   ├── analysis/
 │   │   └── maps/
-│   ├── captures/
-│   │   └── css_captures
-│   │   └── html_captures
-│   │   └── img_captures
-│   └── legacy/
+│   └── captures/
+│       ├── css_captures/
+│       ├── html_captures/
+│       └── img_captures/
+├── reference/
+│   └── manifest.json
 ├── .gitignore
 ├── AGENTS.md
 ├── CONTRIBUTING.md
@@ -26,6 +29,13 @@ aspen-redesign/
 ├── package.json
 ├── README.md (**You are here!**)
 ```
+
+## Assets
+
+Project images and logos live in the `images/` folder at the repository root. A
+light and dark version of the Aspen logo are provided. Use `images/new-aspen-
+logo.png` in light mode and `images/new-aspen-logo-dark.png` when the dark them
+e is active.
 
 ## Layout & Components
 

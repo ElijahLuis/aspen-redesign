@@ -4,9 +4,10 @@ import { fileURLToPath } from 'url';
 
 import { load } from "cheerio";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const rootDir = path.resolve(__dirname, '..');
-const refDir = path.join(rootDir, 'reference');
-const manifestPath = path.join(refDir, 'manifest.json');
+const rootDir = path.resolve(__dirname, '..', '..');
+const captureDir = path.join(rootDir, 'research', 'captures');
+const manifestDir = path.join(rootDir, 'reference');
+const manifestPath = path.join(manifestDir, 'manifest.json');
 
 async function walk(dir) {
   const entries = await fs.readdir(dir, { withFileTypes: true });
@@ -43,7 +44,8 @@ async function getInfo(filePath) {
 
 async function build() {
   try {
-    const files = await walk(refDir);
+    await fs.mkdir(manifestDir, { recursive: true });
+    const files = await walk(captureDir);
     const entries = await Promise.all(files.map(getInfo));
     await fs.writeFile(manifestPath, JSON.stringify(entries, null, 2));
     console.log(`Wrote ${entries.length} entries to ${manifestPath}`);
