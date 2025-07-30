@@ -1,0 +1,136 @@
+/*
+ * Customized CSS version of JQuery minitoggle.css lib.
+ *
+ * Don't just blow this file away if upgrading to a new version.
+ */
+.toggle {
+  	display: inline-block;
+  	float: right;
+  	height: 19px;
+  	padding: 2px 0px 0px 0px;
+  	width: 22px;
+	border-radius: 5px;
+}
+
+.minitoggle {
+  	background-color: #EBEBEB;
+  	border: 1px solid #6f6f6f;
+  	border-radius: 5px;
+  	box-shadow: inset 0 0 4px rgba(0, 0, 0, .1);
+  	float: left;
+  	height: 16px;
+  	margin-left: 2px;
+  	position: relative;
+  	width: 10px;
+}
+
+.minitoggle .toggle-handle {
+  	-webkit-transition: -webkit-transform 0.1s ease-in-out, border 0.1s ease-in-out;
+  	background-color: #d8d8d8;
+  	background-image: -webkit-linear-gradient(top, #d2d1d1 0, #505050 100%);
+  	background-image: linear-gradient(to bottom, #d2d1d1 0, #505050 100%);
+  	border-radius: 5px;
+  	box-shadow: 0px 2px 3px 0 rgba(0,0,0,0.20);
+  	height: 10px;
+  	position: absolute;
+  	width: 10px;
+  	transition: transform 0.1s ease-in-out, border 0.1s ease-in-out;
+  	z-index: 2;
+}
+
+.minitoggle.active {
+  	background-color: #4CD964;
+  	border: 1px solid #6f6f6f;
+  	box-shadow: inset 0 0 15px rgba(255, 255, 255, .25);
+}
+
+.minitoggle.active .toggle-handle {
+  	transform: translate3d(0,6px,0);
+}
+
+/*
+ * CSS styles for list filter icon
+ */
+
+.filterAdvancedMenu {
+  	margin-bottom: 0px !important;
+  	margin-top: 0px !important;
+  	padding-bottom: 1px !important;
+  	padding-left: 0px !important;
+  	padding-right: 0px !important;
+  	width: 27px;
+}
+
+.filterButtons {
+	display: inline-block;
+	height: 40px; 
+	text-align: right; 
+	width: 100%; 
+}
+
+.filterButtonsTable {
+	display: inline-block; 
+	float: right;
+}
+
+.filterDropdown {
+	background-color: #ECECEC; 
+	border: solid #CCCCCC 1px; 
+	display: inline-block; 
+	height: 28px; 
+	margin: 4px 0px; 
+	padding-top: 4px;
+}
+
+.filterDropdownLeft {
+	float: left;
+}
+
+.filterDropdowns {
+	display: table;
+	height: 40px;
+	text-align: right; 
+	width: 100%; 
+}
+
+.filterGroup {
+	background: #eeeeee;	
+  	border: 1px solid grey;
+  	display: inline-block;
+  	height: 21px;
+  	margin-left: 5px;
+  	margin-right: 5px;
+  	padding: 0px;
+  	width: 49px;
+}
+
+.filterHover,.toggle:hover {
+	background-color: #bbbbbb;
+}
+
+.filterPropertyColumn {
+	border-collapse:collapse;
+	float: left; 
+	height: 50%; 
+	width: 50%; 
+	flex: 1; /* Needed for Edge, doesn't appear to impact others */
+}
+
+/*
+ * Style definitions for the embedded popup overlay and iframe
+ */
+div.filterAdvancedCoverClass {
+	position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    filter: alpha(opacity = 70);
+    opacity: 0.7;
+    z-index: 19;
+}
+
+form.detailContainer
+{
+  background-color: #ffffff;
+  border: solid #CCCCCC 1px;
+}
