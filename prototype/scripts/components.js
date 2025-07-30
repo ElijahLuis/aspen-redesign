@@ -65,10 +65,25 @@ export function initThemeToggle() {
   setState(document.documentElement.dataset.theme || 'light');
 }
 
+export function initSearchBars() {
+  document.querySelectorAll('.find-bar__search input[type="text"]').forEach(input => {
+    const table = input.closest('main')?.querySelector('table');
+    if (!table) return;
+    input.addEventListener('input', () => {
+      const query = input.value.toLowerCase();
+      table.querySelectorAll('tbody tr').forEach(row => {
+        const text = row.textContent.toLowerCase();
+        row.hidden = !text.includes(query);
+      });
+    });
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initComponents();
   initTabs();
   initStickyActions();
   initModals();
   initThemeToggle();
+  initSearchBars();
 });

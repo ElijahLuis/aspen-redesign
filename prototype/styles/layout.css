@@ -23,13 +23,23 @@
   min-height: 0; /* avoid overflow when sidebar is fixed */
 }
 
-.sidebar {
+/* grid-based alternative layout */
+.layout-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+}
+
+.sidebar,
+.layout-grid__sidebar {
   flex: 1 0 100%;
   background-color: var(--bg-form);
   padding: 1rem;
 }
 
-.main-panel {
+.main-panel,
+.layout-grid__main {
   flex: 1 1 auto;
   padding: 1rem;
 }
@@ -39,6 +49,9 @@
   }
   .sidebar {
     flex: 0 0 16rem;
+  }
+  .layout-grid {
+    grid-template-columns: 16rem 1fr;
   }
 }
 
