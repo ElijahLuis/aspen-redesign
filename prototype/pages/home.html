@@ -22,9 +22,12 @@
     <input type="hidden" id="scrollX" name="scrollX" value="0">
     <input type="hidden" id="scrollY" name="scrollY" value="0">
     <input type="hidden" id="formFocusField" name="formFocusField" value="">
-    <div class="layout-wrapper">
-      <header class="top-nav" style="display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 1.5rem; background: var(--color-primary, #003366); color: #fff;">
-        <div style="font-weight: bold; font-size: 1.2rem; letter-spacing: 1px;">Chicago Public Schools</div>
+    <div class="layout-wrapper" style="background: linear-gradient(120deg, #eaf1fb 0%, #f7fafd 100%); min-height: 100vh;">
+      <header class="top-nav" style="display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 1.5rem; background: var(--color-primary, #003366); color: #fff; box-shadow: 0 2px 8px #00336622;">
+        <div style="font-weight: bold; font-size: 1.3rem; letter-spacing: 1px; display: flex; align-items: center; gap: 0.75rem;">
+          <img src="../../images/aspen-header-logo.png" alt="Aspen Logo" style="height: 2.2rem; vertical-align: middle;">
+          Chicago Public Schools
+        </div>
         <nav aria-label="Main navigation" style="flex: 1; display: flex; justify-content: center;">
           <ul class="main-tabs" style="display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0;">
             <li><a href="/aspen/home.do" class="tab active" aria-current="page">Pages</a></li>
@@ -41,39 +44,52 @@
           <button type="button" id="logoutBtn" class="logout-btn" style="background: none; border: none; color: #fff; cursor: pointer; font-size: 1rem;">Log Out</button>
         </div>
       </header>
+      <section class="hero-banner" style="background: url('../../images/aspen-portal-bg.png') center/cover no-repeat; min-height: 120px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px #00336611;">
+        <div style="background: rgba(255,255,255,0.85); border-radius: 12px; padding: 1.5rem 2.5rem; margin: 2rem 0; text-align: center; max-width: 700px;">
+          <h1 style="font-size: 2rem; color: #003366; margin-bottom: 0.5rem;">Welcome to Aspen</h1>
+          <p style="font-size: 1.1rem; color: #234; margin-bottom: 0.5rem;">Empowering educators, students, and families to connect, collaborate, and succeed together.</p>
+          <p style="font-size: 1rem; color: #3a4a5a; margin: 0;">This is your community hub for learning, support, and growth across Chicago Public Schools.</p>
+        </div>
+      </section>
       <div style="display: flex; justify-content: center; background: #f7f7f7; padding: 0.5rem 0;">
         <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle color scheme" aria-pressed="false">Toggle Theme</button>
       </div>
 
     <div class="layout-grid">
-      <aside class="layout-grid__sidebar sidebar" style="background: #f4f6fa; min-width: 220px; max-width: 260px; padding: 2rem 1rem 2rem 1.5rem; border-right: 1px solid #e0e4ea;">
+      <aside class="layout-grid__sidebar sidebar" style="background: #f4f6fa; min-width: 220px; max-width: 260px; padding: 2.5rem 1.2rem 2.5rem 1.7rem; border-right: 1px solid #e0e4ea; box-shadow: 2px 0 8px #00336608;">
         <nav aria-label="Sidebar navigation">
-          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.5rem;">
-            <li><a href="#" class="sidebar-link">Dashboard</a></li>
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.7rem;">
+            <li><a href="#" class="sidebar-link" style="font-weight: 600; color: #003366;">Dashboard</a></li>
             <li><a href="#" class="sidebar-link">My Students</a></li>
             <li><a href="#" class="sidebar-link">Attendance</a></li>
             <li><a href="#" class="sidebar-link">Gradebook</a></li>
             <li><a href="#" class="sidebar-link">Reports</a></li>
             <li><a href="#" class="sidebar-link">Resources</a></li>
+            <li style="margin-top: 2.5rem;">
+              <div style="background: #eaf1fb; border-radius: 8px; padding: 1rem 0.8rem; text-align: center; color: #234; font-size: 0.98rem; box-shadow: 0 1px 4px #00336611;">
+                <strong>Community Tip:</strong><br>
+                <span>Connect with colleagues in the <a href="#" style="color: #003366; text-decoration: underline;">Staff Room</a> or check <a href="#" style="color: #003366; text-decoration: underline;">District News</a>.</span>
+              </div>
+            </li>
           </ul>
         </nav>
       </aside>
 
-      <main class="layout-grid__main main-panel" style="flex: 1; padding: 2rem 2.5rem; background: #fff; min-height: 80vh;">
+      <main class="layout-grid__main main-panel" style="flex: 1; padding: 2.5rem 2.5rem 2.5rem 2rem; background: #fff; min-height: 80vh; border-radius: 18px 0 0 0; box-shadow: 0 2px 16px #00336611;">
         <div class="main-widgets" style="display: grid; grid-template-columns: 1fr 340px; gap: 2.5rem; align-items: flex-start;">
-          <div class="widgets-left" style="display: flex; flex-direction: column; gap: 2rem;">
-            <section class="widget" style="background: #f9fafb; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.04); padding: 1.5rem 1.5rem 1rem 1.5rem;">
-              <div class="widget__header"><h2 class="widget__title">Quick Links</h2></div>
+          <div class="widgets-left" style="display: flex; flex-direction: column; gap: 2.2rem;">
+            <section class="widget" style="background: #f9fafb; border-radius: 12px; box-shadow: 0 1px 8px #00336611; padding: 1.7rem 1.7rem 1.2rem 1.7rem;">
+              <div class="widget__header"><h2 class="widget__title" style="font-size: 1.15rem; color: #003366;">Quick Links</h2></div>
               <div class="widget__body">
-                <ul style="padding-left: 1.2rem;">
-                  <li><a href="#">View Students</a></li>
-                  <li><a href="#">Attendance</a></li>
-                  <li><a href="#">Gradebook</a></li>
+                <ul style="padding-left: 1.2rem; display: flex; flex-wrap: wrap; gap: 1.2rem 2.5rem;">
+                  <li><a href="#" style="font-weight: 500; color: #003366;">View Students</a></li>
+                  <li><a href="#" style="font-weight: 500; color: #003366;">Attendance</a></li>
+                  <li><a href="#" style="font-weight: 500; color: #003366;">Gradebook</a></li>
                 </ul>
               </div>
             </section>
-            <section class="widget" style="background: #f9fafb; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.04); padding: 1.5rem 1.5rem 1rem 1.5rem;">
-              <div class="widget__header"><h2 class="widget__title">Student Search</h2></div>
+            <section class="widget" style="background: #f9fafb; border-radius: 12px; box-shadow: 0 1px 8px #00336611; padding: 1.7rem 1.7rem 1.2rem 1.7rem;">
+              <div class="widget__header"><h2 class="widget__title" style="font-size: 1.15rem; color: #003366;">Student Search</h2></div>
               <div class="widget__body">
                 <div class="find-bar" style="display: flex; gap: 1rem; align-items: center;">
                   <input type="text" placeholder="Search students" aria-label="Search students" style="flex: 1; padding: 0.5rem 1rem; border-radius: 6px; border: 1px solid #d1d5db;">
@@ -81,19 +97,23 @@
                 </div>
               </div>
             </section>
-            <section class="widget" style="background: #f9fafb; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.04); padding: 1.5rem 1.5rem 1rem 1.5rem;">
-              <div class="widget__header"><h2 class="widget__title">Workflows</h2></div>
-              <div class="widget__body"><p>No current workflows.</p></div>
+            <section class="widget" style="background: #f9fafb; border-radius: 12px; box-shadow: 0 1px 8px #00336611; padding: 1.7rem 1.7rem 1.2rem 1.7rem;">
+              <div class="widget__header"><h2 class="widget__title" style="font-size: 1.15rem; color: #003366;">Workflows</h2></div>
+              <div class="widget__body"><p style="color: #666;">No current workflows.</p></div>
             </section>
-            <section class="widget" style="background: #f9fafb; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.04); padding: 1.5rem 1.5rem 1rem 1.5rem;">
-              <div class="widget__header"><h2 class="widget__title">Published Reports</h2></div>
-              <div class="widget__body"><p>No published reports.</p></div>
+            <section class="widget" style="background: #f9fafb; border-radius: 12px; box-shadow: 0 1px 8px #00336611; padding: 1.7rem 1.7rem 1.2rem 1.7rem;">
+              <div class="widget__header"><h2 class="widget__title" style="font-size: 1.15rem; color: #003366;">Published Reports</h2></div>
+              <div class="widget__body"><p style="color: #666;">No published reports.</p></div>
             </section>
           </div>
-          <div class="widgets-right" style="display: flex; flex-direction: column; gap: 2rem;">
-            <section class="widget" style="background: #f9fafb; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.04); padding: 1.5rem 1.5rem 1rem 1.5rem;">
-              <div class="widget__header"><h2 class="widget__title">Announcements</h2></div>
-              <div class="widget__body"><p>No announcements.</p></div>
+          <div class="widgets-right" style="display: flex; flex-direction: column; gap: 2.2rem;">
+            <section class="widget" style="background: #f9fafb; border-radius: 12px; box-shadow: 0 1px 8px #00336611; padding: 1.7rem 1.7rem 1.2rem 1.7rem;">
+              <div class="widget__header"><h2 class="widget__title" style="font-size: 1.15rem; color: #003366;">Announcements</h2></div>
+              <div class="widget__body"><p style="color: #666;">No announcements.</p></div>
+            </section>
+            <section class="widget" style="background: #eaf1fb; border-radius: 12px; box-shadow: 0 1px 8px #00336611; padding: 1.7rem 1.7rem 1.2rem 1.7rem; border: 1.5px dashed #b3c7e6;">
+              <div class="widget__header"><h2 class="widget__title" style="font-size: 1.08rem; color: #003366;">Community Board</h2></div>
+              <div class="widget__body"><p style="color: #234;">Share a resource, celebrate a success, or ask for help! <a href="#" style="color: #003366; text-decoration: underline;">Post to the board</a></p></div>
             </section>
           </div>
         </div>
