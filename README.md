@@ -66,7 +66,8 @@ All sample HTML uses either anonymized data or the developer’s own record. No 
 
 ## Build Instructions
 
-Run the following commands to install dependencies and generate the manifest:
+Run the following commands to install dependencies and generate the manifest.  
+If `npm run build:manifest` fails because `cheerio` is missing, make sure you ran `npm install` first:
 
 ```bash
 npm install

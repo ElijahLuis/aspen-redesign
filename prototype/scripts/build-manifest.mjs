@@ -2,7 +2,13 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-import { load } from "cheerio";
+let load;
+try {
+  ({ load } = await import('cheerio'));
+} catch (err) {
+  console.error('Missing dependency: cheerio. Run "npm install" before running build-manifest.');
+  process.exit(1);
+}
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, '..', '..');
 const captureDir = path.join(rootDir, 'research', 'captures');
