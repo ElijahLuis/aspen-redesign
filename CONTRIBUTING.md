@@ -16,8 +16,7 @@ Use semantic HTML where possible and apply utility classes from `utils.css` for 
 ## Assets
 
 Reference images from the top-level `images/` directory. Within HTML files inside
-`prototype/pages/` use the relative path `../../images/`. Dark mode should load
-`/images/new-aspen-logo-dark.png` while light mode uses `/images/new-aspen-logo.png`.
+`prototype/pages/` use the relative path `../../images/`.
 
 ## Folder Conventions
 
