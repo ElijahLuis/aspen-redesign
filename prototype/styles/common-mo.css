@@ -14,7 +14,8 @@ body, html {
 
 /* ========== Legacy-Compatible Body Layout ========== */
 body.loginBackground {
-  background-color: var(--bg-default); /* fallback default */
+  background: var(--bg-default) url('../../images/aspen-portal-bg.png') no-repeat center center fixed;
+  background-size: cover;
 }
 
 a {
@@ -31,6 +32,11 @@ a:hover {
   padding: 1rem;
   text-align: center;
 }
+.header-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
 .aspen-logo {
   max-width: 240px;
   height: auto;
@@ -45,7 +51,8 @@ a:hover {
 }
 
 .logonDetailContainer {
-  background-color: var(--bg-form);
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(4px);
   border-radius: 6px;
   padding: 2rem;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
