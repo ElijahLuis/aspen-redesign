@@ -35,6 +35,21 @@ aspen-redesign/
 Project images and logos live in the `images/` folder at the repository root.
 The file `images/aspen-header-logo.png` serves as the Aspen logo in both light and dark themes.
 
+## Color Palette
+
+The prototype uses a human-centered palette to reinforce clarity and support:
+
+| Color                | Hex       | Purpose |
+|----------------------|----------|---------|
+| Soft Teal            | `#73C6B6` | District base accents |
+| Denim Blue           | `#4A90E2` | Primary interface color |
+| Muted Coral Red      | `#F67280` | Health alerts and errors |
+| Warm Cream           | `#FDF6EC` | Default page background |
+| Goldenrod Yellow     | `#F9D342` | Highlights and buttons |
+| Slate Purple         | `#A28DFF` | Alternate accent |
+| Cool Mint            | `#B2F2BB` | Success confirmations |
+
+
 ## Layout & Components
 
 The layout system (`layout.css`, `components.css`) is mobile-first, using a grid and reusable widgets. Theme variables enable light/dark modes and fallback to legacy styles via `legacy-map.css`. Utility classes in `utils.css` provide spacing and flexbox helpers. Interactive widgets are organized under `prototype/scripts/`.
