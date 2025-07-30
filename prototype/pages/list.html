@@ -14,7 +14,16 @@
   <link rel="stylesheet" href="../styles/themes.css">
 </head>
 <body>
-  <div class="layout-wrapper">
+  <form name="contextListForm" method="post" action="/aspen/studentContextList.do">
+    <input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="af769c85d55ffa9d66033b7705551f45">
+    <input type="hidden" id="userEvent" name="userEvent" value="0">
+    <input type="hidden" id="userParam" name="userParam" value="">
+    <input type="hidden" id="operationId" name="operationId" value="">
+    <input type="hidden" id="deploymentId" name="deploymentId" value="aspen">
+    <input type="hidden" id="scrollX" name="scrollX" value="0">
+    <input type="hidden" id="scrollY" name="scrollY" value="0">
+    <input type="hidden" id="formFocusField" name="formFocusField" value="">
+    <div class="layout-wrapper">
     <nav class="top-nav">
       <div>Chicago Public Schools</div>
       <div>User: Jane Admin</div>
@@ -81,8 +90,8 @@
         <div class="pagination mt-2">Page 1 of 4</div>
       </main>
     </div>
-  </div>
-
+    </div>
+  </form>
   <script type="module" src="../scripts/components.js"></script>
 </body>
 </html>
