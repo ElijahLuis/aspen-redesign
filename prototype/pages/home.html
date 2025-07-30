@@ -111,8 +111,8 @@
       <main id="mainContent" class="layout-grid__main main-panel" style="flex: 1; padding: 2.5rem 2.5rem 2.5rem 2rem; background: #fff; min-height: 80vh; border-radius: 18px 0 0 0; box-shadow: 0 2px 16px #00336611;" tabindex="-1" aria-label="Main content">
         <div class="main-widgets" style="display: grid; grid-template-columns: 1fr 340px; gap: 2.5rem; align-items: flex-start;">
           <div class="widgets-left" style="display: flex; flex-direction: column; gap: 2.2rem;">
-            <section class="widget" style="background: #f9fafb; border-radius: 12px; box-shadow: 0 1px 8px #00336611; padding: 1.7rem 1.7rem 1.2rem 1.7rem;">
-              <div class="widget__header"><h2 class="widget__title" style="font-size: 1.15rem; color: #003366;">Quick Links</h2></div>
+            <section class="widget">
+              <div class="widget__header"><h2 class="widget__title">Quick Links</h2></div>
               <div class="widget__body">
                 <ul style="padding-left: 1.2rem; display: flex; flex-wrap: wrap; gap: 1.2rem 2.5rem;">
                   <li><a href="#" style="font-weight: 500; color: #003366;" tabindex="0">View Students</a></li>
@@ -121,8 +121,8 @@
                 </ul>
               </div>
             </section>
-            <section class="widget" style="background: #f9fafb; border-radius: 12px; box-shadow: 0 1px 8px #00336611; padding: 1.7rem 1.7rem 1.2rem 1.7rem;">
-              <div class="widget__header"><h2 class="widget__title" style="font-size: 1.15rem; color: #003366;">Student Search</h2></div>
+            <section class="widget">
+              <div class="widget__header"><h2 class="widget__title">Student Search</h2></div>
               <div class="widget__body">
                 <form class="find-bar" style="display: flex; gap: 1rem; align-items: center;" role="search" aria-label="Student search" onsubmit="return false;">
                   <input type="text" placeholder="Search students" aria-label="Search students" style="flex: 1; padding: 0.5rem 1rem; border-radius: 6px; border: 1px solid #d1d5db;" id="studentSearchInput">
@@ -131,26 +131,26 @@
                 <div id="studentSearchResult" aria-live="polite" style="margin-top: 0.5em; font-size: 0.98em; color: #234;"></div>
               </div>
             </section>
-            <section class="widget" style="background: #f9fafb; border-radius: 12px; box-shadow: 0 1px 8px #00336611; padding: 1.7rem 1.7rem 1.2rem 1.7rem;">
-              <div class="widget__header"><h2 class="widget__title" style="font-size: 1.15rem; color: #003366;">Workflows</h2></div>
+            <section class="widget">
+              <div class="widget__header"><h2 class="widget__title">Workflows</h2></div>
               <div class="widget__body"><p style="color: #666;">No current workflows.</p></div>
             </section>
-            <section class="widget" style="background: #f9fafb; border-radius: 12px; box-shadow: 0 1px 8px #00336611; padding: 1.7rem 1.7rem 1.2rem 1.7rem;">
-              <div class="widget__header"><h2 class="widget__title" style="font-size: 1.15rem; color: #003366;">Published Reports</h2></div>
+            <section class="widget">
+              <div class="widget__header"><h2 class="widget__title">Published Reports</h2></div>
               <div class="widget__body"><p style="color: #666;">No published reports.</p></div>
             </section>
           </div>
           <div class="widgets-right" style="display: flex; flex-direction: column; gap: 2.2rem;">
-            <section class="widget" style="background: #f9fafb; border-radius: 12px; box-shadow: 0 1px 8px #00336611; padding: 1.7rem 1.7rem 1.2rem 1.7rem;">
-              <div class="widget__header"><h2 class="widget__title" style="font-size: 1.15rem; color: #003366;">Announcements</h2></div>
+            <section class="widget">
+              <div class="widget__header"><h2 class="widget__title">Announcements</h2></div>
               <div class="widget__body"><p style="color: #666;">No announcements.</p></div>
             </section>
-            <section class="widget" style="background: #eaf1fb; border-radius: 12px; box-shadow: 0 1px 8px #00336611; padding: 1.7rem 1.7rem 1.2rem 1.7rem; border: 1.5px dashed #b3c7e6;">
-              <div class="widget__header"><h2 class="widget__title" style="font-size: 1.08rem; color: #003366;">Community Board</h2></div>
+            <section class="widget widget-board">
+              <div class="widget__header"><h2 class="widget__title">Community Board</h2></div>
               <div class="widget__body"><p style="color: #234;">Share a resource, celebrate a success, or ask for help! <a href="#" style="color: #003366; text-decoration: underline;">Post to the board</a></p></div>
             </section>
-            <section class="widget" style="background: #fffbe7; border-radius: 12px; box-shadow: 0 1px 8px #00336611; padding: 1.5rem 1.5rem 1.1rem 1.5rem; border: 1.5px solid #ffe066;">
-              <div class="widget__header"><h2 class="widget__title" style="font-size: 1.08rem; color: #b38f00; display: flex; align-items: center; gap: 0.5em;"><span style="font-size: 1.2em;">⭐</span> Featured Resource</h2></div>
+            <section class="widget widget-featured">
+              <div class="widget__header"><h2 class="widget__title"><span style="font-size: 1.2em;">⭐</span> Featured Resource</h2></div>
               <div class="widget__body"><p style="color: #7a6700;">Check out the new <a href="#" style="color: #b38f00; text-decoration: underline; font-weight: 500;">CPS Family Engagement Toolkit</a> for ideas to strengthen your classroom community.</p></div>
             </section>
           </div>
@@ -671,6 +671,18 @@
     });
   });
 
+  // Intercept links to non-existent pages and show alert
+function handleMissingPageLinks(selector) {
+  document.querySelectorAll(selector).forEach(link => {
+    if (link.getAttribute('href') === '#' || link.getAttribute('href') === '' || link.getAttribute('href') === null) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        alert('This page has not been created yet.');
+      });
+    }
+  });
+}
+handleMissingPageLinks('.sidebar-link, .sidebar-link-animated, .main-tabs .tab, .widget__body a');
   </script>
 </body>
 </html>
