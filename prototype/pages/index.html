@@ -92,16 +92,7 @@
     </div> <!-- .main-content -->
   </div> <!-- .wrapper -->
 
-  <!-- Theme toggle script -->
-  <script>
-    const toggleBtn = document.getElementById('themeToggle');
-    toggleBtn.addEventListener('click', () => {
-      const current = document.documentElement.dataset.theme;
-      const newTheme = current === 'dark' ? 'light' : 'dark';
-      document.documentElement.dataset.theme = newTheme;
-      toggleBtn.setAttribute('aria-pressed', newTheme === 'dark');
-    });
-  </script>
+  <script type="module" src="../scripts/components.js"></script>
 
 </body>
 </html>
