@@ -29,17 +29,39 @@
           <img src="../../images/aspen-header-logo.png" alt="Aspen Logo" style="height: 2.2rem; vertical-align: middle;">
           Chicago Public Schools
         </div>
-        <nav aria-label="Main navigation" style="flex: 1; display: flex; justify-content: center;" role="navigation">
-          <ul class="main-tabs" style="display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0;">
-            <li><a href="/aspen/home.do" class="tab active" aria-current="page" tabindex="0">Pages</a></li>
-            <li><a href="/aspen/studentContextList.do?navkey=student.std.list" class="tab" tabindex="0">Student</a></li>
-            <li><a href="/aspen/dailyHealthLog.do?navkey=healthLog.hlg.list" class="tab" tabindex="0">Visit</a></li>
-            <li><a href="/aspen/contextList.do?navkey=healthCnd.condition.history" class="tab" tabindex="0">Condition</a></li>
-            <li><a href="/aspen/screeningList.do?navkey=healthScr.screening.history" class="tab" tabindex="0">Screening</a></li>
-            <li><a href="/aspen/contextList.do?navkey=healthMed.order.list" class="tab" tabindex="0">Medication</a></li>
-            <li><a href="/aspen/contextList.do?navkey=healthAlr.alert.history" class="tab" tabindex="0">Alert</a></li>
-          </ul>
-        </nav>
+        <div style="display: flex; align-items: center; gap: 1.5rem; flex: 1; justify-content: center;">
+          <!-- View Selector -->
+          <nav aria-label="View selector" style="margin-right: 1.5rem;">
+            <div class="view-selector" role="tablist" aria-label="Select view">
+              <button type="button" class="view-tab active" role="tab" aria-selected="true" tabindex="0" id="viewDistrict">District</button>
+              <button type="button" class="view-tab" role="tab" aria-selected="false" tabindex="-1" id="viewSchool">School</button>
+              <button type="button" class="view-tab" role="tab" aria-selected="false" tabindex="-1" id="viewHealth">Health</button>
+            </div>
+          </nav>
+          <!-- Main Navigation Tabs -->
+          <nav aria-label="Main navigation" role="navigation">
+            <ul class="main-tabs" style="display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0;">
+              <li><a href="/aspen/home.do" class="tab active" aria-current="page" tabindex="0">Pages</a></li>
+              <li><a href="/aspen/studentContextList.do?navkey=student.std.list" class="tab" tabindex="0">Student</a></li>
+              <li><a href="/aspen/dailyHealthLog.do?navkey=healthLog.hlg.list" class="tab" tabindex="0">Visit</a></li>
+              <li><a href="/aspen/contextList.do?navkey=healthCnd.condition.history" class="tab" tabindex="0">Condition</a></li>
+              <li><a href="/aspen/screeningList.do?navkey=healthScr.screening.history" class="tab" tabindex="0">Screening</a></li>
+              <li><a href="/aspen/contextList.do?navkey=healthMed.order.list" class="tab" tabindex="0">Medication</a></li>
+              <li><a href="/aspen/contextList.do?navkey=healthAlr.alert.history" class="tab" tabindex="0">Alert</a></li>
+            </ul>
+          </nav>
+          <!-- School Selector -->
+          <div class="school-selector" style="margin-left: 1.5rem;">
+            <label for="schoolSelect" class="visually-hidden">Select School</label>
+            <select id="schoolSelect" name="schoolSelect" aria-label="Select School" style="padding: 0.4em 1.2em 0.4em 0.7em; border-radius: 6px; border: 1px solid #b3c7e6; font-size: 1em; background: #fff; color: #003366; min-width: 120px;">
+              <option>School A</option>
+              <option>School B</option>
+              <option>School C</option>
+              <option>School D</option>
+              <option>School E</option>
+            </select>
+          </div>
+        </div>
         <div class="user-menu" style="display: flex; align-items: center; gap: 1rem;">
           <span id="userName" style="font-size: 1rem;">Jane Admin</span>
           <button type="button" id="logoutBtn" class="logout-btn" style="background: none; border: none; color: #fff; cursor: pointer; font-size: 1rem;">Log Out</button>
@@ -238,6 +260,19 @@
       gap: 0.5em;
       min-height: 2.2em;
       font-size: 1.04em;
+      list-style-type: disc;
+      list-style-position: inside;
+    }
+    .sidebar-link-animated::before {
+      content: '\2022';
+      color: #003366;
+      margin-right: 0.6em;
+      font-size: 1.1em;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    html[data-theme="dark"] .sidebar-link-animated::before {
+      color: #ffe066 !important;
     }
     .sidebar-link-animated:hover, .sidebar-link-animated:focus {
       background: #eaf1fb;
@@ -346,6 +381,70 @@
       margin-bottom: 0.2em;
       padding-bottom: 0.2em;
     }
+    html[data-theme="dark"] .sidebar nav ul > li:not(:last-child) {
+      border-bottom: 1px solid #3a4a5a !important;
+    }
+    /* School selector dark mode */
+    html[data-theme="dark"] .school-selector select {
+      background: #232b3a !important;
+      color: #ffe066 !important;
+      border: 1px solid #3a4a5a !important;
+    }
+    .school-selector select:focus {
+      outline: 2px solid #003366;
+      outline-offset: 2px;
+    }
+    /* View selector styles */
+    .view-selector {
+      display: flex;
+      gap: 0.2em;
+      background: #f4f6fa;
+      border-radius: 7px;
+      box-shadow: 0 1px 6px #00336608;
+      padding: 0.15em 0.5em;
+      align-items: center;
+    }
+    .view-tab {
+      background: none;
+      border: none;
+      color: #003366;
+      font-weight: 500;
+      font-size: 1em;
+      padding: 0.45em 1.1em;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.18s, color 0.18s;
+      outline: none;
+    }
+    .view-tab.active, .view-tab[aria-selected="true"] {
+      background: #eaf1fb;
+      color: #003366;
+      box-shadow: 0 1px 6px #00336611;
+    }
+    .view-tab:hover, .view-tab:focus {
+      background: #eaf1fb;
+      color: #003366;
+      outline: 2px solid #ffe066;
+      outline-offset: 2px;
+    }
+    html[data-theme="dark"] .view-selector {
+      background: #232b3a !important;
+      box-shadow: 0 1px 6px #0008 !important;
+    }
+    html[data-theme="dark"] .view-tab {
+      color: #ffe066 !important;
+    }
+    html[data-theme="dark"] .view-tab.active, html[data-theme="dark"] .view-tab[aria-selected="true"] {
+      background: #273146 !important;
+      color: #ffe066 !important;
+      box-shadow: 0 1px 6px #0004 !important;
+    }
+    /* Hide default select arrow for custom styling if desired */
+    .school-selector select::-ms-expand { display: none; }
+    .school-selector select::-webkit-input-placeholder { color: #003366; }
+    html[data-theme="dark"] .school-selector select::-webkit-input-placeholder { color: #ffe066; }
+    .visually-hidden { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0,0,0,0) !important; border: 0 !important; }
+    .visually-hidden { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0,0,0,0) !important; border: 0 !important; }
     html[data-theme="dark"] .user-menu-dropdown {
       background: #232b3a !important;
       color: #ffe066 !important;
@@ -543,6 +642,35 @@
     if (announcements) {
       announcements.setAttribute('aria-live', 'polite');
     }
+  
+  // View selector interactivity
+  const viewTabs = Array.from(document.querySelectorAll('.view-tab'));
+  viewTabs.forEach((tab, idx) => {
+    tab.addEventListener('click', function() {
+      viewTabs.forEach(t => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+        t.tabIndex = -1;
+      });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+      tab.tabIndex = 0;
+      tab.focus();
+    });
+    tab.addEventListener('keydown', function(e) {
+      let nextIdx = idx;
+      if (e.key === 'ArrowRight') {
+        nextIdx = (idx + 1) % viewTabs.length;
+      } else if (e.key === 'ArrowLeft') {
+        nextIdx = (idx - 1 + viewTabs.length) % viewTabs.length;
+      } else {
+        return;
+      }
+      e.preventDefault();
+      viewTabs[nextIdx].click();
+    });
+  });
+
   </script>
 </body>
 </html>
