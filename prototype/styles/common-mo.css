@@ -39,13 +39,15 @@ a:hover {
 
 /* ========== Header & Branding ========== */
 .login-header {
-  background: transparent;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background: linear-gradient(to bottom, rgba(255,255,255,0.4), var(--header-bg));
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   padding: 1rem 1.5rem;
   text-align: left;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 .login-header--plain {
   background-color: transparent;
@@ -71,11 +73,11 @@ a:hover {
 }
 
 .logonDetailContainer {
-  background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(4px);
-  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(6px);
+  border-radius: 8px;
   padding: 2rem;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
   max-width: 400px;
   width: 100%;
   margin-bottom: 2rem;
@@ -144,7 +146,7 @@ a:hover {
 
 #logonButton {
   max-width: 16rem;
-  margin: 0.75rem auto 1.5rem;
+  margin: 1rem auto 1.5rem;
 }
 
 /* ========== Theme Toggle Button ========== */
@@ -225,7 +227,9 @@ a:hover {
 
 /* ========== Footer ========== */
 .login-footer {
-  background-color: var(--footer-bg);
+  background: linear-gradient(to top, rgba(255,255,255,0.4), var(--footer-bg));
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   padding: 0.75rem 1.5rem;
   font-size: 0.75rem;
   display: grid;
@@ -234,6 +238,8 @@ a:hover {
   color: white;
   gap: 0.5rem;
   text-align: left;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 0 -1px 4px rgba(0,0,0,0.1);
 }
 .login-footer--plain {
   background-color: transparent;
