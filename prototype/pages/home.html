@@ -25,30 +25,32 @@
     <input type="hidden" id="formFocusField" name="formFocusField" value="">
     <div class="layout-wrapper" style="background: linear-gradient(120deg, #eaf1fb 0%, #f7fafd 100%); min-height: 100vh;">
       <header class="top-nav" style="display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 1.5rem; background: var(--color-primary, #003366); color: #fff; box-shadow: 0 2px 8px #00336622;" role="banner">
-        <div style="font-weight: bold; font-size: 1.3rem; letter-spacing: 1px; display: flex; align-items: center; gap: 0.75rem;">
-          <img src="../../images/aspen-header-logo.png" alt="Aspen Logo" style="height: 2.2rem; vertical-align: middle;">
-          Chicago Public Schools
-        </div>
-        <div style="display: flex; align-items: center; gap: 1.5rem; flex: 1; justify-content: center;">
-          <!-- View Selector and School Selector as Integrated Dropdowns -->
-          <div class="topbar-dropdowns" style="display: flex; align-items: center; gap: 1.2rem;">
-            <div class="view-selector-dropdown">
-              <label for="viewSelect" class="visually-hidden">Select View</label>
-              <select id="viewSelect" name="viewSelect" aria-label="Select View" class="topbar-select">
-                <option value="district" selected>District</option>
-                <option value="school">School</option>
-                <option value="health">Health</option>
-              </select>
+        <div style="display: flex; align-items: center; gap: 1.5rem; flex: 1;">
+          <div style="display: flex; align-items: center; gap: 1.2rem;">
+            <div style="font-weight: bold; font-size: 1.3rem; letter-spacing: 1px; display: flex; align-items: center; gap: 0.75rem;">
+              <img src="../../images/aspen-header-logo.png" alt="Aspen Logo" style="height: 2.2rem; vertical-align: middle;">
+              Chicago Public Schools
             </div>
-            <div class="school-selector">
-              <label for="schoolSelect" class="visually-hidden">Select School</label>
-              <select id="schoolSelect" name="schoolSelect" aria-label="Select School" class="topbar-select">
-                <option>School A</option>
-                <option>School B</option>
-                <option>School C</option>
-                <option>School D</option>
-                <option>School E</option>
-              </select>
+            <!-- Dropdowns next to logo -->
+            <div class="topbar-dropdowns" style="display: flex; align-items: center; gap: 1.2rem; margin-left: 1.5rem;">
+              <div class="view-selector-dropdown">
+                <label for="viewSelect" class="visually-hidden">Select View</label>
+                <select id="viewSelect" name="viewSelect" aria-label="Select View" class="topbar-select">
+                  <option value="district" selected>District</option>
+                  <option value="school">School</option>
+                  <option value="health">Health</option>
+                </select>
+              </div>
+              <div class="school-selector">
+                <label for="schoolSelect" class="visually-hidden">Select School</label>
+                <select id="schoolSelect" name="schoolSelect" aria-label="Select School" class="topbar-select">
+                  <option>School A</option>
+                  <option>School B</option>
+                  <option>School C</option>
+                  <option>School D</option>
+                  <option>School E</option>
+                </select>
+              </div>
             </div>
           </div>
         </div>
@@ -261,16 +263,24 @@
       margin: 0;
       height: 2.3em;
       position: relative;
+      background-clip: padding-box;
     }
     .topbar-select:focus {
       border-color: var(--color-highlight, #F9D342);
       box-shadow: 0 0 0 2px var(--color-highlight, #F9D342)33;
+      background: var(--color-accent, #eaf1fb);
     }
     html[data-theme="dark"] .topbar-select {
       background: #232b3a !important;
       color: var(--color-highlight, #ffe066) !important;
       border: 1.5px solid var(--color-accent, #73C6B6) !important;
       box-shadow: 0 1px 4px #0008 !important;
+      filter: brightness(0.92);
+    }
+    html[data-theme="dark"] .topbar-select:focus {
+      background: #1a2332 !important;
+      border-color: var(--color-highlight, #ffe066) !important;
+      box-shadow: 0 0 0 2px var(--color-highlight, #ffe066)33 !important;
     }
     .topbar-select option {
       background: var(--color-bg, #fff);
