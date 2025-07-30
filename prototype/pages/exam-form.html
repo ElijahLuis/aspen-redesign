@@ -13,7 +13,15 @@
   <div style="display: flex; justify-content: center; margin-bottom: 1rem;">
     <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle color scheme" aria-pressed="false">Toggle Theme</button>
   </div>
-  <form class="exam-form">
+  <form name="healthExamForm" method="post" action="/aspen/healthExamForm.do" class="exam-form">
+    <input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="af769c85d55ffa9d66033b7705551f45">
+    <input type="hidden" id="userEvent" name="userEvent" value="0">
+    <input type="hidden" id="userParam" name="userParam" value="">
+    <input type="hidden" id="operationId" name="operationId" value="">
+    <input type="hidden" id="deploymentId" name="deploymentId" value="aspen">
+    <input type="hidden" id="scrollX" name="scrollX" value="0">
+    <input type="hidden" id="scrollY" name="scrollY" value="0">
+    <input type="hidden" id="formFocusField" name="formFocusField" value="">
     <div class="exam-form__row">
       <label for="examDate">Exam Date</label>
       <input type="date" id="examDate" required>
