@@ -23,13 +23,27 @@
     <input type="hidden" id="scrollY" name="scrollY" value="0">
     <input type="hidden" id="formFocusField" name="formFocusField" value="">
     <div class="layout-wrapper">
-    <nav class="top-nav">
-      <div>Chicago Public Schools</div>
-      <div>User: Jane Admin</div>
-    </nav>
-    <div style="display: flex; justify-content: center;">
-      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle color scheme" aria-pressed="false">Toggle Theme</button>
-    </div>
+      <header class="top-nav" style="display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 1.5rem; background: var(--color-primary, #003366); color: #fff;">
+        <div style="font-weight: bold; font-size: 1.2rem; letter-spacing: 1px;">Chicago Public Schools</div>
+        <nav aria-label="Main navigation" style="flex: 1; display: flex; justify-content: center;">
+          <ul class="main-tabs" style="display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0;">
+            <li><a href="/aspen/home.do" class="tab active" aria-current="page">Pages</a></li>
+            <li><a href="/aspen/studentContextList.do?navkey=student.std.list" class="tab">Student</a></li>
+            <li><a href="/aspen/dailyHealthLog.do?navkey=healthLog.hlg.list" class="tab">Visit</a></li>
+            <li><a href="/aspen/contextList.do?navkey=healthCnd.condition.history" class="tab">Condition</a></li>
+            <li><a href="/aspen/screeningList.do?navkey=healthScr.screening.history" class="tab">Screening</a></li>
+            <li><a href="/aspen/contextList.do?navkey=healthMed.order.list" class="tab">Medication</a></li>
+            <li><a href="/aspen/contextList.do?navkey=healthAlr.alert.history" class="tab">Alert</a></li>
+          </ul>
+        </nav>
+        <div class="user-menu" style="display: flex; align-items: center; gap: 1rem;">
+          <span id="userName" style="font-size: 1rem;">Jane Admin</span>
+          <button type="button" id="logoutBtn" class="logout-btn" style="background: none; border: none; color: #fff; cursor: pointer; font-size: 1rem;">Log Out</button>
+        </div>
+      </header>
+      <div style="display: flex; justify-content: center; background: #f7f7f7; padding: 0.5rem 0;">
+        <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle color scheme" aria-pressed="false">Toggle Theme</button>
+      </div>
 
     <div class="layout-grid">
       <aside class="layout-grid__sidebar sidebar">
