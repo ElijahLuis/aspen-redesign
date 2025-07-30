@@ -44,3 +44,16 @@
   --status-warn: #e09533;
   --status-na: #8a8a8a;
 }
+
+[data-theme="light"] {
+  --bg-default: #FDF6EC;
+  --bg-form: #ffffff;
+  --text-color: #333333;
+  --color-primary: var(--color-school);
+  --color-primary-dark: #357ABD;
+  --footer-bg: rgba(74, 144, 226, 0.9);
+  --header-bg: rgba(74, 144, 226, 0.91);
+  --status-ok: var(--accent-mint);
+  --status-warn: #c26100;
+  --status-na: #6b6b6b;
+}
