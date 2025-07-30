@@ -77,16 +77,6 @@
     "topLevelSelectors": []
   },
   {
-    "path": "research/captures/html_captures/home.do.html",
-    "size": 15385,
-    "lines": 501,
-    "title": "Aspen: Pages",
-    "topLevelSelectors": [
-      "form",
-      "div"
-    ]
-  },
-  {
     "path": "research/captures/html_captures/home.html",
     "size": 21091,
     "lines": 301,
