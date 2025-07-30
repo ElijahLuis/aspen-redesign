@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Immunizations</title>
+  <link rel="stylesheet" href="../styles/common-mo.css">
+  <link rel="stylesheet" href="../styles/layout.css">
+  <link rel="stylesheet" href="../styles/utils.css">
+  <link rel="stylesheet" href="../styles/components.css">
+  <link rel="stylesheet" href="../styles/table.css">
+  <link rel="stylesheet" href="../styles/themes.css">
+</head>
+<body>
+  <div class="layout-wrapper">
+    <nav class="top-nav">
+      <div>Chicago Public Schools</div>
+      <div>User: Jane Admin</div>
+    </nav>
+
+    <div class="layout-container">
+      <aside class="sidebar">
+        <nav class="sidebar-nav">
+          <ul>
+            <li><a href="#">Details</a></li>
+            <li><a href="#">Immunizations</a></li>
+            <li><a href="#">Membership</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main-panel">
+        <nav class="student-tabs" role="tablist">
+          <a href="#" role="tab" class="student-tabs__item">General</a>
+          <a href="#" role="tab" aria-selected="true" class="student-tabs__item">Immunizations</a>
+          <a href="#" role="tab" class="student-tabs__item">Membership</a>
+        </nav>
+
+        <div class="table-wrapper">
+          <table class="imms-table">
+            <thead>
+              <tr>
+                <th>Vaccine</th>
+                <th>Date</th>
+                <th class="imms-table__status">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>MMR</td>
+                <td>09/01/2024</td>
+                <td class="imms-table__status"><span class="status-pill status-pill--ok">Complete</span></td>
+              </tr>
+              <tr>
+                <td>DTaP</td>
+                <td>09/01/2023</td>
+                <td class="imms-table__status"><span class="status-pill status-pill--warn">Due</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script type="module" src="../scripts/components.js"></script>
+</body>
+</html>

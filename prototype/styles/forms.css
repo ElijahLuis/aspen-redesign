@@ -100,3 +100,27 @@ textarea {
 .exam-form__row textarea {
   flex: 1 1 200px;
 }
+
+/* ========== Detail Record Form ========== */
+.detail-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.detail-form__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.detail-form__row label {
+  flex: 0 0 12rem;
+}
+
+.detail-form__row input,
+.detail-form__row select,
+.detail-form__row textarea {
+  flex: 1 1 12rem;
+}
