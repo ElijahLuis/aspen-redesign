@@ -110,7 +110,7 @@ a:hover {
   display: inline-block;
   margin: 1rem auto;
   padding: 0.5rem 1rem;
-  background-color: #4a90e2;
+  background-color: var(--color-primary);
   border: none;
   border-radius: 6px;
   color: white;
@@ -118,7 +118,7 @@ a:hover {
   transition: background-color 0.3s;
 }
 .theme-toggle:hover {
-  background-color: #357ABD;
+  background-color: var(--color-primary-dark);
 }
 
 /* ========== Links Section ========== */
@@ -131,7 +131,7 @@ a:hover {
   font-size: 0.875rem;
 }
 .login-links a {
-  color: #4a90e2;
+  color: var(--color-primary);
   text-decoration: none;
 }
 .login-links a:hover {
@@ -143,18 +143,18 @@ a:hover {
 }
 
 .input-error {
-  border-color: #c0392b;
+  border-color: var(--color-health);
 }
 
 .error-message {
-  color: #c0392b;
+  color: var(--color-health);
   font-size: 0.85rem;
   margin-top: -0.5rem;
   margin-bottom: 1rem;
 }
 
 .noscript-warning {
-  background-color: #c0392b;
+  background-color: var(--color-health);
   color: #fff;
   padding: 1rem;
   text-align: center;
@@ -211,7 +211,7 @@ a:hover {
   flex: 1;
 }
 .footer {
-  background-color: #0f2b5b;
+  background-color: var(--footer-bg);
   color: white;
   padding: 0.5rem;
   text-align: center;

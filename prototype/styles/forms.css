@@ -21,7 +21,7 @@ textarea {
 }
 
 .field--error {
-  border-color: #c0392b;
+  border-color: var(--color-health);
 }
 
 .field--readonly {
