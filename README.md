@@ -63,3 +63,15 @@ Legacy UI fragments are tested with the new stylesheets. Conflicts and overrides
 ## Dummy Data Policy
 
 All sample HTML uses either anonymized data or the developer’s own record. No third-party PHI is present.
+
+## Build Instructions
+
+Run the following commands to install dependencies and generate the manifest:
+
+```bash
+npm install
+npm run build:manifest
+```
+
+The resulting file will be created at `reference/manifest.json`.
+
