@@ -58,20 +58,25 @@
       </select>
 
       <div class="login-links">
-        <a href="javascript:EmbeddedPopup.popupManager.open('loginHelp.do?', 420, 320, 100)">Login Assistance</a>
-        <a href="javascript:EmbeddedPopup.popupManager.open('passwordRecovery.do?isSecondary=false&amp;deploymentId=aspen', 400, 400, 100)">Parent Portal Password Reset</a>
-        <a href="javascript:EmbeddedPopup.popupManager.open('passwordRecovery.do?isSecondary=false&amp;deploymentId=aspen', 400, 400, 100)">Forgot Password?</a>
-        <a href="/create-account.html" class="disabled-link" aria-disabled="true">Create Account</a>
+        <div class="login-links__row">
+          <a href="javascript:EmbeddedPopup.popupManager.open('loginHelp.do?', 420, 320, 100)">Login Assistance</a>
+          <a href="javascript:EmbeddedPopup.popupManager.open('passwordRecovery.do?isSecondary=false&amp;deploymentId=aspen', 400, 400, 100)">Parent Portal Password Reset</a>
+        </div>
+        <div class="login-links__row">
+          <a href="javascript:EmbeddedPopup.popupManager.open('passwordRecovery.do?isSecondary=false&amp;deploymentId=aspen', 400, 400, 100)">Forgot Password?</a>
+          <a href="/create-account.html" class="disabled-link" aria-disabled="true">Create Account</a>
+        </div>
       </div>
 
-      <button type="submit" class="button" id="logonButton">
-        <span class="button-text">Log On</span>
+      <button type="submit" class="button login-button" id="logonButton" aria-label="Sign In">
+        <span class="button-text">Sign In</span>
       </button>
 
       <!-- Optional footer -->
-      <div class="login-legal">
-        <iframe src="https://login-policy.myfollett.com/policy/us" height="75" width="100%" frameborder="0"></iframe>
-      </div>
+      <details class="disclaimer">
+        <summary>Privacy &amp; Security Notice</summary>
+        <p>This is a non-public portal and is intended for authorized users only. Protecting the privacy and security of your personal information is a priority.</p>
+      </details>
     </form>
   </main>
 
