@@ -24,3 +24,6 @@ Theme variables resolved correctly except for `.c1Background` elements, which ov
 
 ## August 2025 update
 Added explicit dark-mode variables in `legacy-map.css` so that `.c1Background`, `.c1Color`, and `.c1Border` adapt to the active theme. Verified pages in both light and dark themes display consistent colors.
+
+### September 2025
+The `.c1Background` overrides no longer conflict with custom themes. Recent dark-mode fixes align the legacy values with CSS variables, closing this issue.

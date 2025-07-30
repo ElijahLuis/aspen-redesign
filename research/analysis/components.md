@@ -11,8 +11,6 @@
 - Modal dialogs
 - Login form (`login-form`)
 - Health exam form (`exam-form`)
-
-## Planned
 - Student tab navigation (`student-tabs`)
 - Detail record form (`detail-form`)
 - Immunization table (`imms-table`)
