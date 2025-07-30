@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="../styles/themes.css">
 </head>
 <body>
+  <a href="#mainContent" class="skip-link" style="position: absolute; left: -999px; top: auto; width: 1px; height: 1px; overflow: hidden; background: #003366; color: #fff; z-index: 1000; padding: 0.5em 1em; border-radius: 6px; font-weight: bold;">Skip to main content</a>
   <form name="authenticatedActionForm" method="post" action="/aspen/home.do">
     <input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="af769c85d55ffa9d66033b7705551f45">
     <input type="hidden" id="userEvent" name="userEvent" value="0">
@@ -23,20 +24,20 @@
     <input type="hidden" id="scrollY" name="scrollY" value="0">
     <input type="hidden" id="formFocusField" name="formFocusField" value="">
     <div class="layout-wrapper" style="background: linear-gradient(120deg, #eaf1fb 0%, #f7fafd 100%); min-height: 100vh;">
-      <header class="top-nav" style="display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 1.5rem; background: var(--color-primary, #003366); color: #fff; box-shadow: 0 2px 8px #00336622;">
+      <header class="top-nav" style="display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 1.5rem; background: var(--color-primary, #003366); color: #fff; box-shadow: 0 2px 8px #00336622;" role="banner">
         <div style="font-weight: bold; font-size: 1.3rem; letter-spacing: 1px; display: flex; align-items: center; gap: 0.75rem;">
           <img src="../../images/aspen-header-logo.png" alt="Aspen Logo" style="height: 2.2rem; vertical-align: middle;">
           Chicago Public Schools
         </div>
-        <nav aria-label="Main navigation" style="flex: 1; display: flex; justify-content: center;">
+        <nav aria-label="Main navigation" style="flex: 1; display: flex; justify-content: center;" role="navigation">
           <ul class="main-tabs" style="display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0;">
-            <li><a href="/aspen/home.do" class="tab active" aria-current="page">Pages</a></li>
-            <li><a href="/aspen/studentContextList.do?navkey=student.std.list" class="tab">Student</a></li>
-            <li><a href="/aspen/dailyHealthLog.do?navkey=healthLog.hlg.list" class="tab">Visit</a></li>
-            <li><a href="/aspen/contextList.do?navkey=healthCnd.condition.history" class="tab">Condition</a></li>
-            <li><a href="/aspen/screeningList.do?navkey=healthScr.screening.history" class="tab">Screening</a></li>
-            <li><a href="/aspen/contextList.do?navkey=healthMed.order.list" class="tab">Medication</a></li>
-            <li><a href="/aspen/contextList.do?navkey=healthAlr.alert.history" class="tab">Alert</a></li>
+            <li><a href="/aspen/home.do" class="tab active" aria-current="page" tabindex="0">Pages</a></li>
+            <li><a href="/aspen/studentContextList.do?navkey=student.std.list" class="tab" tabindex="0">Student</a></li>
+            <li><a href="/aspen/dailyHealthLog.do?navkey=healthLog.hlg.list" class="tab" tabindex="0">Visit</a></li>
+            <li><a href="/aspen/contextList.do?navkey=healthCnd.condition.history" class="tab" tabindex="0">Condition</a></li>
+            <li><a href="/aspen/screeningList.do?navkey=healthScr.screening.history" class="tab" tabindex="0">Screening</a></li>
+            <li><a href="/aspen/contextList.do?navkey=healthMed.order.list" class="tab" tabindex="0">Medication</a></li>
+            <li><a href="/aspen/contextList.do?navkey=healthAlr.alert.history" class="tab" tabindex="0">Alert</a></li>
           </ul>
         </nav>
         <div class="user-menu" style="display: flex; align-items: center; gap: 1rem;">
@@ -44,27 +45,37 @@
           <button type="button" id="logoutBtn" class="logout-btn" style="background: none; border: none; color: #fff; cursor: pointer; font-size: 1rem;">Log Out</button>
         </div>
       </header>
-      <section class="hero-banner" style="background: url('../../images/aspen-portal-bg.png') center/cover no-repeat; min-height: 120px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px #00336611;">
-        <div style="background: rgba(255,255,255,0.85); border-radius: 12px; padding: 1.5rem 2.5rem; margin: 2rem 0; text-align: center; max-width: 700px;">
-          <h1 style="font-size: 2rem; color: #003366; margin-bottom: 0.5rem;">Welcome to Aspen</h1>
-          <p style="font-size: 1.1rem; color: #234; margin-bottom: 0.5rem;">Empowering educators, students, and families to connect, collaborate, and succeed together.</p>
-          <p style="font-size: 1rem; color: #3a4a5a; margin: 0;">This is your community hub for learning, support, and growth across Chicago Public Schools.</p>
+      <section class="hero-banner" style="position: relative; background: url('../../images/aspen-portal-bg.png') center/cover no-repeat, linear-gradient(120deg, #eaf1fb 0%, #f7fafd 100%); min-height: 140px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px #00336611; overflow: hidden;">
+        <div class="hero-animated-bg" style="position: absolute; inset: 0; pointer-events: none; z-index: 0;">
+          <svg width="100%" height="100%" viewBox="0 0 1440 180" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block;">
+            <path d="M0,120 Q360,180 720,120 T1440,120 V180 H0Z" fill="#b3c7e6" fill-opacity="0.13">
+              <animate attributeName="d" dur="8s" repeatCount="indefinite"
+                values="M0,120 Q360,180 720,120 T1440,120 V180 H0Z;M0,110 Q360,160 720,130 T1440,110 V180 H0Z;M0,120 Q360,180 720,120 T1440,120 V180 H0Z" />
+            </path>
+          </svg>
+        </div>
+        <div style="background: rgba(255,255,255,0.88); border-radius: 14px; padding: 2rem 2.7rem; margin: 2.2rem 0; text-align: center; max-width: 700px; position: relative; z-index: 1; box-shadow: 0 2px 12px #00336613;">
+          <h1 style="font-size: 2.1rem; color: #003366; margin-bottom: 0.5rem; letter-spacing: 0.5px;">Welcome to Aspen</h1>
+          <p style="font-size: 1.13rem; color: #234; margin-bottom: 0.5rem;">Empowering educators, students, and families to connect, collaborate, and succeed together.</p>
+          <p style="font-size: 1.01rem; color: #3a4a5a; margin: 0;">This is your community hub for learning, support, and growth across Chicago Public Schools.</p>
         </div>
       </section>
       <div style="display: flex; justify-content: center; background: #f7f7f7; padding: 0.5rem 0;">
-        <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle color scheme" aria-pressed="false">Toggle Theme</button>
+        <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle color scheme" aria-pressed="false" style="display: flex; align-items: center; gap: 0.5em; font-size: 1.05rem; background: #eaf1fb; color: #003366; border: 1px solid #b3c7e6; border-radius: 6px; padding: 0.45em 1.2em; box-shadow: 0 1px 4px #00336611; cursor: pointer; transition: background 0.2s, color 0.2s;">
+          <span id="themeIcon" aria-hidden="true" style="font-size: 1.2em;">🌞</span> <span>Toggle Theme</span>
+        </button>
       </div>
 
     <div class="layout-grid">
-      <aside class="layout-grid__sidebar sidebar" style="background: #f4f6fa; min-width: 220px; max-width: 260px; padding: 2.5rem 1.2rem 2.5rem 1.7rem; border-right: 1px solid #e0e4ea; box-shadow: 2px 0 8px #00336608;">
-        <nav aria-label="Sidebar navigation">
+      <aside class="layout-grid__sidebar sidebar" style="background: #f4f6fa; min-width: 220px; max-width: 260px; padding: 2.5rem 1.2rem 2.5rem 1.7rem; border-right: 1px solid #e0e4ea; box-shadow: 2px 0 8px #00336608;" aria-label="Sidebar" role="complementary">
+        <nav aria-label="Sidebar navigation" role="navigation">
           <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.7rem;">
-            <li><a href="#" class="sidebar-link" style="font-weight: 600; color: #003366;">Dashboard</a></li>
-            <li><a href="#" class="sidebar-link">My Students</a></li>
-            <li><a href="#" class="sidebar-link">Attendance</a></li>
-            <li><a href="#" class="sidebar-link">Gradebook</a></li>
-            <li><a href="#" class="sidebar-link">Reports</a></li>
-            <li><a href="#" class="sidebar-link">Resources</a></li>
+            <li><a href="#" class="sidebar-link sidebar-link-animated" style="font-weight: 600; color: #003366;" tabindex="0">Dashboard</a></li>
+            <li><a href="#" class="sidebar-link sidebar-link-animated" tabindex="0">My Students</a></li>
+            <li><a href="#" class="sidebar-link sidebar-link-animated" tabindex="0">Attendance</a></li>
+            <li><a href="#" class="sidebar-link sidebar-link-animated" tabindex="0">Gradebook</a></li>
+            <li><a href="#" class="sidebar-link sidebar-link-animated" tabindex="0">Reports</a></li>
+            <li><a href="#" class="sidebar-link sidebar-link-animated" tabindex="0">Resources</a></li>
             <li style="margin-top: 2.5rem;">
               <div style="background: #eaf1fb; border-radius: 8px; padding: 1rem 0.8rem; text-align: center; color: #234; font-size: 0.98rem; box-shadow: 0 1px 4px #00336611;">
                 <strong>Community Tip:</strong><br>
@@ -75,26 +86,27 @@
         </nav>
       </aside>
 
-      <main class="layout-grid__main main-panel" style="flex: 1; padding: 2.5rem 2.5rem 2.5rem 2rem; background: #fff; min-height: 80vh; border-radius: 18px 0 0 0; box-shadow: 0 2px 16px #00336611;">
+      <main id="mainContent" class="layout-grid__main main-panel" style="flex: 1; padding: 2.5rem 2.5rem 2.5rem 2rem; background: #fff; min-height: 80vh; border-radius: 18px 0 0 0; box-shadow: 0 2px 16px #00336611;" tabindex="-1" aria-label="Main content">
         <div class="main-widgets" style="display: grid; grid-template-columns: 1fr 340px; gap: 2.5rem; align-items: flex-start;">
           <div class="widgets-left" style="display: flex; flex-direction: column; gap: 2.2rem;">
             <section class="widget" style="background: #f9fafb; border-radius: 12px; box-shadow: 0 1px 8px #00336611; padding: 1.7rem 1.7rem 1.2rem 1.7rem;">
               <div class="widget__header"><h2 class="widget__title" style="font-size: 1.15rem; color: #003366;">Quick Links</h2></div>
               <div class="widget__body">
                 <ul style="padding-left: 1.2rem; display: flex; flex-wrap: wrap; gap: 1.2rem 2.5rem;">
-                  <li><a href="#" style="font-weight: 500; color: #003366;">View Students</a></li>
-                  <li><a href="#" style="font-weight: 500; color: #003366;">Attendance</a></li>
-                  <li><a href="#" style="font-weight: 500; color: #003366;">Gradebook</a></li>
+                  <li><a href="#" style="font-weight: 500; color: #003366;" tabindex="0">View Students</a></li>
+                  <li><a href="#" style="font-weight: 500; color: #003366;" tabindex="0">Attendance</a></li>
+                  <li><a href="#" style="font-weight: 500; color: #003366;" tabindex="0">Gradebook</a></li>
                 </ul>
               </div>
             </section>
             <section class="widget" style="background: #f9fafb; border-radius: 12px; box-shadow: 0 1px 8px #00336611; padding: 1.7rem 1.7rem 1.2rem 1.7rem;">
               <div class="widget__header"><h2 class="widget__title" style="font-size: 1.15rem; color: #003366;">Student Search</h2></div>
               <div class="widget__body">
-                <div class="find-bar" style="display: flex; gap: 1rem; align-items: center;">
-                  <input type="text" placeholder="Search students" aria-label="Search students" style="flex: 1; padding: 0.5rem 1rem; border-radius: 6px; border: 1px solid #d1d5db;">
-                  <button type="button" style="padding: 0.5rem 1.2rem; border-radius: 6px; border: none; background: var(--color-primary, #003366); color: #fff; cursor: pointer;">Filter</button>
-                </div>
+                <form class="find-bar" style="display: flex; gap: 1rem; align-items: center;" role="search" aria-label="Student search" onsubmit="return false;">
+                  <input type="text" placeholder="Search students" aria-label="Search students" style="flex: 1; padding: 0.5rem 1rem; border-radius: 6px; border: 1px solid #d1d5db;" id="studentSearchInput">
+                  <button type="submit" id="studentSearchBtn" style="padding: 0.5rem 1.2rem; border-radius: 6px; border: none; background: var(--color-primary, #003366); color: #fff; cursor: pointer;" aria-label="Filter students">Filter</button>
+                </form>
+                <div id="studentSearchResult" aria-live="polite" style="margin-top: 0.5em; font-size: 0.98em; color: #234;"></div>
               </div>
             </section>
             <section class="widget" style="background: #f9fafb; border-radius: 12px; box-shadow: 0 1px 8px #00336611; padding: 1.7rem 1.7rem 1.2rem 1.7rem;">
@@ -115,6 +127,10 @@
               <div class="widget__header"><h2 class="widget__title" style="font-size: 1.08rem; color: #003366;">Community Board</h2></div>
               <div class="widget__body"><p style="color: #234;">Share a resource, celebrate a success, or ask for help! <a href="#" style="color: #003366; text-decoration: underline;">Post to the board</a></p></div>
             </section>
+            <section class="widget" style="background: #fffbe7; border-radius: 12px; box-shadow: 0 1px 8px #00336611; padding: 1.5rem 1.5rem 1.1rem 1.5rem; border: 1.5px solid #ffe066;">
+              <div class="widget__header"><h2 class="widget__title" style="font-size: 1.08rem; color: #b38f00; display: flex; align-items: center; gap: 0.5em;"><span style="font-size: 1.2em;">⭐</span> Featured Resource</h2></div>
+              <div class="widget__body"><p style="color: #7a6700;">Check out the new <a href="#" style="color: #b38f00; text-decoration: underline; font-weight: 500;">CPS Family Engagement Toolkit</a> for ideas to strengthen your classroom community.</p></div>
+            </section>
           </div>
         </div>
       </main>
@@ -122,5 +138,138 @@
     </div>
   </form>
   <script type="module" src="../scripts/components.js"></script>
+  <style>
+    .skip-link:focus {
+      left: 1rem;
+      top: 1rem;
+      width: auto;
+      height: auto;
+      overflow: visible;
+      outline: 3px solid #ffe066;
+      outline-offset: 2px;
+    }
+    .sidebar-link-animated {
+      transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+      border-radius: 6px;
+      padding: 0.18em 0.5em;
+      text-decoration: none;
+    }
+    .sidebar-link-animated:hover, .sidebar-link-animated:focus {
+      background: #eaf1fb;
+      color: #003366;
+      box-shadow: 0 2px 8px #00336611;
+      outline: none;
+      text-decoration: underline;
+    }
+    .sidebar-link-animated:focus {
+      outline: 2px solid #003366;
+      outline-offset: 2px;
+    }
+    .widget__body a:hover, .widget__body a:focus {
+      color: #00509e !important;
+      text-decoration: underline;
+    }
+    .widget__title {
+      letter-spacing: 0.2px;
+    }
+    .theme-toggle:active {
+      background: #dbeafe !important;
+      color: #003366 !important;
+    }
+    .tab:focus {
+      outline: 2px solid #ffe066;
+      outline-offset: 2px;
+    }
+    #studentSearchInput:focus {
+      outline: 2px solid #003366;
+      outline-offset: 2px;
+    }
+    #studentSearchBtn:focus {
+      outline: 2px solid #003366;
+      outline-offset: 2px;
+    }
+    .logout-btn:focus {
+      outline: 2px solid #ffe066;
+      outline-offset: 2px;
+    }
+  </style>
+  <script>
+    // Theme toggle with icon feedback and keyboard support
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const html = document.documentElement;
+    if (themeToggle && themeIcon) {
+      function toggleTheme() {
+        const isLight = html.getAttribute('data-theme') !== 'dark';
+        html.setAttribute('data-theme', isLight ? 'dark' : 'light');
+        themeToggle.setAttribute('aria-pressed', String(isLight));
+        themeIcon.textContent = isLight ? '🌙' : '🌞';
+        themeToggle.style.background = isLight ? '#003366' : '#eaf1fb';
+        themeToggle.style.color = isLight ? '#fff' : '#003366';
+      }
+      themeToggle.addEventListener('click', toggleTheme);
+      themeToggle.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggleTheme();
+        }
+      });
+    }
+
+    // Skip to content link focus management
+    const skipLink = document.querySelector('.skip-link');
+    if (skipLink) {
+      skipLink.addEventListener('click', function(e) {
+        const main = document.getElementById('mainContent');
+        if (main) {
+          main.setAttribute('tabindex', '-1');
+          main.focus();
+        }
+      });
+    }
+
+    // Sidebar keyboard navigation (arrow keys)
+    const sidebarLinks = Array.from(document.querySelectorAll('.sidebar-link-animated'));
+    sidebarLinks.forEach((link, idx) => {
+      link.addEventListener('keydown', e => {
+        if (e.key === 'ArrowDown') {
+          e.preventDefault();
+          const next = sidebarLinks[(idx + 1) % sidebarLinks.length];
+          next.focus();
+        } else if (e.key === 'ArrowUp') {
+          e.preventDefault();
+          const prev = sidebarLinks[(idx - 1 + sidebarLinks.length) % sidebarLinks.length];
+          prev.focus();
+        }
+      });
+    });
+
+    // Student search interactivity (demo only)
+    const studentSearchForm = document.querySelector('.find-bar');
+    const studentSearchInput = document.getElementById('studentSearchInput');
+    const studentSearchResult = document.getElementById('studentSearchResult');
+    if (studentSearchForm && studentSearchInput && studentSearchResult) {
+      studentSearchForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const val = studentSearchInput.value.trim();
+        if (val.length > 0) {
+          studentSearchResult.textContent = `Searching for "${val}"... (demo)`;
+        } else {
+          studentSearchResult.textContent = '';
+        }
+      });
+      studentSearchInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+          studentSearchForm.dispatchEvent(new Event('submit'));
+        }
+      });
+    }
+
+    // Announcements live region demo
+    const announcements = document.querySelector('.widgets-right .widget__body p');
+    if (announcements) {
+      announcements.setAttribute('aria-live', 'polite');
+    }
+  </script>
 </body>
 </html>
