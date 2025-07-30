@@ -15,6 +15,20 @@
   --legacy-pd: #1966b2;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --legacy-c1: #c76075;
+    --legacy-c2: #d38895;
+    --legacy-c3: #993333;
+  }
+}
+
+[data-theme="dark"] {
+  --legacy-c1: #c76075;
+  --legacy-c2: #d38895;
+  --legacy-c3: #993333;
+}
+
 .c1Background { background-color: var(--legacy-c1) !important; }
 .c1Color { color: var(--legacy-c1); }
 .c1Border { border-color: var(--legacy-c1); }

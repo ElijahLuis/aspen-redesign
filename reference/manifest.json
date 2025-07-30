@@ -1,5 +1,12 @@
 [
   {
+    "path": "research/captures/css_captures/colorPatternPicker.css",
+    "size": 1459,
+    "lines": 94,
+    "title": "colorPatternPicker.css",
+    "topLevelSelectors": []
+  },
+  {
     "path": "research/captures/css_captures/common-header.css",
     "size": 36132,
     "lines": 1068,
@@ -14,10 +21,24 @@
     "topLevelSelectors": []
   },
   {
+    "path": "research/captures/css_captures/fontawesome.min.css",
+    "size": 36238,
+    "lines": 2765,
+    "title": "fontawesome.min.css",
+    "topLevelSelectors": []
+  },
+  {
     "path": "research/captures/css_captures/health.css",
     "size": 1336,
     "lines": 94,
     "title": "health.css",
+    "topLevelSelectors": []
+  },
+  {
+    "path": "research/captures/css_captures/jquery-minitoggle.css",
+    "size": 2675,
+    "lines": 137,
+    "title": "jquery-minitoggle.css",
     "topLevelSelectors": []
   },
   {
@@ -28,11 +49,42 @@
     "topLevelSelectors": []
   },
   {
+    "path": "research/captures/css_captures/logon.css",
+    "size": 3761,
+    "lines": 219,
+    "title": "logon.css",
+    "topLevelSelectors": []
+  },
+  {
     "path": "research/captures/css_captures/myResources.css",
     "size": 1053,
     "lines": 61,
     "title": "myResources.css",
     "topLevelSelectors": []
+  },
+  {
+    "path": "research/captures/css_captures/niftyCorners.css",
+    "size": 1073,
+    "lines": 35,
+    "title": "niftyCorners.css",
+    "topLevelSelectors": []
+  },
+  {
+    "path": "research/captures/css_captures/school.css",
+    "size": 1335,
+    "lines": 94,
+    "title": "school.css",
+    "topLevelSelectors": []
+  },
+  {
+    "path": "research/captures/html_captures/home.do.html",
+    "size": 15385,
+    "lines": 501,
+    "title": "Aspen: Pages",
+    "topLevelSelectors": [
+      "form",
+      "div"
+    ]
   },
   {
     "path": "research/captures/html_captures/home.html",

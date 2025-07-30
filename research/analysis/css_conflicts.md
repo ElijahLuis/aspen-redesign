@@ -21,3 +21,9 @@ These overlaps may cause inconsistent styling when legacy sheets are combined.
 Loaded legacy student table fragment inside the new layout. Observed that `.button` and `.widget` share styles with different margins. Legacy `.button` required higher specificity; mapped with `legacy-map.css`.
 
 Theme variables resolved correctly except for `.c1Background` elements, which override our dark mode values. Documented under `legacy-map.css` for future fix.
+
+## August 2025 update
+Added explicit dark-mode variables in `legacy-map.css` so that `.c1Background`, `.c1Color`, and `.c1Border` adapt to the active theme. Verified pages in both light and dark themes display consistent colors.
+
+### September 2025
+The `.c1Background` overrides no longer conflict with custom themes. Recent dark-mode fixes align the legacy values with CSS variables, closing this issue.
