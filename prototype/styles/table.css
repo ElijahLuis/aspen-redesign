@@ -77,3 +77,46 @@
 [data-theme="dark"] .table__cell--sticky {
   background-color: var(--bg-form);
 }
+
+/* ========== Immunization Table ========== */
+.imms-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.imms-table th,
+.imms-table td {
+  padding: 0.25rem 0.5rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  font-size: 0.875rem;
+}
+
+.imms-table__status {
+  text-align: center;
+}
+
+[data-theme="dark"] .imms-table th,
+[data-theme="dark"] .imms-table td {
+  border-color: rgba(255,255,255,0.1);
+}
+
+/* ========== Membership Table ========== */
+.membership-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.membership-table th,
+.membership-table td {
+  padding: 0.25rem 0.5rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  font-size: 0.875rem;
+}
+
+.membership-table tbody tr:nth-child(even) {
+  background-color: rgba(0,0,0,0.03);
+}
+
+[data-theme="dark"] .membership-table tbody tr:nth-child(even) {
+  background-color: rgba(255,255,255,0.05);
+}

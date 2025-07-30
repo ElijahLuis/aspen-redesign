@@ -31,26 +31,28 @@
         </nav>
       </aside>
 
-      <main class="main-panel">
-        <div role="tablist" class="mb-2">
-          <button role="tab" aria-selected="true">General</button>
-          <button role="tab">Medical</button>
-        </div>
+        <main class="main-panel">
+        <nav class="student-tabs" role="tablist">
+          <a href="#" role="tab" aria-selected="true" class="student-tabs__item">General</a>
+          <a href="#" role="tab" class="student-tabs__item">Medical</a>
+        </nav>
 
-        <form>
+        <form class="detail-form">
           <section class="form-section">
             <h2 class="form-section__title">Student Info</h2>
-            <div>
+            <div class="detail-form__row">
               <label for="studentName">Student Name</label>
               <input id="studentName" type="text" required class="field--error">
               <span class="error-message text-sm">Required</span>
-
+            </div>
+            <div class="detail-form__row">
               <label for="grade">Grade</label>
               <select id="grade">
                 <option>9</option>
                 <option>10</option>
               </select>
-
+            </div>
+            <div class="detail-form__row">
               <label for="studentId">ID</label>
               <input id="studentId" type="text" value="A123" readonly class="field--readonly">
             </div>
@@ -58,7 +60,7 @@
 
           <section class="form-section">
             <h2 class="form-section__title">Health</h2>
-            <div>
+            <div class="detail-form__row">
               <label for="notes">Notes</label>
               <textarea id="notes" rows="4"></textarea>
             </div>
