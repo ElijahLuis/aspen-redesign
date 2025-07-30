@@ -8,7 +8,7 @@ This project is a front-end prototype for the Aspen student information system, 
 aspen-redesign/
 ├── images/
 │   ├── favicon.ico
-│   └── new-aspen-logo.png
+│   └── aspen-header-logo.png
 ├── prototype/
 │   ├── pages/
 │   ├── scripts/
