@@ -4,7 +4,7 @@
   - div#overlay
   - div#spellingMenu
   - form[name="personAddressDetailForm"]
-    - input[type=hidden] (token, userEvent, userParam, etc.)
+    - input[type=hidden] (userEvent, userParam, operationId, etc.)
     - table#layoutHeader.layoutHeader
       - div#topTitleBar
         - div#contextMenu
@@ -17,13 +17,13 @@
         - div#actualTopMenuBar
         - div#topMenuBarRight
     - div#contentArea.contentPad
-      - table.breadcrumbs
-      - table.nav buttons
+      - table.breadcrumbs (#bodytop)
+      - table.nav buttons (firstButton, previousButton, searchStringButton, etc.)
       - div#searchStringDiv.searchStringDiv
-      - table.layoutVerticalTabsContainer
+      - table (layoutVerticalTabsContainer)
         - div#layoutVerticalTabs
           - tr.verticalTabSelected
-          - tr.verticalTab (Visits, Immunizations, Conditions, etc.)
+          - tr.verticalTab pointer (Visits, Immunizations, Conditions, etc.)
       - td.contentContainer
         - table.optionsBar
           - div#maximizeMenuButton
@@ -34,7 +34,12 @@
         - div#collapsibleDiv1
         - div#collapsibleDiv2.detailContainer
         - div#collapsibleDiv3.detailContainer
-  - div#messageWindow
+    - div#messageWindow
 
 ## 🧩 Component Candidates
-- detail-form
+- TabbedPanel
+- DetailFormGroup
+- StudentContextBar
+- RelatedListTable
+- OptionsMenuBar
+- SearchOverlay
