@@ -32,10 +32,8 @@ aspen-redesign/
 
 ## Assets
 
-Project images and logos live in the `images/` folder at the repository root. A
-light and dark version of the Aspen logo are provided. Use `images/new-aspen-
-logo.png` in light mode and `images/new-aspen-logo-dark.png` when the dark them
-e is active.
+Project images and logos live in the `images/` folder at the repository root.
+The file `images/aspen-header-logo.png` serves as the Aspen logo in both light and dark themes.
 
 ## Layout & Components
 
