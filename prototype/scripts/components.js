@@ -46,9 +46,29 @@ export function initModals() {
   });
 }
 
+export function initThemeToggle() {
+  const toggleBtn = document.getElementById('themeToggle');
+  if (!toggleBtn) return;
+
+  const setState = theme => {
+    document.documentElement.dataset.theme = theme;
+    toggleBtn.setAttribute('aria-pressed', theme === 'dark');
+  };
+
+  toggleBtn.addEventListener('click', () => {
+    const current = document.documentElement.dataset.theme || 'light';
+    const newTheme = current === 'dark' ? 'light' : 'dark';
+    setState(newTheme);
+  });
+
+  // initialize button state
+  setState(document.documentElement.dataset.theme || 'light');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initComponents();
   initTabs();
   initStickyActions();
   initModals();
+  initThemeToggle();
 });
