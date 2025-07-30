@@ -213,15 +213,15 @@ a:hover {
 
 /* ========== Disclaimer Section ========== */
 .disclaimer summary {
-  font-size: 0.75rem;
-  color: #666;
+  font-size: 0.85rem;
+  color: var(--text-color);
   cursor: pointer;
   padding-top: 1rem;
 }
 
 .disclaimer p {
-  font-size: 0.7rem;
-  color: #999;
+  font-size: 0.8rem;
+  color: var(--text-color);
   margin-top: 0.5rem;
 }
 
@@ -263,6 +263,17 @@ a:hover {
 .footer-right {
   text-align: right;
   justify-self: end;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-right a {
+  margin-left: 0;
+}
+
+.footer-divider {
+  padding: 0 0.25rem;
 }
 
 /* ========== Responsive Layout ========== */
@@ -287,6 +298,10 @@ a:hover {
   .footer-right {
     text-align: center;
     justify-self: center;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
 }
 
