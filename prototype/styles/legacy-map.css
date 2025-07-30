@@ -13,6 +13,10 @@
   --legacy-planner: #669900;
   --legacy-quest: #193366;
   --legacy-pd: #1966b2;
+  --legacy-repo-height: 390px;
+  --legacy-h1-size: 100%;
+  --legacy-disabled-opacity: 0.33;
+  --legacy-accordion-bg: #ffffcc;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -46,3 +50,11 @@
 .menuItemHighlight { background-color: var(--legacy-menu-highlight); }
 
 .listCellLastSelectionHighlight { background-color: var(--legacy-highlight) !important; }
+
+/* mappings for classes with conflicts across legacy stylesheets */
+.repositoryListClass { height: var(--legacy-repo-height); }
+.reset_style_h1,
+.reset_style_h1_top { font-size: var(--legacy-h1-size); margin: 0; }
+.ui-accordion-header { background-color: var(--legacy-accordion-bg); }
+.disabled { opacity: var(--legacy-disabled-opacity); }
+.reposMenuLeft { float: left; }
