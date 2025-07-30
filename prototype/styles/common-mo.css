@@ -16,6 +16,17 @@ body, html {
 body.loginBackground {
   background: var(--bg-default) url('../../images/aspen-portal-bg.png') no-repeat center center fixed;
   background-size: cover;
+  position: relative;
+}
+body.loginBackground::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 64, 128, 0.15), rgba(255, 255, 255, 0.05));
+  pointer-events: none;
 }
 
 a {
@@ -53,7 +64,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem 2rem 3rem;
   flex: 1;
 }
 
@@ -62,7 +73,7 @@ a:hover {
   backdrop-filter: blur(4px);
   border-radius: 6px;
   padding: 2rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
   max-width: 400px;
   width: 100%;
 }
@@ -76,8 +87,8 @@ a:hover {
 /* ========== Inputs & Buttons ========== */
 .logonInput {
   width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
+  padding: 0.875rem;
+  margin-bottom: 1.25rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1rem;
@@ -85,8 +96,8 @@ a:hover {
 
 .logonSelect {
   width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
+  padding: 0.875rem;
+  margin-bottom: 1.25rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1rem;
@@ -103,6 +114,13 @@ a:hover {
   cursor: pointer;
   width: 100%;
   text-align: center;
+}
+.login-button {
+  background-color: #005cbf;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.login-button:hover {
+  background-color: #004a99;
 }
 .button:hover {
   background-color: var(--color-primary-dark);
@@ -143,12 +161,18 @@ a:hover {
 /* ========== Links Section ========== */
 .login-links {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.75rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
   margin-top: 1rem;
   margin-bottom: 1.25rem;
   font-size: 0.875rem;
+}
+.login-links__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
 }
 .login-links a {
   color: var(--color-primary);
@@ -181,16 +205,17 @@ a:hover {
 }
 
 /* ========== Disclaimer Section ========== */
-.login-legal {
-  overflow: hidden;
+.disclaimer summary {
+  font-size: 0.75rem;
+  color: #666;
+  cursor: pointer;
+  padding-top: 1rem;
 }
 
-.login-legal iframe {
-  width: 100%;
-  height: 60px;
-  border: none;
-  transform: scale(0.8);
-  transform-origin: top left;
+.disclaimer p {
+  font-size: 0.7rem;
+  color: #999;
+  margin-top: 0.5rem;
 }
 
 /* ========== Footer ========== */
@@ -235,9 +260,8 @@ a:hover {
   }
 
   .login-links {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.75rem;
+    align-items: center;
+    gap: 0.25rem;
   }
 
   .button {
