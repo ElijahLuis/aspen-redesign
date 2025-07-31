@@ -1,3 +1,72 @@
+/* Theme toggle bar layout */
+.theme-toggle-bar {
+  display: flex;
+  justify-content: center;
+  background: #f7f7f7;
+  padding: 0.5rem 0;
+}
+html[data-theme="dark"] .theme-toggle-bar {
+  background: #232b3a;
+}
+/* Main panel padding and border radius */
+.main-panel--padded {
+  flex: 1;
+  padding: 2.5rem 2.5rem 2.5rem 2rem;
+  min-height: 80vh;
+  border-radius: 18px 0 0 0;
+  box-shadow: 0 2px 16px #00336611;
+}
+
+/* Main widgets grid layout */
+.widgets-grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+/* Widgets left column layout */
+.widgets-left--column {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+/* Widgets right column layout */
+.widgets-right--column {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+/* Quick links list layout */
+.quick-links-list {
+  padding-left: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem 2.5rem;
+}
+/* Sidebar layout and padding */
+.sidebar--padded {
+  min-width: 220px;
+  max-width: 260px;
+  padding: 2.5rem 1.2rem 2.5rem 1.7rem;
+}
+
+/* Sidebar list layout */
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+/* Sidebar tip wrapper for spacing */
+.sidebar-tip-wrapper {
+  margin-top: 2.5rem;
+}
 /* Responsive Layout Framework
    Defines semantic layout classes for redesigned Aspen pages.
    Utilizes Flexbox for sidebar and main content with an optional top bar.

@@ -1,3 +1,162 @@
+/* Featured Resource widget icon */
+.widget-featured-icon {
+  font-size: 1.2em;
+  vertical-align: middle;
+  margin-right: 0.2em;
+}
+/* Skip to main content accessibility link */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  background: #003366;
+  color: #fff;
+  z-index: 1000;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: left 0.2s, width 0.2s, height 0.2s, padding 0.2s;
+}
+.skip-link:focus, .skip-link:active {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  outline: 2px solid #ffe066;
+  outline-offset: 2px;
+}
+/* Theme toggle button and icon */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 1.05rem;
+  background: #eaf1fb;
+  color: #003366;
+  border: 1px solid #b3c7e6;
+  border-radius: 6px;
+  padding: 0.45em 1.2em;
+  box-shadow: 0 1px 4px #00336611;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+html[data-theme="dark"] .theme-toggle {
+  background: #003366 !important;
+  color: #fff !important;
+  border: 1px solid #eaf1fb !important;
+}
+.theme-toggle-icon {
+  font-size: 1.2em;
+}
+/* Muted text for widgets (e.g., empty state) */
+.widget-muted-text {
+  color: #666;
+}
+html[data-theme="dark"] .widget-muted-text {
+  color: #b0b8c9 !important;
+}
+/* Quick link style */
+.quick-link {
+  font-weight: 500;
+  color: #003366;
+  transition: color 0.18s;
+}
+html[data-theme="dark"] .quick-link {
+  color: var(--color-highlight, #ffe066) !important;
+}
+
+/* Student search form layout */
+.student-search-form {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.student-search-input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+.student-search-btn {
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  border: none;
+  background: var(--color-primary, #003366);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.18s, color 0.18s;
+}
+.student-search-btn:hover, .student-search-btn:focus {
+  background: var(--color-highlight, #F9D342);
+  color: #003366;
+}
+.student-search-result {
+  margin-top: 0.5em;
+  font-size: 0.98em;
+  color: #234;
+}
+html[data-theme="dark"] .student-search-result {
+  color: #eaf1fb !important;
+}
+
+/* Community board text and link */
+.community-board-text {
+  color: #234;
+}
+.community-board-link {
+  color: #003366;
+  text-decoration: underline;
+}
+html[data-theme="dark"] .community-board-link {
+  color: var(--color-highlight, #ffe066) !important;
+}
+
+/* Featured resource text and link */
+.featured-resource-text {
+  color: #7a6700;
+}
+.featured-resource-link {
+  color: #b38f00;
+  text-decoration: underline;
+  font-weight: 500;
+}
+html[data-theme="dark"] .featured-resource-link {
+  color: #ffe066 !important;
+}
+/* Sidebar link bold variant */
+.sidebar-link--bold {
+  font-weight: 600;
+}
+
+/* Sidebar tip box styling */
+.sidebar-tip {
+  background: #eaf1fb;
+  border-radius: 8px;
+  padding: 1rem 0.8rem;
+  text-align: center;
+  color: #234;
+  font-size: 0.98rem;
+  box-shadow: 0 1px 4px #00336611;
+}
+html[data-theme="dark"] .sidebar-tip {
+  background: #273146 !important;
+  color: #eaf1fb !important;
+  box-shadow: 0 1px 4px #0008 !important;
+}
+
+/* Sidebar tip links */
+.sidebar-tip-link {
+  color: #003366;
+  text-decoration: underline;
+}
+html[data-theme="dark"] .sidebar-tip-link {
+  color: #ffe066 !important;
+}
 /* Core UI Components for Aspen redesign */
 
 /* ========== Widget Container ========== */

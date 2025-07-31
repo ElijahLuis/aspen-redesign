@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="../styles/themes.css">
 </head>
 <body>
-  <a href="#mainContent" class="skip-link" style="position: absolute; left: -999px; top: auto; width: 1px; height: 1px; overflow: hidden; background: #003366; color: #fff; z-index: 1000; padding: 0.5em 1em; border-radius: 6px; font-weight: bold;">Skip to main content</a>
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
   <form name="authenticatedActionForm" method="post" action="/aspen/home.do">
     <input type="hidden" name="org.apache.struts.taglib.html.TOKEN" value="af769c85d55ffa9d66033b7705551f45">
     <input type="hidden" id="userEvent" name="userEvent" value="0">
@@ -23,16 +23,15 @@
     <input type="hidden" id="scrollX" name="scrollX" value="0">
     <input type="hidden" id="scrollY" name="scrollY" value="0">
     <input type="hidden" id="formFocusField" name="formFocusField" value="">
-    <div class="layout-wrapper" style="background: linear-gradient(120deg, #eaf1fb 0%, #f7fafd 100%); min-height: 100vh;">
-      <header class="top-nav" style="display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 1.5rem; background: var(--color-primary, #003366); color: #fff; box-shadow: 0 2px 8px #00336622;" role="banner">
-        <div style="display: flex; align-items: center; gap: 1.5rem; flex: 1;">
-          <div style="display: flex; align-items: center; gap: 1.2rem;">
-            <div style="font-weight: bold; font-size: 1.7rem; letter-spacing: 1px; display: flex; align-items: center; gap: 1.1rem;">
-              <img src="../../images/aspen-header-logo.png" alt="Aspen Logo" style="height: 3.1rem; vertical-align: middle; display: block;">
-              <span style="font-size: 1.25rem; font-weight: 600; letter-spacing: 0.5px; color: var(--color-on-primary, #fff);">Chicago Public Schools</span>
-            </div>
-            <!-- Dropdowns next to logo -->
-            <div class="topbar-dropdowns" style="display: flex; align-items: center; gap: 1.2rem; margin-left: 1.5rem;">
+    <div class="layout-wrapper">
+      <header class="top-nav" role="banner">
+        <div class="top-nav__left">
+          <div class="top-nav__branding">
+            <img src="../../images/aspen-header-logo.png" alt="Aspen Logo" class="branding__logo">
+            <span class="branding__title">Chicago Public Schools</span>
+          </div>
+          <!-- Dropdowns next to logo -->
+          <div class="topbar-dropdowns">
               <div class="view-selector-dropdown">
                 <label for="viewSelect" class="visually-hidden">Select View</label>
                 <select id="viewSelect" name="viewSelect" aria-label="Select View" class="topbar-select">
@@ -54,96 +53,96 @@
             </div>
           </div>
         </div>
-        <div class="user-menu" style="display: flex; align-items: center; gap: 1rem;">
-          <span id="userName" class="user-name" style="font-size: 1rem;">Jane Admin</span>
-          <button type="button" id="logoutBtn" class="logout-btn" style="background: none; border: none; color: #fff; cursor: pointer; font-size: 1rem;">Log Out</button>
+        <div class="user-menu">
+          <span id="userName" class="user-name">Jane Admin</span>
+          <button type="button" id="logoutBtn" class="logout-btn">Log Out</button>
         </div>
       </header>
-      <section class="hero-banner" style="position: relative; background: url('../../images/aspen-portal-bg.png') center/cover no-repeat, linear-gradient(120deg, #eaf1fb 0%, #f7fafd 100%); min-height: 140px; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px #00336611; overflow: hidden;">
-        <div class="hero-animated-bg" style="position: absolute; inset: 0; pointer-events: none; z-index: 0;">
-          <svg width="100%" height="100%" viewBox="0 0 1440 180" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block;">
+      <section class="hero-banner">
+        <div class="hero-animated-bg">
+          <svg width="100%" height="100%" viewBox="0 0 1440 180" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-animated-svg">
             <path d="M0,120 Q360,180 720,120 T1440,120 V180 H0Z" fill="#b3c7e6" fill-opacity="0.13">
               <animate attributeName="d" dur="8s" repeatCount="indefinite"
                 values="M0,120 Q360,180 720,120 T1440,120 V180 H0Z;M0,110 Q360,160 720,130 T1440,110 V180 H0Z;M0,120 Q360,180 720,120 T1440,120 V180 H0Z" />
             </path>
           </svg>
         </div>
-        <div style="background: rgba(255,255,255,0.88); border-radius: 14px; padding: 2rem 2.7rem; margin: 2.2rem 0; text-align: center; max-width: 700px; position: relative; z-index: 1; box-shadow: 0 2px 12px #00336613;">
-          <h1 style="font-size: 2.1rem; color: #003366; margin-bottom: 0.5rem; letter-spacing: 0.5px;">Welcome to Aspen</h1>
-          <p style="font-size: 1.13rem; color: #234; margin-bottom: 0.5rem;">Empowering educators, students, and families to connect, collaborate, and succeed together.</p>
-          <p style="font-size: 1.01rem; color: #3a4a5a; margin: 0;">This is your community hub for learning, support, and growth across Chicago Public Schools.</p>
+        <div class="hero-content-box">
+          <h1 class="hero-title">Welcome to Aspen</h1>
+          <p class="hero-subtitle">Empowering educators, students, and families to connect, collaborate, and succeed together.</p>
+          <p class="hero-desc">This is your community hub for learning, support, and growth across Chicago Public Schools.</p>
         </div>
       </section>
-      <div style="display: flex; justify-content: center; background: #f7f7f7; padding: 0.5rem 0;">
-        <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle color scheme" aria-pressed="false" style="display: flex; align-items: center; gap: 0.5em; font-size: 1.05rem; background: #eaf1fb; color: #003366; border: 1px solid #b3c7e6; border-radius: 6px; padding: 0.45em 1.2em; box-shadow: 0 1px 4px #00336611; cursor: pointer; transition: background 0.2s, color 0.2s;">
-          <span id="themeIcon" aria-hidden="true" style="font-size: 1.2em;">🌞</span> <span>Toggle Theme</span>
+      <div class="theme-toggle-bar">
+        <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle color scheme" aria-pressed="false">
+          <span id="themeIcon" aria-hidden="true" class="theme-toggle-icon">🌞</span> <span>Toggle Theme</span>
         </button>
       </div>
 
     <div class="layout-grid">
-      <aside class="layout-grid__sidebar sidebar" style="background: #f4f6fa; min-width: 220px; max-width: 260px; padding: 2.5rem 1.2rem 2.5rem 1.7rem; border-right: 1px solid #e0e4ea; box-shadow: 2px 0 8px #00336608;" aria-label="Sidebar" role="complementary">
+      <aside class="layout-grid__sidebar sidebar sidebar--padded" aria-label="Sidebar" role="complementary">
         <nav aria-label="Sidebar navigation" role="navigation">
-          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.7rem;">
-            <li><a href="#" class="sidebar-link sidebar-link-animated" style="font-weight: 600; color: #003366;" tabindex="0">Dashboard</a></li>
+          <ul class="sidebar-list">
+            <li><a href="#" class="sidebar-link sidebar-link-animated sidebar-link--bold" tabindex="0">Dashboard</a></li>
             <li><a href="#" class="sidebar-link sidebar-link-animated" tabindex="0">My Students</a></li>
             <li><a href="#" class="sidebar-link sidebar-link-animated" tabindex="0">Attendance</a></li>
             <li><a href="#" class="sidebar-link sidebar-link-animated" tabindex="0">Gradebook</a></li>
             <li><a href="#" class="sidebar-link sidebar-link-animated" tabindex="0">Reports</a></li>
             <li><a href="#" class="sidebar-link sidebar-link-animated" tabindex="0">Resources</a></li>
-            <li style="margin-top: 2.5rem;">
-              <div style="background: #eaf1fb; border-radius: 8px; padding: 1rem 0.8rem; text-align: center; color: #234; font-size: 0.98rem; box-shadow: 0 1px 4px #00336611;">
+            <li class="sidebar-tip-wrapper">
+              <div class="sidebar-tip">
                 <strong>Community Tip:</strong><br>
-                <span>Connect with colleagues in the <a href="#" style="color: #003366; text-decoration: underline;">Staff Room</a> or check <a href="#" style="color: #003366; text-decoration: underline;">District News</a>.</span>
+                <span>Connect with colleagues in the <a href="#" class="sidebar-tip-link">Staff Room</a> or check <a href="#" class="sidebar-tip-link">District News</a>.</span>
               </div>
             </li>
           </ul>
         </nav>
       </aside>
 
-      <main id="mainContent" class="layout-grid__main main-panel" style="flex: 1; padding: 2.5rem 2.5rem 2.5rem 2rem; background: #fff; min-height: 80vh; border-radius: 18px 0 0 0; box-shadow: 0 2px 16px #00336611;" tabindex="-1" aria-label="Main content">
-        <div class="main-widgets" style="display: grid; grid-template-columns: 1fr 340px; gap: 2.5rem; align-items: flex-start;">
-          <div class="widgets-left" style="display: flex; flex-direction: column; gap: 2.2rem;">
+      <main id="mainContent" class="layout-grid__main main-panel main-panel--padded" tabindex="-1" aria-label="Main content">
+        <div class="main-widgets widgets-grid">
+          <div class="widgets-left widgets-left--column">
             <section class="widget">
               <div class="widget__header"><h2 class="widget__title">Quick Links</h2></div>
               <div class="widget__body">
-                <ul style="padding-left: 1.2rem; display: flex; flex-wrap: wrap; gap: 1.2rem 2.5rem;">
-                  <li><a href="#" style="font-weight: 500; color: #003366;" tabindex="0">View Students</a></li>
-                  <li><a href="#" style="font-weight: 500; color: #003366;" tabindex="0">Attendance</a></li>
-                  <li><a href="#" style="font-weight: 500; color: #003366;" tabindex="0">Gradebook</a></li>
+                <ul class="quick-links-list">
+                  <li><a href="#" class="quick-link" tabindex="0">View Students</a></li>
+                  <li><a href="#" class="quick-link" tabindex="0">Attendance</a></li>
+                  <li><a href="#" class="quick-link" tabindex="0">Gradebook</a></li>
                 </ul>
               </div>
             </section>
             <section class="widget">
               <div class="widget__header"><h2 class="widget__title">Student Search</h2></div>
               <div class="widget__body">
-                <form class="find-bar" style="display: flex; gap: 1rem; align-items: center;" role="search" aria-label="Student search" onsubmit="return false;">
-                  <input type="text" placeholder="Search students" aria-label="Search students" style="flex: 1; padding: 0.5rem 1rem; border-radius: 6px; border: 1px solid #d1d5db;" id="studentSearchInput">
-                  <button type="submit" id="studentSearchBtn" style="padding: 0.5rem 1.2rem; border-radius: 6px; border: none; background: var(--color-primary, #003366); color: #fff; cursor: pointer;" aria-label="Filter students">Filter</button>
+                <form class="find-bar student-search-form" role="search" aria-label="Student search" onsubmit="return false;">
+                  <input type="text" placeholder="Search students" aria-label="Search students" class="student-search-input" id="studentSearchInput">
+                  <button type="submit" id="studentSearchBtn" class="student-search-btn" aria-label="Filter students">Filter</button>
                 </form>
-                <div id="studentSearchResult" aria-live="polite" style="margin-top: 0.5em; font-size: 0.98em; color: #234;"></div>
+                <div id="studentSearchResult" class="student-search-result" aria-live="polite"></div>
               </div>
             </section>
             <section class="widget">
               <div class="widget__header"><h2 class="widget__title">Workflows</h2></div>
-              <div class="widget__body"><p style="color: #666;">No current workflows.</p></div>
+              <div class="widget__body"><p class="widget-muted-text">No current workflows.</p></div>
             </section>
             <section class="widget">
               <div class="widget__header"><h2 class="widget__title">Published Reports</h2></div>
-              <div class="widget__body"><p style="color: #666;">No published reports.</p></div>
+              <div class="widget__body"><p class="widget-muted-text">No published reports.</p></div>
             </section>
           </div>
-          <div class="widgets-right" style="display: flex; flex-direction: column; gap: 2.2rem;">
+          <div class="widgets-right widgets-right--column">
             <section class="widget">
               <div class="widget__header"><h2 class="widget__title">Announcements</h2></div>
-              <div class="widget__body"><p style="color: #666;">No announcements.</p></div>
+              <div class="widget__body"><p class="widget-muted-text">No announcements.</p></div>
             </section>
             <section class="widget widget-board">
               <div class="widget__header"><h2 class="widget__title">Community Board</h2></div>
-              <div class="widget__body"><p style="color: #234;">Share a resource, celebrate a success, or ask for help! <a href="#" style="color: #003366; text-decoration: underline;">Post to the board</a></p></div>
+              <div class="widget__body"><p class="community-board-text">Share a resource, celebrate a success, or ask for help! <a href="#" class="community-board-link">Post to the board</a></p></div>
             </section>
             <section class="widget widget-featured">
-              <div class="widget__header"><h2 class="widget__title"><span style="font-size: 1.2em;">⭐</span> Featured Resource</h2></div>
-              <div class="widget__body"><p style="color: #7a6700;">Check out the new <a href="#" style="color: #b38f00; text-decoration: underline; font-weight: 500;">CPS Family Engagement Toolkit</a> for ideas to strengthen your classroom community.</p></div>
+              <div class="widget__header"><h2 class="widget__title"><span class="widget-featured-icon">⭐</span> Featured Resource</h2></div>
+              <div class="widget__body"><p class="featured-resource-text">Check out the new <a href="#" class="featured-resource-link">CPS Family Engagement Toolkit</a> for ideas to strengthen your classroom community.</p></div>
             </section>
           </div>
         </div>
@@ -221,14 +220,94 @@
       color: var(--color-highlight) !important;
     }
     .sidebar-link-animated:hover, .sidebar-link-animated:focus {
-      background: var(--color-accent) !important;
-      color: var(--color-on-primary) !important;
+      background: var(--color-accent, #eaf1fb);
+      color: var(--color-on-primary, #003366);
+      box-shadow: 0 2px 8px #00336611;
+      outline: none;
+      text-decoration: none;
+      border-left: 4px solid var(--color-primary, #003366);
     }
-    .widget__body a {
+    html[data-theme="dark"] .sidebar-link-animated:hover, html[data-theme="dark"] .sidebar-link-animated:focus {
+      background: rgba(255,255,255,0.08) !important;
+      color: var(--color-highlight, #ffe066) !important;
+      border-left: 4px solid var(--color-highlight, #ffe066) !important;
+      text-decoration: none !important;
+    }
+    .topbar-select {
+      padding: 0.4em 1.7em 0.4em 0.7em;
+      border-radius: 7px;
+      border: 2px solid var(--color-accent, #73C6B6);
+      font-size: 1em;
+      background: #fff;
+      color: var(--color-primary, #003366);
+      min-width: 120px;
+      box-shadow: 0 1px 6px #00336611;
+      transition: border 0.18s, box-shadow 0.18s, background 0.18s, color 0.18s;
+      appearance: none;
+      outline: none;
+      font-weight: 500;
+      margin: 0;
+      height: 2.3em;
+      position: relative;
+      background-clip: padding-box;
+      backdrop-filter: blur(1.5px);
+    }
+    .topbar-select:focus {
+      border-color: var(--color-highlight, #F9D342);
+      box-shadow: 0 0 0 2px var(--color-highlight, #F9D342)33;
+      background: #f7fafd;
+      color: var(--color-primary, #003366);
+    }
+    html[data-theme="dark"] .topbar-select {
+      background: #232b3a !important;
+      color: var(--color-highlight, #ffe066) !important;
+      border: 2px solid var(--color-highlight, #ffe066) !important;
+      box-shadow: 0 1px 6px #0008 !important;
+      filter: brightness(1);
+    }
+    html[data-theme="dark"] .topbar-select:focus {
+      background: #273146 !important;
+      border-color: var(--color-highlight, #ffe066) !important;
+      box-shadow: 0 0 0 2px var(--color-highlight, #ffe066)33 !important;
+      color: var(--color-highlight, #ffe066) !important;
+    }
+    .topbar-select option {
+      background: #fff;
+      color: var(--color-primary, #003366);
+      font-weight: 500;
+    }
+    html[data-theme="dark"] .topbar-select option {
+      background: #232b3a !important;
+      color: var(--color-highlight, #ffe066) !important;
+      font-weight: 500;
+    }
+    .user-menu {
       color: var(--color-primary) !important;
+      background: linear-gradient(90deg, #eaf1fb 0%, #f7fafd 100%);
+      border-radius: 8px;
+      padding: 0.3em 1.1em 0.3em 0.7em;
+      box-shadow: 0 1px 6px #00336611;
+      margin-left: 1.5em;
+      min-width: 120px;
+      display: flex;
+      align-items: center;
+      gap: 1em;
     }
-    .widget__body a:hover, .widget__body a:focus {
-      color: var(--color-alt) !important;
+    .logout-btn {
+      color: var(--color-primary) !important;
+      background: #eaf1fb;
+      border-radius: 6px;
+      padding: 0.3em 1.1em;
+      font-weight: 500;
+      transition: background 0.18s, color 0.18s;
+      border: 1.5px solid var(--color-primary);
+      margin-left: 0.5em;
+    }
+    .logout-btn:hover, .logout-btn:focus {
+      background: var(--color-primary);
+      color: #fff !important;
+      outline: 2px solid var(--color-highlight);
+      outline-offset: 2px;
     }
     .theme-toggle {
       background: var(--color-accent) !important;
@@ -250,12 +329,12 @@
     .topbar-select {
       padding: 0.4em 1.7em 0.4em 0.7em;
       border-radius: 7px;
-      border: 1.5px solid var(--color-accent, #73C6B6);
+      border: 2px solid var(--color-accent, #73C6B6);
       font-size: 1em;
-      background: transparent;
-      color: var(--color-on-primary, #fff);
+      background: #fff;
+      color: var(--color-primary, #003366);
       min-width: 120px;
-      box-shadow: none;
+      box-shadow: 0 1px 6px #00336611;
       transition: border 0.18s, box-shadow 0.18s, background 0.18s, color 0.18s;
       appearance: none;
       outline: none;
@@ -264,117 +343,73 @@
       height: 2.3em;
       position: relative;
       background-clip: padding-box;
-      border: 1.5px solid rgba(255,255,255,0.32);
       backdrop-filter: blur(1.5px);
-      box-shadow: 0 1px 6px #00336611;
     }
     .topbar-select:focus {
       border-color: var(--color-highlight, #F9D342);
       box-shadow: 0 0 0 2px var(--color-highlight, #F9D342)33;
-      background: rgba(255,255,255,0.08);
-      color: var(--color-on-primary, #fff);
+      background: #f7fafd;
+      color: var(--color-primary, #003366);
     }
     html[data-theme="dark"] .topbar-select {
-      background: transparent !important;
+      background: #232b3a !important;
       color: var(--color-highlight, #ffe066) !important;
-      border: 1.5px solid rgba(255,255,255,0.22) !important;
+      border: 2px solid var(--color-highlight, #ffe066) !important;
       box-shadow: 0 1px 6px #0008 !important;
-      filter: brightness(0.92);
+      filter: brightness(1);
     }
     html[data-theme="dark"] .topbar-select:focus {
-      background: rgba(34, 40, 60, 0.22) !important;
+      background: #273146 !important;
       border-color: var(--color-highlight, #ffe066) !important;
       box-shadow: 0 0 0 2px var(--color-highlight, #ffe066)33 !important;
       color: var(--color-highlight, #ffe066) !important;
     }
     .topbar-select option {
-      background: var(--color-bg, #fff);
+      background: #fff;
       color: var(--color-primary, #003366);
+      font-weight: 500;
     }
     html[data-theme="dark"] .topbar-select option {
       background: #232b3a !important;
       color: var(--color-highlight, #ffe066) !important;
+      font-weight: 500;
     }
     .user-menu {
       color: var(--color-primary) !important;
+      background: linear-gradient(90deg, #eaf1fb 0%, #f7fafd 100%);
+      border-radius: 8px;
+      padding: 0.3em 1.1em 0.3em 0.7em;
+      box-shadow: 0 1px 6px #00336611;
+      margin-left: 1.5em;
+      min-width: 120px;
+      display: flex;
+      align-items: center;
+      gap: 1em;
     }
     .logout-btn {
       color: var(--color-primary) !important;
-    }
-    .skip-link {
-      background: var(--color-primary) !important;
-      color: var(--color-on-primary) !important;
-    }
-    /* End dark mode styles */
-    .skip-link:focus {
-      left: 1rem;
-      top: 1rem;
-      width: auto;
-      height: auto;
-      overflow: visible;
-      outline: 3px solid #ffe066;
-      outline-offset: 2px;
-    }
-    .sidebar-link-animated {
-      transition: background 0.18s, color 0.18s, box-shadow 0.18s, border 0.18s;
-      border-radius: 7px;
-      padding: 0.22em 0.7em 0.22em 0.7em;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 0.5em;
-      min-height: 2.3em;
-      font-size: 1.08em;
+      background: #eaf1fb;
+      border-radius: 6px;
+      padding: 0.3em 1.1em;
       font-weight: 500;
-      list-style-type: disc;
-      list-style-position: inside;
-      border-left: 4px solid transparent;
-      background: linear-gradient(90deg, rgba(230,240,255,0.18) 0%, rgba(255,255,255,0.01) 100%);
-      color: var(--color-primary, #003366) !important;
+      transition: background 0.18s, color 0.18s;
+      border: 1.5px solid var(--color-primary);
+      margin-left: 0.5em;
     }
-    .sidebar-link-animated::before {
-      content: '\2022';
-      color: #003366;
-      margin-right: 0.7em;
-      font-size: 1.13em;
-      display: inline-block;
-      vertical-align: middle;
-      opacity: 0.7;
-    }
-    html[data-theme="dark"] .sidebar-link-animated {
-      background: linear-gradient(90deg, rgba(34,40,60,0.44) 0%, rgba(34,40,60,0.01) 100%) !important;
-      color: var(--color-highlight, #ffe066) !important;
-    }
-    html[data-theme="dark"] .sidebar-link-animated::before {
-      color: #ffe066 !important;
-      opacity: 0.8;
-    }
-    .sidebar-link-animated:hover, .sidebar-link-animated:focus {
-      background: var(--color-accent, #eaf1fb);
-      color: var(--color-on-primary, #003366);
-      box-shadow: 0 2px 8px #00336611;
-      outline: none;
-      text-decoration: underline;
-      border-left: 4px solid var(--color-primary, #003366);
-    }
-    html[data-theme="dark"] .sidebar-link-animated:hover, html[data-theme="dark"] .sidebar-link-animated:focus {
-      background: rgba(255,255,255,0.08) !important;
-      color: var(--color-highlight, #ffe066) !important;
-      border-left: 4px solid var(--color-highlight, #ffe066) !important;
-    }
-    .sidebar-link-animated:focus {
-      outline: 2px solid var(--color-primary, #003366);
+    .logout-btn:hover, .logout-btn:focus {
+      background: var(--color-primary);
+      color: #fff !important;
+      outline: 2px solid var(--color-highlight);
       outline-offset: 2px;
-    }
-    .widget__body a:hover, .widget__body a:focus {
-      color: #00509e !important;
-      text-decoration: underline;
     }
     .widget__title {
       letter-spacing: 0.2px;
       display: flex;
       align-items: center;
       gap: 0.5em;
+      font-weight: 600;
+      font-size: 1.13em;
+      text-shadow: 0 1px 2px #00336611;
     }
     .main-tabs {
       background: #f4f6fa;
