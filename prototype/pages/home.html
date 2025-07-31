@@ -155,13 +155,19 @@
     :root {
       --color-primary: #4A90E2; /* Denim Blue */
       --color-accent: #73C6B6; /* Soft Teal */
-      --color-bg: #FDF6EC; /* Warm Cream */
-      --color-highlight: #F9D342; /* Goldenrod Yellow */
-      --color-error: #F67280; /* Muted Coral Red */
-      --color-alt: #A28DFF; /* Slate Purple */
-      --color-success: #B2F2BB; /* Cool Mint */
-      --color-on-primary: #fff;
-      --color-on-bg: #234;
+      font-size: 1.45em;
+      font-weight: 700;
+      color: var(--color-primary);
+      letter-spacing: 0.01em;
+      margin-left: 0.7em;
+      vertical-align: middle;
+      text-shadow: 0 2px 8px #00336633, 0 1px 0 #fff8, 0 0 2px #fff8;
+      background: rgba(255,255,255,0.72);
+      border-radius: 7px;
+      padding: 0.15em 0.7em 0.15em 0.5em;
+      box-shadow: 0 2px 8px #00336611;
+      transition: background 0.18s, color 0.18s;
+      display: inline-block;
     }
     html[data-theme="dark"] {
       --color-primary: #4A90E2;
@@ -180,11 +186,25 @@
     }
     .main-panel {
       background: #fff !important;
+      /* Add a semi-transparent overlay for better text contrast */
       color: var(--color-on-bg) !important;
+    .top-nav::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(255,255,255,0.82) 0%, rgba(255,255,255,0.62) 100%);
+      z-index: 0;
+      border-radius: 0 0 18px 18px;
+      pointer-events: none;
+    }
+    .top-nav > * {
+      position: relative;
+      z-index: 1;
       box-shadow: 0 2px 16px #00336611 !important;
     }
     html[data-theme="dark"] .main-panel {
       background: #232b3a !important;
+      gap: 0.3em;
       color: var(--color-on-bg) !important;
       box-shadow: 0 2px 16px #0006 !important;
     }
@@ -197,22 +217,26 @@
       color: var(--color-on-bg) !important;
     }
     .widget__header h2,
+      font-size: 1.08em;
+      font-weight: 600;
     .widget__title {
       color: var(--color-primary) !important;
     }
-    .sidebar {
-      background: #f4f6fa !important;
-      border-right: 1px solid #e0e4ea !important;
-      color: var(--color-on-bg) !important;
-      box-shadow: 2px 0 8px #00336608 !important;
-    }
+      color: var(--color-primary) !important;
+      font-weight: 700;
+      font-size: 1.08em;
+      letter-spacing: 0.01em;
+      vertical-align: middle;
+      transition: color 0.18s;
+      text-shadow: 0 1px 4px #fff8, 0 2px 8px #00336622;
     html[data-theme="dark"] .sidebar {
       background: #20293a !important;
       border-right: 1px solid #2d3a4d !important;
       color: var(--color-on-bg) !important;
       box-shadow: 2px 0 8px #0002 !important;
     }
-    .sidebar-link-animated {
+      font-weight: 600;
+      font-size: 1em;
       color: var(--color-primary) !important;
     }
     html[data-theme="dark"] .sidebar-link-animated {
@@ -222,9 +246,12 @@
       background: var(--color-accent, #eaf1fb);
       color: var(--color-on-primary, #003366);
       box-shadow: 0 2px 8px #00336611;
+      box-shadow: 0 2px 8px #00336633;
       outline: none;
       text-decoration: none;
-      border-left: 4px solid var(--color-primary, #003366);
+      gap: 1.2rem;
+      display: flex;
+      align-items: center;
     }
     html[data-theme="dark"] .sidebar-link-animated:hover, html[data-theme="dark"] .sidebar-link-animated:focus {
       background: rgba(255,255,255,0.08) !important;
@@ -238,22 +265,26 @@
       border: 2px solid var(--color-accent, #73C6B6);
       font-size: 1em;
       background: #fff;
-      color: var(--color-primary, #003366);
+      font-weight: 600;
       min-width: 120px;
       box-shadow: 0 1px 6px #00336611;
       transition: border 0.18s, box-shadow 0.18s, background 0.18s, color 0.18s;
       appearance: none;
       outline: none;
+      text-shadow: 0 1px 2px #fff8;
       font-weight: 500;
       margin: 0;
       height: 2.3em;
       position: relative;
       background-clip: padding-box;
       backdrop-filter: blur(1.5px);
+      outline: 2px solid var(--color-highlight, #F9D342);
+      outline-offset: 2px;
     }
     .topbar-select:focus {
       border-color: var(--color-highlight, #F9D342);
       box-shadow: 0 0 0 2px var(--color-highlight, #F9D342)33;
+      gap: 1.2em;
       background: #f7fafd;
       color: var(--color-primary, #003366);
     }
