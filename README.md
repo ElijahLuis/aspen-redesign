@@ -89,3 +89,33 @@ npm run build:manifest
 
 The resulting file will be created at `reference/manifest.json`.
 
+# Aspen Redesign Project
+
+## Structure
+
+- All CSS is in `prototype/styles/` (layout, components, themes, utils, etc.)
+- All JavaScript is in `prototype/scripts/components.js`
+- All HTML pages are in `prototype/pages/`
+- Images are in `images/`
+- Research and reference in `research/`
+
+## Guidelines
+
+- **Centralize all styles and scripts** in external files. No inline or embedded `<style>` or `<script>` in HTML.
+- **Use shared classes and modules** for all widgets and features.
+- **Avoid code duplication** by reusing classes and JS modules.
+- **Document new features** in this README or in a `docs/` folder.
+- **Lint and format code** using Prettier and Stylelint.
+
+## Linting & Formatting
+
+- Run `npx prettier --write .` to format code.
+- Run `npx stylelint "**/*.css"` to lint CSS.
+
+## Adding Features
+
+- Add new widgets as components in the main HTML pages.
+- Add new styles to the appropriate CSS file.
+- Add new JS to `components.js` or as a module.
+- Document any new structure or conventions here or in `docs/`.
+
