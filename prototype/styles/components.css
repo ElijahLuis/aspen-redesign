@@ -1,3 +1,153 @@
+/* Sidebar visual polish */
+.sidebar {
+  border-radius: 14px 0 0 14px;
+  box-shadow: 2px 0 12px #0033660a;
+  border: 1px solid #eaf1fb;
+  background: linear-gradient(120deg, #f4f6fa 80%, #eaf1fb 100%);
+  transition: box-shadow 0.18s, border 0.18s, background 0.18s;
+}
+.sidebar-list {
+  padding-top: 0.5em;
+}
+.sidebar-link, .sidebar-link-animated {
+  border-radius: 6px;
+  padding: 0.5em 1.1em;
+  font-size: 1.07em;
+  font-weight: 500;
+  transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+  outline: none;
+}
+.sidebar-link--bold {
+  font-weight: 700;
+}
+.sidebar-link:hover, .sidebar-link:focus, .sidebar-link-animated:hover, .sidebar-link-animated:focus {
+  background: #eaf1fb;
+  color: var(--color-primary, #4A90E2);
+  box-shadow: 0 2px 8px #00336611;
+  text-decoration: none;
+}
+.sidebar-tip-wrapper {
+  margin-top: 1.2rem;
+}
+.sidebar-tip {
+  background: linear-gradient(90deg, #eaf1fb 60%, #f7fafd 100%);
+  border-radius: 8px;
+  padding: 0.7em 1em;
+  font-size: 0.98em;
+  color: #234;
+  box-shadow: 0 1px 4px #00336608;
+  margin-top: 0.5em;
+}
+.sidebar-tip strong {
+  color: var(--color-primary, #4A90E2);
+}
+.sidebar-tip-link {
+  color: var(--color-accent, #73C6B6);
+  text-decoration: underline dotted #b3c7e6 1.5px;
+  border-radius: 3px;
+  transition: background 0.15s, color 0.15s;
+}
+.sidebar-tip-link:hover, .sidebar-tip-link:focus {
+  background: #eaf1fb;
+  color: var(--color-primary, #4A90E2);
+}
+.student-search-input {
+  background: #fff;
+  border: 1.5px solid #e0e4ea;
+  font-size: 1em;
+  transition: border 0.15s, box-shadow 0.15s;
+}
+.student-search-input:focus {
+  border-color: var(--color-primary, #4A90E2);
+  box-shadow: 0 0 0 2px #4A90E233;
+}
+.main-panel {
+  border-radius: 18px;
+  background: linear-gradient(120deg, #fff 80%, #eaf1fb 100%) !important;
+  color: var(--color-on-bg) !important;
+  box-shadow: 0 4px 24px #00336611 !important;
+  border: 1.5px solid #eaf1fb;
+  margin-top: 0.5rem;
+}
+.hero-animated-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.widget-muted-text {
+  color: #888;
+  font-style: italic;
+}
+.featured-resource-link {
+  color: var(--color-accent, #73C6B6);
+}
+.featured-resource-link:hover, .featured-resource-link:focus {
+  color: var(--color-primary, #4A90E2);
+  background: #eaf1fb;
+}
+/* Widget visual polish */
+.widget {
+  background: linear-gradient(120deg, #f9fafb 80%, #eaf1fb 100%);
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #0033660a;
+  border: 1px solid #eaf1fb;
+  transition: box-shadow 0.18s, border 0.18s, background 0.18s;
+  display: flex;
+  flex-direction: column;
+}
+.widget:hover, .widget:focus-within {
+  box-shadow: 0 6px 32px #00336622;
+  border: 1.5px solid var(--color-primary, #4A90E2);
+  background: linear-gradient(120deg, #f7fafd 80%, #eaf1fb 100%);
+}
+.student-search-input:focus, .student-search-input:active {
+  border-color: var(--color-accent, #73C6B6);
+  box-shadow: 0 0 0 2px #73C6B633;
+  background: #f7fafd;
+}
+.student-search-btn:active, .logout-btn:active, .theme-toggle:active {
+  filter: brightness(0.97);
+  box-shadow: 0 1px 2px #00336622;
+}
+.sidebar-link:active, .sidebar-link-animated:active {
+  background: #eaf1fb;
+  color: var(--color-primary, #4A90E2);
+  box-shadow: 0 2px 8px #00336611;
+}
+.quick-link:active, .community-board-link:active, .featured-resource-link:active {
+  background: #eaf1fb;
+  color: var(--color-primary, #4A90E2);
+}
+.widget__header {
+  border-bottom: 1px solid #eaf1fb;
+  padding: 0.7em 1.1em 0.5em 1.1em;
+  border-radius: 14px 14px 0 0;
+  background: linear-gradient(90deg, #f7fafd 60%, #eaf1fb 100%);
+}
+.widget__body {
+  padding: 1.1em 1.1em 1em 1.1em;
+}
+.quick-link, .community-board-link, .featured-resource-link {
+  text-decoration: underline dotted #b3c7e6 1.5px;
+  border-radius: 4px;
+  transition: background 0.15s, color 0.15s, text-decoration 0.15s;
+}
+.quick-link:hover, .community-board-link:hover, .featured-resource-link:hover {
+  background: #eaf1fb;
+  color: var(--color-primary, #4A90E2);
+  text-decoration: underline solid var(--color-primary, #4A90E2) 2px;
+}
+.student-search-btn, .logout-btn, .theme-toggle {
+  box-shadow: 0 1px 4px #00336611;
+  border-radius: 6px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+}
+.student-search-btn:hover, .logout-btn:hover, .theme-toggle:hover {
+  box-shadow: 0 2px 8px #00336622;
+  filter: brightness(1.07);
+}
 /* Restrict header logo size for .branding__logo */
 .branding__logo {
   max-height: 48px;
@@ -168,13 +318,7 @@ html[data-theme="dark"] .sidebar-tip-link {
 /* Core UI Components for Aspen redesign */
 
 /* ========== Widget Container ========== */
-.widget {
-  background-color: var(--bg-form);
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-}
+
 
 .widget__header {
   padding: 0.5rem 1rem;
