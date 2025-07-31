@@ -27,9 +27,9 @@
       <header class="top-nav" style="display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 1.5rem; background: var(--color-primary, #003366); color: #fff; box-shadow: 0 2px 8px #00336622;" role="banner">
         <div style="display: flex; align-items: center; gap: 1.5rem; flex: 1;">
           <div style="display: flex; align-items: center; gap: 1.2rem;">
-            <div style="font-weight: bold; font-size: 1.3rem; letter-spacing: 1px; display: flex; align-items: center; gap: 0.75rem;">
-              <img src="../../images/aspen-header-logo.png" alt="Aspen Logo" style="height: 2.2rem; vertical-align: middle;">
-              Chicago Public Schools
+            <div style="font-weight: bold; font-size: 1.7rem; letter-spacing: 1px; display: flex; align-items: center; gap: 1.1rem;">
+              <img src="../../images/aspen-header-logo.png" alt="Aspen Logo" style="height: 3.1rem; vertical-align: middle; display: block;">
+              <span style="font-size: 1.25rem; font-weight: 600; letter-spacing: 0.5px; color: var(--color-on-primary, #fff);">Chicago Public Schools</span>
             </div>
             <!-- Dropdowns next to logo -->
             <div class="topbar-dropdowns" style="display: flex; align-items: center; gap: 1.2rem; margin-left: 1.5rem;">
@@ -252,10 +252,10 @@
       border-radius: 7px;
       border: 1.5px solid var(--color-accent, #73C6B6);
       font-size: 1em;
-      background: var(--color-bg, #fff);
-      color: var(--color-primary, #003366);
+      background: transparent;
+      color: var(--color-on-primary, #fff);
       min-width: 120px;
-      box-shadow: 0 1px 4px #00336611;
+      box-shadow: none;
       transition: border 0.18s, box-shadow 0.18s, background 0.18s, color 0.18s;
       appearance: none;
       outline: none;
@@ -264,23 +264,28 @@
       height: 2.3em;
       position: relative;
       background-clip: padding-box;
+      border: 1.5px solid rgba(255,255,255,0.32);
+      backdrop-filter: blur(1.5px);
+      box-shadow: 0 1px 6px #00336611;
     }
     .topbar-select:focus {
       border-color: var(--color-highlight, #F9D342);
       box-shadow: 0 0 0 2px var(--color-highlight, #F9D342)33;
-      background: var(--color-accent, #eaf1fb);
+      background: rgba(255,255,255,0.08);
+      color: var(--color-on-primary, #fff);
     }
     html[data-theme="dark"] .topbar-select {
-      background: #232b3a !important;
+      background: transparent !important;
       color: var(--color-highlight, #ffe066) !important;
-      border: 1.5px solid var(--color-accent, #73C6B6) !important;
-      box-shadow: 0 1px 4px #0008 !important;
+      border: 1.5px solid rgba(255,255,255,0.22) !important;
+      box-shadow: 0 1px 6px #0008 !important;
       filter: brightness(0.92);
     }
     html[data-theme="dark"] .topbar-select:focus {
-      background: #1a2332 !important;
+      background: rgba(34, 40, 60, 0.22) !important;
       border-color: var(--color-highlight, #ffe066) !important;
       box-shadow: 0 0 0 2px var(--color-highlight, #ffe066)33 !important;
+      color: var(--color-highlight, #ffe066) !important;
     }
     .topbar-select option {
       background: var(--color-bg, #fff);
@@ -311,38 +316,54 @@
       outline-offset: 2px;
     }
     .sidebar-link-animated {
-      transition: background 0.18s, color 0.18s, box-shadow 0.18s;
-      border-radius: 6px;
-      padding: 0.18em 0.5em;
+      transition: background 0.18s, color 0.18s, box-shadow 0.18s, border 0.18s;
+      border-radius: 7px;
+      padding: 0.22em 0.7em 0.22em 0.7em;
       text-decoration: none;
       display: flex;
       align-items: center;
       gap: 0.5em;
-      min-height: 2.2em;
-      font-size: 1.04em;
+      min-height: 2.3em;
+      font-size: 1.08em;
+      font-weight: 500;
       list-style-type: disc;
       list-style-position: inside;
+      border-left: 4px solid transparent;
+      background: linear-gradient(90deg, rgba(230,240,255,0.18) 0%, rgba(255,255,255,0.01) 100%);
+      color: var(--color-primary, #003366) !important;
     }
     .sidebar-link-animated::before {
       content: '\2022';
       color: #003366;
-      margin-right: 0.6em;
-      font-size: 1.1em;
+      margin-right: 0.7em;
+      font-size: 1.13em;
       display: inline-block;
       vertical-align: middle;
+      opacity: 0.7;
+    }
+    html[data-theme="dark"] .sidebar-link-animated {
+      background: linear-gradient(90deg, rgba(34,40,60,0.44) 0%, rgba(34,40,60,0.01) 100%) !important;
+      color: var(--color-highlight, #ffe066) !important;
     }
     html[data-theme="dark"] .sidebar-link-animated::before {
       color: #ffe066 !important;
+      opacity: 0.8;
     }
     .sidebar-link-animated:hover, .sidebar-link-animated:focus {
-      background: #eaf1fb;
-      color: #003366;
+      background: var(--color-accent, #eaf1fb);
+      color: var(--color-on-primary, #003366);
       box-shadow: 0 2px 8px #00336611;
       outline: none;
       text-decoration: underline;
+      border-left: 4px solid var(--color-primary, #003366);
+    }
+    html[data-theme="dark"] .sidebar-link-animated:hover, html[data-theme="dark"] .sidebar-link-animated:focus {
+      background: rgba(255,255,255,0.08) !important;
+      color: var(--color-highlight, #ffe066) !important;
+      border-left: 4px solid var(--color-highlight, #ffe066) !important;
     }
     .sidebar-link-animated:focus {
-      outline: 2px solid #003366;
+      outline: 2px solid var(--color-primary, #003366);
       outline-offset: 2px;
     }
     .widget__body a:hover, .widget__body a:focus {
