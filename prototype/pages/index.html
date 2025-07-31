@@ -8,6 +8,7 @@
 
   <!-- Legacy styling support -->
   <link rel="stylesheet" href="../styles/common-mo.css">
+  <link rel="stylesheet" href="../styles/layout.css">
 
   <!-- Theme variables and dark mode -->
   <link rel="stylesheet" href="../styles/themes.css">
@@ -23,14 +24,17 @@
         <div class="noscript-warning">JavaScript is required to use Aspen. Please enable JavaScript.</div>
       </noscript>
 
-      <header class="login-header">
-        <div class="logo-wrapper">
-          <img src="../../images/aspen-header-logo.png" alt="CPS Aspen Header Logo" class="aspen-logo">
-        </div>
-        <div style="display: flex; justify-content: center;">
-          <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle color scheme" aria-pressed="false">Toggle Theme</button>
+      <header class="top-nav" role="banner">
+        <div class="top-nav__left">
+          <div class="top-nav__branding">
+            <img src="../../images/aspen-header-logo.png" alt="Aspen Logo" class="branding__logo">
+            <span class="branding__title">Chicago Public Schools</span>
+          </div>
         </div>
       </header>
+      <div class="theme-toggle-bar">
+        <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle color scheme" aria-pressed="false">Toggle Theme</button>
+      </div>
 
       <main class="login-main">
     <form name="logonForm" method="post" action="/aspen/logon.do" class="logonDetailContainer">
