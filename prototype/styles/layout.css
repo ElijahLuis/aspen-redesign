@@ -9,10 +9,11 @@ html[data-theme="dark"] .theme-toggle-bar {
   background: #232b3a;
 }
 /* Main panel padding and border radius */
+
 .main-panel--padded {
   flex: 1;
-  padding: 2.5rem 2.5rem 2.5rem 2rem;
-  min-height: 80vh;
+  padding: 1.2rem 1.2rem 1.2rem 1rem;
+  min-height: 40vh;
   border-radius: 18px 0 0 0;
   box-shadow: 0 2px 16px #00336611;
 }
@@ -21,7 +22,7 @@ html[data-theme="dark"] .theme-toggle-bar {
 .widgets-grid {
   display: grid;
   grid-template-columns: 1fr 340px;
-  gap: 2.5rem;
+  gap: 1.2rem;
   align-items: flex-start;
 }
 
@@ -29,14 +30,14 @@ html[data-theme="dark"] .theme-toggle-bar {
 .widgets-left--column {
   display: flex;
   flex-direction: column;
-  gap: 2.2rem;
+  gap: 1.1rem;
 }
 
 /* Widgets right column layout */
 .widgets-right--column {
   display: flex;
   flex-direction: column;
-  gap: 2.2rem;
+  gap: 1.1rem;
 }
 
 /* Quick links list layout */
@@ -50,7 +51,7 @@ html[data-theme="dark"] .theme-toggle-bar {
 .sidebar--padded {
   min-width: 220px;
   max-width: 260px;
-  padding: 2.5rem 1.2rem 2.5rem 1.7rem;
+  padding: 1.2rem 0.7rem 1.2rem 1rem;
 }
 
 /* Sidebar list layout */
@@ -65,7 +66,7 @@ html[data-theme="dark"] .theme-toggle-bar {
 
 /* Sidebar tip wrapper for spacing */
 .sidebar-tip-wrapper {
-  margin-top: 2.5rem;
+  margin-top: 1.2rem;
 }
 /* Responsive Layout Framework
    Defines semantic layout classes for redesigned Aspen pages.
